@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    /* Kích thước chữ mặc định */
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+:root{
+
+}
+
+
+nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+
+
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    :root{
+        --color: white;
+    }
+    
+
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    nav a.active {
+        background-color: darkgreen;
+        color: white;
+    }
+
+    nav a:hover {
+        text-decoration: none;
+        background-color: darkseagreen;
+        color: black;
+    }
+
+
+}
+
+/* Light theme */
+@media (prefers-color-scheme: light) {
+    :root{
+        --color: black;
+    }
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+    nav a.active {
+        background-color: darkseagreen;
+    }
+
+    nav a:hover {
+        text-decoration: none;
+        background-color: darkgreen;
+        color: white;
+    }
+}
+
+summary{
+    border-bottom: solid 1px var(--color);;
+}
+
+
+/* class style */

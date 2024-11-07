@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/doc/css/font/roboto.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Biến đổi Laplace</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/index.html" class="active">Trang chủ</a>
+        <a href="index.html">TH&HT</a>
+    </nav>
+
+    <h2>Biến đổi Laplace</h2>
+    <a href="https://vi.wikipedia.org/wiki/Ph%C3%A9p_bi%E1%BA%BFn_%C4%91%E1%BB%95i_Laplace">Wiki</a>
+    <details open>
+        <summary>Biến đổi Laplace 1 phía</summary>
+        <a href="https://vi.wikipedia.org/wiki/Ph%C3%A9p_bi%E1%BA%BFn_%C4%91%E1%BB%95i_Laplace#%C4%90%E1%BB%8Bnh_ngh%C4%A9a">wiki</a>
+        
+        <p>
+            Phép biến đổi Laplace là cách tiếp cận miền tần số cho các tín hiệu thời gian liên tục bất kể tính ổn định
+            của hệ thống. Phép biến đổi Laplace của hàm số f(t) (với mọi số thực t ≥
+            0) là hàm số F(s), được định nghĩa như sau:
+
+            $$ \mathcal{L}\{f(t)\}= F(s) = \int\limits_{0^-}^{\infty} f(t)e^{-st}dt $$
+
+            Trong đó: s là biến số phức cho bởi $ s = \sigma+j\omega $ với s là miền
+            tần số, có đơn vị là phần giây (second) $ s^{-1} $
+
+            Giới hạn $ 0^- $chỉ rõ thời điểm bắt đầu ngay trước khi $ t = 0 $, được dùng để lấy gốc
+            hàm số $ f(t) $ tại thời điểm $ t = 0 $.
+        </p>
+    </details>
+
+    <details open>
+        <summary>Biến đổi Laplace 2 phía</summary>
+        <a href="https://vi.wikipedia.org/wiki/Ph%C3%A9p_bi%E1%BA%BFn_%C4%91%E1%BB%95i_Laplace#Bi%E1%BA%BFn_%C4%91%E1%BB%95i_Laplace_hai_ph%C3%ADa">wiki</a>
+        <p>
+            Một khi nói "biến đổi Laplace" mà không chú ý thêm gì, thường là ta nói đến biến đổi một phía. Biến đổi
+            Laplace có thể được định nghĩa là [[biến đổi Laplace hai phía]] bằng cách mở rộng giới hạn của tích phân đến
+            [[Vô tận|vô cực]].
+
+            $$ F(s)=\mathcal{L}\left\{f(t)\right\}=\int_{-\infty}^\infty f(t)e^{-st}dt $$
+
+            Như vậy, biến đổi Laplace một phía đơn giản sẽ trở thành trường hợp đặc biệt của biến đổi Laplace hai phía,
+            được xác định bằng cách lấy hàm đã chuyển đổi nhân với [[Hàm bước Heaviside|hàm bước nhảy Heaviside]].
+
+        </p>
+    </details>
+
+    <details open>
+        <summary>Biến đổi Laplace ngược</summary>
+        <a href="https://vi.wikipedia.org/wiki/Ph%C3%A9p_bi%E1%BA%BFn_%C4%91%E1%BB%95i_Laplace#Bi%E1%BA%BFn_%C4%91%E1%BB%95i_Laplace_ng%C6%B0%E1%BB%A3c">wiki</a>
+        <p>
+            [[Biến đổi Laplace ngược]] giúp chúng ta tìm lại hàm gốc f(t) từ hàm ảnh F(s). Biến đổi Laplace ngược được
+            định nghĩa bởi tích phân sau.
+
+            $$ \mathcal{L}^{-1} \left\{F(s)\right\}=f(t)=\frac{1}{2\pi i}\int_{\gamma -i \infty}^{\gamma +i
+            \infty}e^{st}F(s)ds $$
+
+            Nhưng thông thường chúng ta ít dùng đến tích phân này để tính hàm gốc mà dùng bảng "các hàm gốc – hàm ảnh
+            tương ứng" đã có sẵn để tìm lại hàm gốc f(t).
+        </p>
+    </details>
+
+
+    <details open>
+        <summary>Tính chất</summary>
+        <a href="https://vi.wikipedia.org/wiki/Ph%C3%A9p_bi%E1%BA%BFn_%C4%91%E1%BB%95i_Laplace#T%C3%ADnh_ch%E1%BA%A5t_c%E1%BB%A7a_bi%E1%BA%BFn_%C4%91%E1%BB%95i_Laplace">wiki</a>
+        <p>
+            * Cho các hàm f(t) và g(t), và các hàm ảnh tương ứng F(s) và G(s):
+
+            $$ f(t)=\mathcal{L}^{-1}\left\{F(s)\right\} $$
+
+            $$ g(t)=\mathcal{L}^{-1}\left\{G(s)\right\} $$
+
+            * Sau đây là bảng các tính chất của biến đổi Laplace:
+            <img src="imgs/tc.png" alt="">
+        </p>
+    </details>
+
+    
+
+    <!-- Mathjax -->
+    <script src="/doc/js/math-inline.js"></script>
+    <script id="MathJax-script" async src="/doc/js/tex-mml-chtml.js"></script>
+
+</body>
+
+
+</html>
