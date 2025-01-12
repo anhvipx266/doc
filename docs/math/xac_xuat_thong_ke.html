@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Xác xuất thống kê</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Toán</a>
+    </nav>
+
+    <h1>Đại số</h1>
+
+    <div style="max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h1>Kiến thức tổng hợp về Xác suất Thống kê</h1>
+    
+        <section id="probability">
+            <h2>1. Xác suất (Probability)</h2>
+            <p>
+                Xác suất của một biến cố \( A \), ký hiệu là \( P(A) \), là một số từ 0 đến 1 biểu diễn khả năng xảy ra của biến cố đó. Một số tính chất cơ bản:
+            </p>
+            <ul>
+                <li>\( 0 \leq P(A) \leq 1 \)</li>
+                <li>\( P(\Omega) = 1 \): Xác suất của không gian mẫu</li>
+                <li>\( P(A \cup B) = P(A) + P(B) - P(A \cap B) \)</li>
+                <li>\( P(\bar{A}) = 1 - P(A) \): Xác suất của biến cố đối</li>
+            </ul>
+        </section>
+    
+        <section id="random-variables">
+            <h2>2. Biến ngẫu nhiên (Random Variables)</h2>
+            <p>
+                Biến ngẫu nhiên là một hàm số gán một giá trị số cho mỗi kết quả có thể xảy ra trong một thí nghiệm ngẫu nhiên. Có hai loại biến ngẫu nhiên chính:
+            </p>
+            <ul>
+                <li><b>Biến ngẫu nhiên rời rạc:</b> Chỉ nhận các giá trị rời rạc như \( 0, 1, 2, \ldots \)</li>
+                <li><b>Biến ngẫu nhiên liên tục:</b> Có thể nhận bất kỳ giá trị nào trên một khoảng, ví dụ: \( x \in [a, b] \)</li>
+            </ul>
+            <p>
+                Hàm mật độ xác suất (PMF) của biến ngẫu nhiên rời rạc \( X \):
+                \[
+                P(X = x) = p(x)
+                \]
+                Hàm mật độ xác suất (PDF) của biến ngẫu nhiên liên tục \( X \):
+                \[
+                f(x), \quad \text{với } \int_{-\infty}^{\infty} f(x) \, dx = 1
+                \]
+            </p>
+        </section>
+    
+        <section id="probability-distributions">
+            <h2>3. Phân phối xác suất (Probability Distributions)</h2>
+            <p>Các phân phối xác suất thông dụng:</p>
+            <ul>
+                <li><b>Phân phối Bernoulli:</b> Biến ngẫu nhiên rời rạc với hai giá trị \( 0 \) và \( 1 \). Kỳ vọng \( E(X) = p \), phương sai \( \text{Var}(X) = p(1 - p) \).</li>
+                <li><b>Phân phối Nhị thức:</b> \( X \sim \text{Bin}(n, p) \), xác suất thành công sau \( n \) lần thử:
+                    \[
+                    P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+                    \]
+                </li>
+                <li><b>Phân phối Chuẩn (Normal):</b> \( X \sim N(\mu, \sigma^2) \), với hàm mật độ:
+                    \[
+                    f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+                    \]
+                </li>
+            </ul>
+        </section>
+    
+        <section id="expectation-variance">
+            <h2>4. Kỳ vọng và Phương sai (Expectation and Variance)</h2>
+            <p>
+                Kỳ vọng (giá trị trung bình) của biến ngẫu nhiên \( X \):
+                \[
+                E(X) = \sum_{x} x \cdot P(X = x) \quad \text{(rời rạc)}
+                \]
+                \[
+                E(X) = \int_{-\infty}^{\infty} x \cdot f(x) \, dx \quad \text{(liên tục)}
+                \]
+            </p>
+            <p>
+                Phương sai của \( X \):
+                \[
+                \text{Var}(X) = E(X^2) - (E(X))^2
+                \]
+            </p>
+        </section>
+    
+        <section id="hypothesis-testing">
+            <h2>5. Kiểm định giả thuyết (Hypothesis Testing)</h2>
+            <p>
+                Kiểm định giả thuyết là phương pháp xác định xem một giả thuyết về tổng thể có đúng hay không dựa vào mẫu dữ liệu.
+            </p>
+            <ul>
+                <li><b>Giả thuyết gốc \( H_0 \):</b> Giả thuyết mà chúng ta muốn kiểm định.</li>
+                <li><b>Giả thuyết thay thế \( H_1 \):</b> Giả thuyết đối lập với \( H_0 \).</li>
+            </ul>
+            <p>
+                Giá trị thống kê kiểm định:
+                \[
+                Z = \frac{\bar{x} - \mu_0}{\frac{\sigma}{\sqrt{n}}}
+                \]
+                So sánh giá trị thống kê kiểm định với giá trị tới hạn để quyết định bác bỏ hoặc không bác bỏ \( H_0 \).
+            </p>
+        </section>
+    
+        <section id="confidence-intervals">
+            <h2>6. Khoảng tin cậy (Confidence Intervals)</h2>
+            <p>
+                Khoảng tin cậy cho kỳ vọng \( \mu \) của tổng thể với độ tin cậy \( 1 - \alpha \):
+                \[
+                \left(\bar{x} - Z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}, \, \bar{x} + Z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}\right)
+                \]
+            </p>
+        </section>
+    
+        <footer>
+            <p>Trên đây là một số kiến thức cơ bản của Xác suất Thống kê. Học tốt và thành công!</p>
+        </footer>
+    </div>    
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Lý thuyết mạch 1</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Lý thuyết mạch</a>
+    </nav>
+
+    <h1>Lý thuyết mạch 1</h1>
+    <a href="slides/bai tap mach 1.pdf" target="_blank">Bài tập</a> <br>
+    <details><summary>Kết quả</summary>
+        <ol>
+            <li></li>
+        </ol>
+    </details>
+    <section>
+        <h2>Chương 1: Thông số mạch</h2>
+        <ol>
+            <li>
+                <details>
+                    <summary>Điện tích</summary>
+                    Là các hạt mang điện, đại lượng vật lý.
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Dòng điện</summary>
+                    <hl><u>Dòng dịch chuyển</u> có hướng của các <u>điện tích</u></hl> <br>
+                    <div class="row">
+                        <div class="col-md-6"><img src="imgs/i16.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                    
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>Điện áp</summary>
+                    <hl>Là công dịch chuyển điện tích</hl> <br>
+                    <div class="row">
+                        <div class="col-md-6"><img src="imgs/i17.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Công suất</summary>
+                    <hl>Là đại lượng mô tả <u>tốc độ</u> <b>tiêu thụ hoặc cung cấp</b> năng lượng trong một mạch điện</hl> <br>
+                    <hl>Tích <u>Dòng và Áp</u></hl>
+                    <div class="row">
+                        <div class="col-md-6"><img src="imgs/i18.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Chương 2: Phần tử mạch</h2>
+        <ol>
+            <li>
+                <details>
+                    <summary>Nguồn áp</summary>
+                    <hl><b>(lý tưởng)</b> Là một phần tử mạch có khả năng <u>duy trì một điện áp định danh</u> trên hai cực
+                        của đầu ra, điện áp này không phụ thuộc vào dòng điện chảy giữa hai cực đó.</hl> <br>
+                        <img src="imgs/i19.png" alt="" class="d-invert">
+                    <ul>
+                        
+                        <li> Điện áp không phụ thuộc vào tải.</li>
+                        <li> Điện áp có thể không đổi <b>(một chiều)</b> hoặc biến thiên <b>(thường là xoay chiều)</b>.</li>
+                        <li>Điện trở của nguồn áp <b>(lý tưởng)</b> bằng không <b>(0)</b>.</li>
+                        <li> <ex>ắcquy, pin, máy phát điện.</ex></li>
+
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Nguồn dòng</summary>
+                    <hl><b>(lý tưởng)</b> Là một phần tử mạch có khả năng <u>duy trì một
+                        dòng điện định danh</u> chảy giữa hai cực của đầu ra, dòng
+                        điện này không phụ thuộc vào điện trên hai cực đó.</hl> <br>
+                    <img src="imgs/i20.png" alt="">
+                    <ul>
+                       
+
+                        <li>Dòng điện không phụ thuộc vào tải.</li>
+                        <li>Dòng điện có thể không đổi <b>(một chiều)</b> hoặc biến thiên <b>(thường là xoay chiều)</b>.</li>
+                        <li>Điện trở của nguồn dòng <b>(lý tưởng)</b> vô cùng lớn</li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Điện trở</summary>
+                    <hl>Phần tử đặc trưng cho khả năng <u>cản trở dòng điện</u>.</hl> <br>
+                    <img src="imgs/dien_tro.png" class="d-invert">
+                    <ex>dây tóc bóng đèn</ex>
+                     
+                    <h3><hl> Điện dẫn:</hl></h3>
+                    <ul>
+                        <li>Nghịch đảo của điện trở,</li>
+                        <li>Đơn vị: siemens (S),</li>
+                        <li>Ký hiệu <b>G</b> hoặc <b>g</b>.</li>
+                    </ul>
+
+                    
+                    <div class="row">
+                        <div class="col-md-6"><hl>Kí hiệu</hl><img src="imgs/i21.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-md-6"><hl>Trạng thái</hl><img src="imgs/i22.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                    
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Cuộn dây</summary>
+                    <hl>Phần tử tích trữ <u>năng lượng từ trường</u></hl> <br>
+                    <div class="row">
+                        <div class="col-md-6"><img src="imgs/i23.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                    
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Tụ điện</summary>
+                    <hl>Phần tử tích trữ <u>năng lượng điện trường</u></hl> <br>
+                    <div class="row">
+                        <div class="col-md-6"><img src="imgs/i24.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Tổng kết</summary>
+                    <div class="row">
+                        <div class="col-md-6"><hl>Kí hiệu</hl><img src="imgs/i25.png" alt="" class="d-invert"></div>
+                    </div>
+                    <table>
+                        <thead>
+                            <td>Điện trở</td>
+                            <td>Cuộn cảm</td>
+                            <td>Tụ điện</td>
+                        </thead>
+                        <tr>
+                            <td>Cản trở dòng điện</td>
+                            <td>Tích trữ từ trường</td>
+                            <td>Tích trữ điện trường</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>DC: <hl>Hở mạch</hl></td>
+                            <td>DC: <hl>Ngắn mạch</hl></td>
+                        </tr>
+                    </table>
+                </details>
+            </li>
+        </ol>
+
+       
+    </section>
+
+    <section>
+        <details>
+            <summary><h2>Chương 3 Mạch một chiều</h2></summary>
+            <ul>
+                <li>Là mạch điện chỉ có nguồn một chiều</li>
+                <li>Cuộn dây (nếu có) bị ngắn mạch</li>
+                <li>Tụ điện (nếu có) bị hở mạch</li>
+            </ul>
+        </details>
+        <ol>
+            <li>
+                <h3>Các định luật cơ bản</h3>
+                <ul>
+                    <li>
+                        <details>
+                            <summary>Định luật Ohm</summary>
+                            <ul>
+                                <li>Liên hệ giữa <u>dòng & áp</u> của một phần tử.</li>
+                                <li>Nếu có nhiều phần tử trở lên thì định luật Ohm chưa đủ</li>
+                                <li>→ Các định luật Kirchhoff</li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-md-6"><img src="imgs/i26.png" alt="" class="d-invert w-100"></div>
+                                <div class="col-md-6"><ex><img src="imgs/i27.png" alt="" class="d-invert w-100"></ex> </div>
+                            </div>
+                            
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary>Nhánh, nút, và vòng</summary>
+                            <div class="row">
+                                <div class="col-md-6"><hl>Nhánh</hl> <img src="imgs/nhanh.png" alt="" class="w-100 d-invert"></div>
+                                <div class="col-md-6"><hl>Nút</hl> <img src="imgs/note.png" alt="" class="w-100 d-invert"></div>
+                                <div class="col-md-6"><hl>Vòng</hl><img src="imgs/circle.png" alt="" class="w-100 d-invert"></div>
+                            </div>
+                           
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary>Định luật Kirchhoff</summary>
+                            <ul>
+                                <li>Có hai định luật Kirchhoff: định luật cân bằng dòng(KD), và định luật cân bằng áp
+                                    (KA).</li>
+                                <li>KD: suy ra từ luật bảo toàn điện tích.</li>
+                                <li>KA: suy ra từ luật bảo toàn năng lượng.</li>
+
+                            </ul>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>KD</h3>
+                                    <img src="imgs/kd1.png" alt="" class="w-100 d-invert">
+                                    <img src="imgs/kd2.png" alt="" class="w-100 d-invert">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>KA</h3>
+                                    <img src="imgs/ka1.png" alt="" class="w-100 d-invert">
+                                    <img src="imgs/ka2.png" alt="" class="w-100 d-invert">
+                                    <img src="imgs/ka3.png" alt="" class="w-100 d-invert">
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <details>
+                    <summary>Các phương pháp phân tích</summary>
+
+
+                </details>
+                <ul>
+                    <li>
+                        <details>
+                            <summary> Phương pháp dòng nhánh</summary>
+                            <ul>
+                                <li>Ẩn số là các dòng điện của các nhánh.</li>
+                                <li> Số lượng ẩn số = số lượng nhánh (không kể nguồn
+                                    dòng, nếu có) của mạch.
+
+                                </li>
+
+                            </ul>
+                            Một mạch điện có: <br>
+                            <fr>
+                               
+                                \[ n_{KD} = note – 1\] <br>
+                                \[ n_{KA} = branch – note + 1 \] <b> (không kể nguồn dòng, nếu có)</b>
+                            </fr> <br>
+                            <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 19 - 28</a>
+                            <details><summary>Phân tích</summary>
+                                <ol>
+                                    <li>Phân tích <u>Nút và Nhánh</u></li>
+                                    <li>Tối ưu khi viết thành ma trận, và giải hệ tuyến tính</li>
+                                </ol>
+                            </details>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary>Phương pháp thế nút</summary>
+                            <ul>
+                                <li>Ẩn số là điện thế của các nút.</li>
+                                <li>Còn gọi là “thế đỉnh”.</li>
+                                <li>Dùng KA để đổi ẩn số “dòng điện nhánh” thành ẩn
+                                    số “điện thế nút”.</li>
+                            </ul>
+                            <hl>Chú ý I = U / R, mà U là hiệu điện thế <u>(trước - sau)</u></hl>
+                            <img src="imgs/a34.png" alt="" class="d-invert">
+                            <h3>Các trường hợp</h3>
+                            <div class="row">
+                                <div class="col-md-6"><img src="imgs/i30.png" alt="" class="w-100 d-invert"></div>
+                                <div class="col-md-6"><img src="imgs/i28.png" alt="" class="w-100 d-invert"></div>
+                                <div class="col-md-6"><img src="imgs/i29.png" alt="" class="w-100 d-invert"></div>
+                                <div class="col-md-6"><img src="imgs/i31.png" alt="" class="w-100 d-invert"></div>
+                            </div>
+                            
+                            <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 36  - 47</a>
+                            <details><summary>Phân tích</summary>
+                                <ol>
+                                    <li>Giảm số lượng phương trình = KA</li>
+                                    <li>Dòng i từ thế <u>Cao -> Thấp</u></li>
+                                    <li>Nếu xét 1 vòng, việc xác định i theo thế đơn giản hơn nhiều</li>
+                                    <li><hl>dấu của E tương ứng với việc cùng chiều dòng i</hl> <br>
+                                        
+                                        <hl>trừ <u>vào Thế đỉnh</u>, cộng <u>ra Thế đỉnh</u></hl> <br>
+                                        <div class="row">
+                                            <div class="col-md-6"> <img src="imgs/i29.png" alt="" class="d-invert w-100"></div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </details>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary>Phương pháp dòng vòng</summary>
+                            <img src="imgs/i32.png" alt="" class="d-invert"> <br>
+                            <hl>Lưu ý vòng xả J</hl> <br>
+                            <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">54 - 61</a>
+
+                            <details><summary>Phân tích</summary>
+                                <hl>Lưu ý vòng xả J, tuy nhiên vòng xả J nên chọn xả vào <u>ít phần tử nhất</u></hl>
+                            </details>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary>Biến đổi tương đương</summary>
+                            <hl>Biến đổi thành mạng 1 cửa có dòng, áp tương đương.</hl> <br>
+                            <img src="imgs/i34.png" alt="" class="d-invert">
+                            <details><summary>Biến đổi</summary>
+                                <div class="row">
+                                    <div class="col-6"><img src="imgs/i35.png" alt="" class="w-100 d-invert"></div>
+                                    <div class="col-6"><img src="imgs/i36.png" alt="" class="w-100 d-invert"></div>
+                                    <div class="col-6"><img src="imgs/i37.png" alt="" class="w-100 d-invert"></div>
+                                    <div class="col-6"><img src="imgs/i38.png" alt="" class="w-100 d-invert"></div>
+                                    <div class="col-6"><img src="imgs/i39.png" alt="" class="w-100 d-invert"></div>
+                                    <div class="col-6"><img src="imgs/i40.png" alt="" class="w-100 d-invert"></div>
+                                    <div class="col-6"><img src="imgs/i41.png" alt="" class="w-100 d-invert"></div>
+                                </div>
+                            </details>
+                            <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 73 - 75</a>
+                            <div class="row">
+                                <div class="col-6"><img src="imgs/i42.png" alt="" class="w-100 d-invert"></div>
+                            </div>
+                            <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 77 - 81</a>
+                            <div class="row">
+                                <div class="col-6"><img src="imgs/i43.png" alt="" class="w-100 d-invert"></div>
+                            </div>
+                            <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 84</a>
+                            <div class="row">
+                                <div class="col-6"><img src="imgs/i44.png" alt="" class="w-100 d-invert"></div>
+                            </div>
+                            <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 86</a>
+                            <details><summary>Phân tích</summary>
+                                <ol>
+                                    <li><hl>Nguồn tổng hợp khi E nối tiếp, J song song</hl></li>
+                                </ol>
+                            </details>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary>Phương pháp ma trận</summary>
+                            Từ mạch điện viết trực tiếp phương trình ma trận:
+                            \(Ax = b\)
+                            Áp dụng cho dòng nhánh và dòng vòng. <br>
+                            <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 90 - 93</a>
+
+                        </details>
+                    </li>
+
+                    <li><details><summary>So sánh, tổng kết</summary>
+                        <img src="imgs/i33.png" alt="" class="d-invert">
+                    
+                    </details></li>
+
+                </ul>
+            </li>
+            <li>
+                <details>
+                    <summary> Các định lý mạch</summary>
+
+
+                </details>
+                <ul>
+                    <li><details><summary>Nguyên lý xếp chồng</summary>
+                        <hl>Tính mạch đơn giản bằng cách tắt các nguồn, rồi <u>tổng hợp lại</u>.</hl>
+                        <div class="row">
+                            <div class="col-md-6"><img src="imgs/i45.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-md-6"><img src="imgs/i46.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                        <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 97 - 104</a>
+                    </details></li>
+                    <li><details><summary>Định lý Thevenin</summary>
+                        <hl>Thay <u>Mạng tuyến tính một của</u> bằng <u>Nguồn áp và Trở</u></hl>
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/i47.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i48.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i49.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                        <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 110 - 119</a>
+                    </details></li>
+                    <li><details><summary>Định lý Norton</summary>
+                        <hl>Thay <u>Mạng tuyến tính một của</u> bằng <u>Nguồn dòng và Trở</u></hl>
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/i50.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i51.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                        <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 124 - 130</a>
+                    </details></li>
+                    <li><details><summary>Thevenin và Norton</summary>
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/i52.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i53.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                        <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 133</a>
+                    </details></li>
+                    <li><details><summary>Truyền công suất cực đại</summary>
+                        <hl>Bài toán hòa hợp tải: Trở = Trở td, Công suất này dễ tính \(= i^2R\)</hl>
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/i54.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i55.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                        <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 138</a>
+                    </details></li>
+                </ul>
+            </li>
+            <li>
+                <details>
+                    <summary>Phân tích mạch một chiều có L hoặc/và C</summary>
+                    Trong mạch điện một chiều ở chế độ xác lập:
+                    <table>
+                        <thead><td></td><td>L</td><td>C</td></thead>
+                        <tr>
+                            <td>Dòng: I</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Áp: U</td>
+                            <td>0</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Tương đương</td>
+                            <td>Ngắn mạch</td>
+                            <td>Hở mạch</td>
+                        </tr>
+                    </table>
+                    
+                    <a href="slides/01_Mach_mot_chieu2023b_mk.pdf">VD: 141 - 145</a>
+                </details>
+            </li>
+        </ol>
+    </section>
+
+
+    <section>
+        <details>
+            <summary>Chương 4: Mạch xoay chiều</summary>
+            <ul>
+                <li>Định nghĩa mạch xoay chiều: có nguồn (áp hoặc
+                    dòng) kích thích hình sin (hoặc cos).</li>
+                <li> Phương pháp giải:
+                    <ul>
+                        <li>Dùng số phức để phức hóa mạch điện,</li>
+                        <li>Sau đó dùng các phương pháp của mạch một chiều.</li>
+                    </ul>
+                </li>
+            </ul>
+        </details>
+        <ol>
+            <li><details><summary> Sóng sin</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i56.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i57.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                <a href="slides/02_Mach_xoay_chieu2023mk.pdf">VD: 10 - 12</a>
+            </details></li>
+            <li><details><summary>Phản ứng của các phần tử cơ bản</summary>
+                <table>
+                    <tr>
+                        <th>Đặc tính</th>
+                        <th>Điện trở (R)</th>
+                        <th>Tụ điện (C)</th>
+                        <th>Cuộn cảm (L)</th>
+                    </tr>
+                   
+                    <tr>
+                        <td>Pha</td>
+                        <td>cùng pha</td>
+                        <td>I chậm 90 U</td>
+                        <td>I nhanh 90 U</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Trở</td>
+                        <td>-</td>
+                        <td>\[ Z = 1 / wC \]</td>
+                        <td>\[ Z = wL \]</td>
+                    </tr>
+                    <tr>
+                        <td>Công suất tiêu thụ</td>
+                        <td>Công suất thực (P = V × I)</td>
+                        <td>Công suất phản kháng (không có công suất thực trong mạch lý tưởng)</td>
+                        <td>Công suất phản kháng (không có công suất thực trong mạch lý tưởng)</td>
+                    </tr>
+                    <tr>
+                        <td>Vi phân</td>
+                        <td>\( u(t) = R \cdot i(t) \)</td>
+                        <td>\( i(t) = C \frac{du(t)}{dt} \)</td>
+                        <td>\( u_L(t) = L \frac{di(t)}{dt} \)</td>
+                    </tr>
+                    <tr>
+                        <td>Tích phân</td>
+                        <td>\( i(t) = \frac{1}{R} \int u(t) \, dt \)</td>
+                        <td>\( u(t) = \frac{1}{C} \int i(t) \, dt \)</td>
+                        <td>\( i(t) = \frac{1}{L} \int u_L(t) \, dt \)</td>
+                    </tr>
+                    <tr>
+                        <td>Quan hệ khác</td>
+                        <td>-</td>
+                        <td>\( Q(t) = C \cdot u(t) \)</td>
+                        <td>\( \Phi_L(t) = L \cdot i(t) \)</td>
+                    </tr>
+                  
+                </table>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i58.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i59.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i60.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i61.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                <a href="slides/02_Mach_xoay_chieu2023mk.pdf">Nguồn: 14 - 21</a>
+            </details></li>
+            <li><details><summary>Số phức</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i62.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i63.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i65.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i64.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                <a href="slides/02_Mach_xoay_chieu2023mk.pdf">VD: 25 - 28</a>
+            </details></li>
+            <li><details><summary>Biển diễn sóng sin bằng số phức</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i66.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i67.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                <a href="slides/02_Mach_xoay_chieu2023mk.pdf">VD: 33 - 38</a>
+            </details></li>
+            <li><details><summary>Phức hoá các phần tử cơ bản</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i68.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i69.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i70.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i71.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i72.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                <a href="slides/02_Mach_xoay_chieu2023mk.pdf">VD: 44 - 45</a>
+            </details></li>
+            <li><details><summary>Phân tích mạch xoay chiều</summary>
+                <ul>
+                    <li> Định luật Ohm & định luật Kirchhoff đúng đối với các tín hiệu phức hoá.</li>
+                    <li>Các bước phân tích mạch điện xoay chiều:
+                        <ol>
+                            <li>Phức hoá mạch điện (phức hoá các phần tử mạch),</li>
+                            <li>Phân tích mạch điện bằng các phương pháp phân tích
+                                mạch một chiều,</li>
+                            <li>Chuyển tín hiệu phức hoá sang tín hiệu tức thời.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <img src="imgs/i78.png" alt="" class="d-invert">
+            </details>
+            <ul>
+                <li><details><summary>Định luật Ohm</summary>
+                    <div class="row">
+                       
+                        <div class="col-6"><img src="imgs/i73.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i74.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i75.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i76.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i77.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details></li>
+                <li><details><summary>Định luật Kirchhoff</summary>
+                    <a href="slides/02_Mach_xoay_chieu2023mk.pdf">Tương tự: 54 - 55</a>
+                </details></li>
+                <li><details><summary>Dòng nhánh</summary>
+                
+                </details></li>
+                <li><details><summary>Thế nút</summary>
+                
+                </details></li>
+                <li><details><summary>Dòng vòng</summary>
+                
+                </details></li>
+                <li><details><summary>Biến đổi tương đương</summary>
+                
+                </details></li>
+                <li><details><summary>Nguyên lý xếp chồng</summary>
+                    <ul>
+                        <li> PHẢI áp dụng nếu mạch có các nguồn khác tần số.</li>
+                        <li> KHÔNG phức hóa mạch có các nguồn khác tần số.</li>
+                        <li> KHÔNG dùng số phức để cộng/trừ các sóng sin
+                            khác tần số.</li>
+                        <li>NÊN xét đồng thời các nguồn cùng tần số.</li>
+
+                    </ul>
+                </details></li>
+                <li><details><summary>Định lý Thevenin</summary>
+                
+                </details></li>
+                <li><details><summary>Định lý Norton</summary>
+                
+                </details></li>
+
+            </ul>
+            </li>
+            <li><details><summary>Công suất trong mạch xoay chiều</summary>
+                
+            </details>
+                <ul>
+                    <li><details><summary>Công suất tức thời & công suất tác dụng</summary>
+                        <define>Định nghĩa:</define> <hl>Công suất tác dụng là trung bình của công suất tức thời 
+                            trong một chu kỳ, ký hiệu là P, đo bằng oát (W)</hl>
+                        <div class="row">
+                       
+                            <div class="col-md-6"><img src="imgs/i79.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-md-6"><img src="imgs/i80.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-md-6"><img src="imgs/i81.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-md-6"><img src="imgs/i82.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                        
+                    </details></li>
+                    <li><details><summary>Truyền công suất cực đại</summary>
+                        <div class="row">
+                       
+                            <div class="col-md-6"><img src="imgs/i83.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-md-6"><img src="imgs/i84.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-md-6"><img src="imgs/i85.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                        <!-- <a href="slides/02_Mach_xoay_chieu2023mk.pdf">VD: 44 - 45</a> -->
+                    </details></li>
+                    <li><details><summary>Trị hiệu dụng</summary>
+                        <ul>
+                            <li> Xuất phát từ nhu cầu đo/đánh giá tác dụng của một
+                                nguồn áp/nguồn dòng trong việc cung cấp công suất cho
+                                một điện trở (tải thuần trở).</li>
+                            <li>Định nghĩa: Trị hiệu dụng của một dòng điện chu kỳ là
+                                độ lớn một dòng điện một chiều, công suất mà dòng
+                                điện một chiều này cung cấp cho một điện trở bằng
+                                công suất mà dòng điện chu kỳ cung cấp cho điện trở
+                                đó.</li>
+                            <li>Có thể viết tắt trị hiệu dụng là rms (root-mean-square)</li>
+                            <li> Gọi tắt là dòng hiệu dụng (& áp hiệu dụng)</li>
+                            <li> Ký hiệu: I & U [của dòng chu kỳ i(t) & áp chu kỳ u(t)]</li>
+                           
+                        </ul>
+                        <div class="row">
+                       
+                            <div class="col-6"><img src="imgs/i86.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i87.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i88.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                    </details></li>
+                    <li><details><summary>Công suất biểu kiến</summary>
+                        <define> Định nghĩa</define>: Tích của trị hiệu dụng của điện áp & trị
+                        hiệu dụng của dòng điện, ký hiệu S, đo bằng VA (vônampe, volt-ampere) <br>
+                        \[S = UI\]
+                    </details></li>
+                    <li><details><summary>Hệ số công suất</summary>
+                        <img src="imgs/i89.png" alt="" class="d-invert">
+                    </details></li>
+                    <li><details><summary>Công suất phức</summary>
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/i90.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i91.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i92.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i93.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                    </details></li>
+                    <li><details><summary>Bảo toàn công suất</summary>
+                        <img src="imgs/i94.png" alt="" class="d-invert">
+                    </details></li>
+                    <li><details><summary>Cải thiện hệ số công suất</summary>
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/i95.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i96.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i97.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i98.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                    </details></li>
+                    <li><details><summary>Trị hiệu dụng & công suất của tín hiệu đa hài</summary>
+                        <define>Định nghĩa</define>: tín hiệu đa hài là tín hiệu có nhiều thành phần tần số.
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/i99.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/i100.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                    </details></li>
+ 
+                </ul>
+            </li>
+            <li><details><summary>Hỗ cảm</summary>
+            
+            </details>
+                <ul>
+                    <li><details><summary> Hiện tượng hỗ cảm</summary>
+                        <define>Định nghĩa</define>: khi hai cuộn cảm/cuộn dây đặt đủ sát
+                        nhau, dòng từ thông biến thiên của một cuộn (do
+                        dòng điện trong cuộn này gây ra) sẽ liên kết với
+                        cuộn thứ hai, tạo ra điện áp trên cuộn đó.
+                    
+                    </details></li>
+                    <li><details><summary>Quy tắc dấu chấm</summary>
+                        <define>Dòng và áp hỗ cảm đi vào, ra cùng chiều</define> <br>
+                        <hl>Áp vào cùng chiều đánh dấu</hl>
+                        
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/a1.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/a2.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                        <hl><u>Nối tiếp</u>: so với dòng ban đầu, <u>Áp</u>:</hl>
+                        <table>
+                            <thead>
+                                <td>Thuận</td>
+                                <td>Nghịch</td>
+                            </thead>
+                            <tr>
+                                <td>Cùng chiều</td>
+                                <td>Ngược chiều</td>
+                            </tr>
+                            <tr>
+                                <td><img src="imgs/a36.png" alt="" class="d-invert"></td>
+                                <td><img src="imgs/a35.png" alt="" class="d-invert"></td>
+                            </tr>
+                        </table>
+                       
+                    
+                    </details></li>
+                    <li><details><summary> Phân tích mạch điện có hỗ cảm</summary>
+                        <h3>Phức hóa hỗ cảm</h3>
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/a3.png" alt="" class="w-100 d-invert"></div>
+                            <div class="col-6"><img src="imgs/a4.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                        <a href="slides/02_Mach_xoay_chieu2023mk.pdf">VD: 167 - 171</a>
+                    </details></li>
+            
+                </ul>
+            </li>
+           
+        </ol>
+    </section>
+
+
+    <section>
+        <details>
+            <summary>Chương 5: Mạng hai cửa</summary>
+            <div class="row">
+                <div class="col-md-6"><img src="imgs/a37.png" alt="" class="d-invert w-100"></div>
+            </div>
+        </details>
+        <ol>
+            <li><details><summary>Các bộ thông số Z, Y, H, G, A, B</summary>
+                <table class="font-weight-bold">
+                    <thead>Kí hiệu</thead>
+                    <tr>
+                        <td>\[ [U] [I] \]</td>
+                        <td>\[ [U_1 U_2] [I_1 I_2] \]</td>
+                    </tr>
+                    <tr>
+                        <td>\[ [UI] [IU] \]</td>
+                        <td>\[ [U_1 I_2] [I_1 U_2] \]</td>
+                    </tr>
+                    <tr>
+                        <td>\[ [X_1] [X_2] \]</td>
+                        <td>\[ [U_1 I_1] [U_2 I_2] \]</td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="font-weight-bold">
+                    <tr>
+                        <td>Z</td>
+                        <td>Trở kháng</td>
+                        <td>\[ [U] = [Z][I] \]</td>
+                    </tr>
+                    <tr>
+                        <td>Y</td>
+                        <td>Tiếp nhận</td>
+                        <td>\[ [I] = [Y][U] \]</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>Lai</td>
+                        <td>\[ [UI] = [H][IU] \]</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>Tiếp nhận lai</td>
+                        <td>\[ [IU] = [G][UI] \]</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>Truyền tải</td>
+                        <td>\[ [X_1] = [A][X_2] \]</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>Truyền tải khác</td>
+                        <td>\[ [X_2] = [B][X_1] \]</td>
+                    </tr>
+                </table>
+                <hl>Cách tính toán thông số: đặt thông số <u>dòng hoặc áp = 0</u> rồi dùng phép chia</hl> <br>
+                <ex>
+                    <img src="imgs/a6.png" alt="" class="w-50 d-invert">
+                </ex>
+                <details>
+                    <summary>Slide</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/a5.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a6.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a7.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a8.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a9.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a10.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a11.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a12.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a13.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a14.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a15.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a16.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a17.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a18.png" alt="" class="w-100 d-invert"></div>
+    
+                    </div>
+                </details>
+            </details></li>
+            <li><details><summary>Quan hệ giữa các bộ thông số</summary>
+                \[\begin{array}{l}\left[ Y \right] = {\left[ Z \right]^{ - 1}}\\\left[ G \right] = {\left[ H \right]^{ - 1}}\end{array}\]
+            </details></li>
+            <li><details><summary>Phân tích mạch có mạng hai cửa</summary>
+                <a href="slides/03_Mang2cua2023_mk.pdf">VD: 37 - 47</a>
+            </details></li>
+            <li><details><summary>Kết nối các mạng hai cửa</summary>
+                <a href="slides/03_Mang2cua2023_mk.pdf">Nguồn: 49</a>
+                <h3><hl>Kết nối cửa</hl></h3>
+                <table>
+                    <tr>
+                        <td>Nối tiếp</td>
+                        <td>Song song</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/a38.png" alt="" class="d-invert"></td>
+                        <td><img src="imgs/a39.png" alt="" class="d-invert"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Nối tiếp</td>
+                        <td>Dòng nối tiếp</td>
+                        <td>\[ Z_a + Z_b \]</td>
+                    </tr>
+                    <tr>
+                        <td>Song song</td>
+                        <td>Dòng song song</td>
+                        <td>\[ Y_a + Y_b \]</td>
+                    </tr>
+                    <tr>
+                        <td>Xâu chuỗi</td>
+                        <td>Xâu chuỗi cửa</td>
+                        <td>\[ A_a.A_b \]</td>
+                    </tr>
+                    <tr>
+                        <td>Lai 1</td>
+                        <td>Nối tiếp - Song song</td>
+                        <td>\[ H_a + H_b \]</td>
+                    </tr>
+                    <tr>
+                        <td>Lai 2</td>
+                        <td>Song song - nối tiếp</td>
+                        <td>\[ H_a + H_b \]</td>
+                    </tr>
+                </table>
+                <details>
+                    <summary>Slide</summary>
+                    <h3>Nối tiếp</h3>
+                    Mô hình: Chồng nhau <br>
+                    Công thức: tương đường nối tiếp R <br>
+                    
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/a19.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a20.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a21.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a22.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/a23.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details> 
+               
+                <a href="slides/03_Mang2cua2023_mk.pdf">VD: 59 - 64</a>
+            </details></li>
+            <li><details><summary>Mạng T & П</summary>
+                <h3>Cho phép chuyển đổi qua lại ma trận Z (hoặc A) và trở R</h3>
+                <table>
+                    <tr>
+                        <td><img src="imgs/T.png" alt="" class="d-invert"></td>
+                        <td><img src="imgs/N.png" alt="" class="d-invert"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/a40.png" alt="" class="d-invert"></td>
+                        <td><img src="imgs/a41.png" alt="" class="d-invert"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/a42.png" alt="" class="d-invert"></td>
+                        <td><img src="imgs/a43.png" alt="" class="d-invert"></td>
+                    </tr>
+                </table>
+                <a href="slides/03_Mang2cua2023_mk.pdf">Nguồn: 67 - 76</a>
+            </details></li>
+            <li><details><summary>Mạng hai cửa tương đương của mạch điện có hỗ cảm</summary>
+                <a href="slides/03_Mang2cua2023_mk.pdf">Nguồn: 78</a>
+            </details></li>
+            <li><details><summary>Tương hỗ</summary>
+                <a href="slides/03_Mang2cua2023_mk.pdf">Nguồn: 85</a>
+            </details></li>
+            <li><details><summary>Tổng trở vào & hòa hợp tải</summary>
+                <a href="slides/03_Mang2cua2023_mk.pdf">Nguồn: 89</a>
+            </details></li>
+            <li><details><summary>Hàm truyền đạt</summary>
+                <img src="imgs/a24.png" alt="" class="d-invert">
+                <a href="slides/03_Mang2cua2023_mk.pdf">VD: 105 - 108</a>
+            </details></li>
+            
+        </ol>
+    </section>
+
+    <section>
+        <details>
+            <summary>Chương 6: Mạch ba pha</summary>
+
+        </details>
+        <ol>
+            <li><details><summary>Giới thiệu</summary>
+                <ul>
+                    <li>Mạch một pha: một nguồn điện
+                        xoay chiều nối với tải bằng một cặp
+                        dây dẫn.</li>
+                    <li>Mạch nhiều pha: nhiều nguồn xoay
+                        chiều cùng tần số nhưng khác pha.</li>
+                    <li> Mạch ba pha: ba nguồn điện xoay
+                        chiều cùng tần số, cùng biên độ,
+                        lệch pha với nhau 120o.</li>
+                    <li>Trong số các mạch nhiều pha, mạch
+                        ba pha phổ biến & kinh tế nhất.</li>
+                   
+
+                </ul>
+                <h3>Ưu điểm</h3>
+                <ul>
+                    <li>Máy phát rẻ hơn, gọn hơn,</li>
+                    <li>Giá thành truyền tải rẻ hơn,</li>
+                    <li> Động cơ ba pha,</li>
+                    <li> Điện áp ba pha,</li>
+                    <li> Hệ số công suất,</li>
+                    <li>Chỉnh lưu,</li>
+                </ul>
+            </details></li>
+            <li><details><summary>Mạch ba pha đối xứng</summary>
+                <a href="slides/04_Ba_pha2023mk.pdf">Nguồn: 11</a>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/a25.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a26.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a27.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a28.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                Có hai cách giải mạch ba pha đối xứng:
+                <ol>
+                    <li>Tính thông số của một pha, suy ra các
+                        thông số của 2 pha còn lại bằng cách
+                        cộng thêm các góc ±120o, hoặc</li>
+                    <li>Coi như một mạch điện bình thường &
+                        tính toán bằng các phương pháp đã học.</li>
+                </ol>
+            </details></li>
+            <li><details><summary>Mạch ba pha không đối xứng</summary>
+                <ul>
+                    <li>Mạch ba pha đối xứng: mạch có nguồn đối xứng và tải đối xứng.</li>
+                    <li>Mạch ba pha không đối xứng: mạch có
+                        nguồn không đối xứng và/hoặc tải
+                        không đối xứng.</li>
+                    <li>Có 4 cách mắc: Y/Y, Y/Δ, Δ/Δ, Δ/Y.</li>
+                    <li>Cách giải mạch ba pha không đối xứng:
+                        coi như một mạch điện thông thường có
+                        nhiều nguồn xoay chiều cùng tần số.</li>
+                </ul>
+                <a href="slides/04_Ba_pha2023mk.pdf">VD: 24 - 32</a>
+            </details></li>
+            <li><details><summary>Công suất trong mạch ba pha</summary>
+                <a href="slides/04_Ba_pha2023mk.pdf">VD: 34</a>
+            </details></li>
+            
+        </ol>
+    </section>
+
+
+    <section>
+        <details>
+            <summary>Chương 7: Khuếch đại thuật toán</summary>
+
+        </details>
+        <ol>
+            <li><details><summary>Nguồn phụ thuộc</summary>
+                <img src="imgs/a29.png" alt="" class="d-invert">
+            </details></li>
+            <li><details><summary>Phân tích mạch điện có nguồn phụ thuộc</summary>
+                <a href="slides/05_Khuech_dai2023_mk.pdf">Nguồn: 6</a>
+            </details>
+                <ul>
+                    <li>Dòng nhánh</li>
+                    <li>Thế nút</li>
+                    <li>Dòng vòng</li>
+                    <li>Xếp chồng</li>
+                    <li>Mạng một cửa</li>
+                </ul>
+            </li>
+            <li><details><summary>Khuếch đại thuật toán</summary>
+                <a href="slides/05_Khuech_dai2023_mk.pdf">Nguồn: 32</a>
+            </details></li>
+            <li><details><summary>Các mạch cơ bản</summary>
+                <a href="slides/05_Khuech_dai2023_mk.pdf">Nguồn: 37</a>
+            </details></li>
+            <li><details><summary>Phân tích mạch có khuếch đại thuật toán</summary>
+            
+            </details></li>
+
+        </ol>
+    </section>
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Phương pháp tính và Matlab</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Cơ khí</a>
+    </nav>
+
+    <div class="numerical-methods-summary">
+        <h1>Phương pháp tính và Matlab</h1>
+        
+        <section>
+            <h2>1. Giới thiệu</h2>
+            <p><define>Phương pháp tính</define> là tập hợp các kỹ thuật số học để giải quyết các bài toán toán học không thể giải bằng phương pháp giải tích. Matlab là công cụ mạnh hỗ trợ tính toán số, vẽ đồ thị và lập trình kỹ thuật.</p>
+        </section>
+    
+        <section>
+            <h2>2. Các phương pháp tính cơ bản</h2>
+            <ul>
+                <li><b>Phương pháp xấp xỉ nghiệm:</b> Sử dụng để tìm nghiệm gần đúng của phương trình.</li>
+                <li><b>Phương pháp nội suy:</b> Dự đoán giá trị dựa trên tập hợp dữ liệu đã biết.</li>
+                <li><b>Phương pháp tích phân số:</b> Tính tích phân gần đúng của các hàm phức tạp.</li>
+                <li><b>Phương pháp đạo hàm số:</b> Tính đạo hàm gần đúng khi không có hàm chính xác.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>3. Các kỹ thuật trong Matlab</h2>
+            <h3>3.1. Tính toán cơ bản</h3>
+            <pre>
+    % Cộng, trừ, nhân, chia
+    a = 5; b = 3;
+    sum = a + b;
+    prod = a * b;
+    
+    % Ma trận
+    A = [1, 2; 3, 4];
+    B = [5, 6; 7, 8];
+    C = A * B; % Nhân ma trận
+            </pre>
+    
+            <h3>3.2. Vẽ đồ thị</h3>
+            <pre>
+    % Đồ thị hàm số y = sin(x)
+    x = 0:0.1:2*pi;
+    y = sin(x);
+    plot(x, y);
+    title('Đồ thị hàm sin');
+    xlabel('x');
+    ylabel('y');
+            </pre>
+    
+            <h3>3.3. Lập trình</h3>
+            <p>Matlab hỗ trợ lập trình với các cấu trúc lệnh cơ bản như:</p>
+            <ul>
+                <li><b>If-Else:</b> Kiểm tra điều kiện.</li>
+                <li><b>For loop:</b> Lặp lại một số lần xác định.</li>
+                <li><b>While loop:</b> Lặp lại khi điều kiện đúng.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>4. Các công thức và thuật toán quan trọng</h2>
+            <h3>4.1. Công thức xấp xỉ nghiệm</h3>
+            <p><b>Phương pháp chia đôi:</b> Giải phương trình <math>f(x) = 0</math> bằng cách tìm khoảng [a, b] sao cho <math>f(a)f(b) < 0</math>. Công thức lặp:</p>
+            <p>
+                <math>x_{mid} = \frac{a + b}{2}</math>
+            </p>
+    
+            <h3>4.2. Công thức nội suy</h3>
+            <p><b>Đa thức Lagrange:</b> Nội suy giá trị tại <math>x</math> dựa trên các điểm <math>(x_i, y_i)</math>:</p>
+            <p>
+                <math>P(x) = \sum_{i=0}^{n} y_i \prod_{j=0, j \neq i}^{n} \frac{x - x_j}{x_i - x_j}</math>
+            </p>
+        </section>
+    
+        <section>
+            <h2>5. Câu hỏi trắc nghiệm</h2>
+            <div id="quiz-box">
+                <!-- Dữ liệu trắc nghiệm -->
+                <script>
+                    var quizData = [
+                        {
+                            quiz: "Phương pháp chia đôi được sử dụng để làm gì?",
+                            answer: 0,
+                            type: 1,
+                            choice: [
+                                "Xấp xỉ nghiệm phương trình",
+                                "Nội suy dữ liệu",
+                                "Tính đạo hàm",
+                                "Tính tích phân"
+                            ]
+                        },
+                        {
+                            quiz: "Công thức <math>P(x) = \sum_{i=0}^{n} y_i \prod_{j=0, j \neq i}^{n} \frac{x - x_j}{x_i - x_j}</math> là của phương pháp nào?",
+                            answer: 1,
+                            type: 1,
+                            choice: [
+                                "Phương pháp chia đôi",
+                                "Đa thức nội suy Lagrange",
+                                "Phương pháp Euler",
+                                "Phương pháp Gauss"
+                            ]
+                        }
+                    ];
+                </script>
+            </div>
+        </section>
+    </div>
+    
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

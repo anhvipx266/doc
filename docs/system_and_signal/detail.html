@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/doc/css/font/roboto.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/doc/style.css">
+
+
+
+    <title>TH&HT</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">TH&HT</a>
+    </nav>
+
+    <h2>TH&HT</h2>
+
+    <div>
+
+        <h2>Chương 1: Giới thiệu về Tín hiệu và Hệ thống</h2>
+
+        <h3>1.1 Khái niệm tín hiệu</h3>
+        <p>Tín hiệu là một hàm số biểu diễn sự thay đổi của một đại lượng vật lý theo thời gian hoặc không gian. Tín
+            hiệu có thể là dạng rời rạc hoặc liên tục.</p>
+
+        <p><b>Ví dụ:</b> Tín hiệu nhiệt độ trong một ngày hoặc tín hiệu điện áp trên mạch điện.</p>
+
+        <h3>1.2 Phân loại tín hiệu</h3>
+        <ul>
+            <li><b>Tín hiệu liên tục:</b> Tín hiệu được định nghĩa tại mọi thời điểm. Ví dụ: \( x(t) = A \cos(\omega t +
+                \phi) \)</li>
+            <li><b>Tín hiệu rời rạc:</b> Tín hiệu chỉ được định nghĩa tại các thời điểm rời rạc. Ví dụ: \( x[n] = A
+                \cos(\omega n + \phi) \)</li>
+        </ul>
+
+        <h4>Bài tập:</h4>
+        <p>Phân loại các tín hiệu sau: \( x(t) = e^{-t} \), \( x[n] = \sin(n\pi/4) \), \( x(t) = 5 \).</p>
+
+        <hr>
+
+        <h2>Chương 2: Biến đổi Fourier</h2>
+
+        <h3>2.1 Biến đổi Fourier liên tục</h3>
+        <p>Biến đổi Fourier là công cụ quan trọng dùng để phân tích các tín hiệu liên tục. Nó chuyển tín hiệu từ miền
+            thời gian sang miền tần số.</p>
+
+        <p><b>Biểu thức:</b></p>
+        $$ X(f) = \int_{-\infty}^{\infty} x(t)e^{-j2\pi ft} dt $$
+
+        <h4>Ví dụ:</h4>
+        <p>Tìm biến đổi Fourier của tín hiệu \( x(t) = e^{-at}u(t) \), với \( a > 0 \).</p>
+        <p><b>Lời giải:</b></p>
+        $$ X(f) = \int_{0}^{\infty} e^{-at} e^{-j2\pi ft} dt = \frac{1}{a + j2\pi f} $$
+
+        <h4>Bài tập:</h4>
+        <p>Tìm biến đổi Fourier của tín hiệu \( x(t) = \cos(2\pi f_0 t) \).</p>
+
+        <hr>
+
+        <h2>Chương 3: Biến đổi Laplace</h2>
+
+        <h3>3.1 Khái niệm biến đổi Laplace</h3>
+        <p>Biến đổi Laplace là công cụ mạnh mẽ giúp giải các bài toán liên quan đến tín hiệu và hệ thống. Nó chuyển tín
+            hiệu từ miền thời gian sang miền phức.</p>
+
+        <p><b>Biểu thức:</b></p>
+        $$ X(s) = \int_{0}^{\infty} x(t)e^{-st} dt $$
+
+        <h3>3.2 Ứng dụng của biến đổi Laplace</h3>
+        <ul>
+            <li>Giải phương trình vi phân</li>
+            <li>Phân tích các hệ thống LTI</li>
+        </ul>
+
+        <h4>Ví dụ:</h4>
+        <p>Tìm biến đổi Laplace của tín hiệu \( x(t) = e^{-2t}u(t) \).</p>
+        <p><b>Lời giải:</b></p>
+        $$ X(s) = \int_{0}^{\infty} e^{-2t}e^{-st} dt = \frac{1}{s + 2} $$
+
+        <h4>Bài tập:</h4>
+        <p>Tìm biến đổi Laplace của tín hiệu \( x(t) = t e^{-3t}u(t) \).</p>
+
+        <hr>
+
+        <h2>Chương 4: Hệ thống LTI (Tuyến tính bất biến)</h2>
+
+        <h3>4.1 Định nghĩa hệ thống LTI</h3>
+        <p>Một hệ thống LTI là hệ thống thỏa mãn hai tính chất: tuyến tính và bất biến theo thời gian.</p>
+
+        <h3>4.2 Đáp ứng xung và hàm truyền đạt</h3>
+        <p><b>Đáp ứng xung:</b> Là đáp ứng của hệ thống khi đầu vào là một xung đơn vị \( \delta(t) \).</p>
+        <p><b>Hàm truyền đạt:</b> Biểu diễn mối quan hệ giữa đầu vào và đầu ra của hệ thống trong miền Laplace.</p>
+
+        <p><b>Biểu thức hàm truyền đạt:</b></p>
+        $$ H(s) = \frac{Y(s)}{X(s)} $$
+
+        <h4>Ví dụ:</h4>
+        <p>Tìm đáp ứng xung của hệ thống với hàm truyền đạt \( H(s) = \frac{1}{s + 1} \).</p>
+        <p><b>Lời giải:</b></p>
+        $$ h(t) = e^{-t}u(t) $$
+
+        <h4>Bài tập:</h4>
+        <p>Cho hệ thống với \( H(s) = \frac{s + 2}{s^2 + 3s + 2} \). Tìm đáp ứng xung \( h(t) \).</p>
+
+        <hr>
+
+        <h2>Chương 5: Phân tích miền tần số của hệ thống</h2>
+
+        <h3>5.1 Đáp ứng tần số</h3>
+        <p>Đáp ứng tần số là hàm số biểu diễn sự thay đổi biên độ và pha của tín hiệu khi đi qua hệ thống.</p>
+
+        <p><b>Biểu thức:</b></p>
+        $$ H(j\omega) = H(s)|_{s = j\omega} $$
+
+        <h3>5.2 Bode Plot</h3>
+        <p>Biểu đồ Bode gồm hai phần: biểu đồ biên độ và biểu đồ pha, dùng để phân tích hệ thống trong miền tần số.</p>
+
+        <h4>Ví dụ:</h4>
+        <p>Vẽ biểu đồ Bode cho hệ thống \( H(s) = \frac{10}{s + 10} \).</p>
+
+        <h4>Bài tập:</h4>
+        <p>Phân tích đáp ứng tần số và vẽ biểu đồ Bode cho \( H(s) = \frac{s + 1}{s^2 + s + 1} \).</p>
+
+    </div>
+
+
+
+    <!-- Mathjax -->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+
+</html>

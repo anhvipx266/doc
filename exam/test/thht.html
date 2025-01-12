@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Tín hiệu và Hệ thống</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="/doc/exam/test/index.html">Bài kiểm tra</a>
+    </nav>
+
+    <h1>Đề kiểm tra Tín hiệu và Hệ thống</h1>
+
+    <h2>Phần 1: Lý thuyết (3 điểm)</h2>
+    <hl>Câu 1:</hl> <define>Định nghĩa tín hiệu liên tục</define> và tín hiệu rời rạc. Cho ví dụ minh họa.  
+  <br>  <hl>Câu 2:</hl> Trình bày khái niệm hệ thống LTI (tuyến tính và bất biến theo thời gian) và các tính chất cơ bản.  
+  <br>  <hl>Câu 3:</hl> Phát biểu định lý lấy mẫu Nyquist-Shannon và ý nghĩa của nó trong xử lý tín hiệu.  
+    
+    <h2>Phần 2: Bài tập tự luận (7 điểm)</h2>
+    <hl>Câu 1:</hl> Một tín hiệu \( x(t) = e^{-2t}u(t) \) (trong đó \( u(t) \) là hàm bước đơn vị) được đưa qua một hệ thống LTI với hàm truyền đạt xung \( h(t) = e^{-t}u(t) \).  
+    Tính đầu ra \( y(t) \) của hệ thống bằng tích chập.  
+    
+    <br>  <hl>Câu 2:</hl> Một tín hiệu \( x(t) = 3\cos(2\pi 100 t) + 5\sin(2\pi 200 t) \) được lấy mẫu với tần số \( f_s = 300 \, Hz \).  
+    Tính phổ tín hiệu sau khi lấy mẫu và giải thích hiện tượng aliasing nếu xảy ra.
+    
+    <br> <hl>Câu 3:</hl> Xác định miền Laplace của tín hiệu \( x(t) = e^{-3t}u(t) + e^{2t}u(-t) \).  
+    
+    <br>   <hl>Câu 4:</hl> Tính phép biến đổi Fourier của tín hiệu \( x(t) = \text{sinc}(t) \).  
+    
+    <br>  <hl>Câu 5:</hl> Một tín hiệu \( x[n] = 2^n u[n] \) được đưa qua một hệ thống LTI rời rạc với hàm truyền đạt xung \( h[n] = (0.5)^n u[n] \).  
+    Tính đầu ra \( y[n] \).  
+    
+    <br>   <hl>Câu 6:</hl> Giải bài toán miền tần số:  
+    Một tín hiệu \( x(t) = e^{-t}u(t) \) được đưa qua một hệ thống LTI với hàm truyền \( H(j\omega) = \frac{1}{1 + j\omega} \).  
+    Tính tín hiệu đầu ra trong miền tần số và miền thời gian.
+    
+    <br>  <hl>Câu 7:</hl> Xác định hệ thống sau có phải là LTI hay không:
+    - (a) \( y(t) = x^2(t) \).  
+    - (b) \( y[n] = 2x[n] + x[n-1] \).  
+    
+    <br>  <hl>Câu 8:</hl> Tính phổ năng lượng của tín hiệu \( x(t) = 5\cos(2\pi 100 t) + 3\sin(2\pi 50 t) \).
+    
+    <br> <hl>Câu 9:</hl> Một tín hiệu rời rạc \( x[n] = \delta[n] + 2\delta[n-1] - \delta[n-2] \) được đưa qua một hệ thống LTI có hàm truyền đạt xung \( h[n] = \delta[n] - \delta[n-1] \).  
+    Tính tín hiệu đầu ra \( y[n] \).
+    
+    <h2>Phần 3: Trắc nghiệm (3 điểm)</h2>
+    <ol>
+        <li>Tín hiệu \( x(t) = \cos(2\pi f_0 t) \) được xem là:
+            <ul>
+                <li>A. Tín hiệu rời rạc</li>
+                <li>B. Tín hiệu liên tục</li>
+                <li>C. Không xác định</li>
+                <li>D. Tất cả các đáp án trên</li>
+            </ul>
+        </li>
+        <li>Hàm truyền đạt xung \( h(t) \) của một hệ thống LTI thỏa mãn:
+            <ul>
+                <li>A. \( h(t) = y(t) \)</li>
+                <li>B. \( h(t) = \frac{y(t)}{x(t)} \)</li>
+                <li>C. \( h(t) = x(t) * y(t) \)</li>
+                <li>D. Không đáp án nào đúng</li>
+            </ul>
+        </li>
+        <li>Phổ Fourier của một tín hiệu \( x(t) \) xác định:
+            <ul>
+                <li>A. Năng lượng của tín hiệu</li>
+                <li>B. Thành phần tần số của tín hiệu</li>
+                <li>C. Tần số Nyquist</li>
+                <li>D. Đáp án khác</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <h2>Phần 4: Điền khuyết (2 điểm)</h2>
+    <p>Hoàn thành các câu sau:</p>
+    <ol>
+        <li>Hệ thống LTI là hệ thống thỏa mãn tính chất <hl>__________</hl> và <hl>__________</hl>.</li>
+        <li>Hàm bước đơn vị \( u(t) \) là tích phân của <hl>__________</hl>.</li>
+    </ol>
+    
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

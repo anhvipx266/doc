@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Lý thuyết mạch 2</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="/doc/exam/test/index.html">Bài kiểm tra</a>
+    </nav>
+
+    <h1>Đề kiểm tra Lý thuyết Mạch 2</h1>
+
+    <h2>Phần 1: Lý thuyết (3 điểm)</h2>
+    <hl>Câu 1:</hl> <define>Định nghĩa mạch ba pha</define> và phân biệt giữa mạch ba pha cân bằng và không cân bằng.  
+ <br>   <hl>Câu 2:</hl> Trình bày khái niệm hàm truyền (transfer function) của một mạch điện và ý nghĩa của nó trong phân tích tín hiệu.  
+ <br>   <hl>Câu 3:</hl> Nêu định nghĩa và ứng dụng của kỹ thuật Fourier trong phân tích mạch.  
+    
+    <h2>Phần 2: Bài tập tự luận (7 điểm)</h2>
+    <hl>Câu 1:</hl> Một mạch ba pha cân bằng có điện áp dây \( V_{LL} = 380 \, V \) và tải gồm ba điện trở \( R = 10 \, \Omega \) được nối hình sao (Y).  
+    Tính:
+    - (a) Dòng điện pha \( I_{\text{pha}} \).  
+    - (b) Công suất tiêu thụ của tải.  
+    
+    <br>   <hl>Câu 2:</hl> Một mạch điện gồm một cuộn cảm \( L = 0.1 \, H \) và một tụ điện \( C = 100 \, \mu F \) nối nối tiếp với nguồn xoay chiều \( V(t) = 50 \cos(1000 t) \, V \).  
+    Tính:
+    - (a) Tần số cộng hưởng của mạch.  
+    - (b) Dòng điện qua mạch tại tần số cộng hưởng.
+    
+    <br>  <hl>Câu 3:</hl> Một mạch điện RLC nối tiếp có \( R = 10 \, \Omega \), \( L = 0.5 \, H \), \( C = 20 \, \mu F \) và nguồn xoay chiều \( V(t) = 100 \cos(200 t) \, V \).  
+    Tính:  
+    - (a) Tổng trở của mạch.  
+    - (b) Hệ số công suất của mạch.
+    
+    <br>  <hl>Câu 4:</hl> Một tín hiệu đầu vào \( v_{\text{in}}(t) = 10 \cos(2\pi 1000 t) \, V \) được đưa vào một mạch lọc thông thấp với hàm truyền \( H(j\omega) = \frac{1}{1 + j\frac{\omega}{\omega_c}} \), trong đó \( \omega_c = 2\pi \times 500 \).  
+    Tính biên độ và pha của tín hiệu đầu ra \( v_{\text{out}}(t) \).
+    
+    <br>  <hl>Câu 5:</hl> Xác định phổ Fourier của tín hiệu \( v(t) = 5 + 3 \cos(2\pi 100 t) + 2 \sin(2\pi 200 t) \).
+    
+    <br>  <hl>Câu 6:</hl> Một tải ba pha không cân bằng có các điện trở nối hình tam giác (∆): \( R_1 = 10 \, \Omega \), \( R_2 = 20 \, \Omega \), \( R_3 = 30 \, \Omega \), được cung cấp bởi nguồn điện áp ba pha \( V_{LL} = 400 \, V \).  
+    Tính:
+    - (a) Dòng điện trong mỗi nhánh.  
+    - (b) Công suất tiêu thụ của mạch.  
+    
+    <br>  <hl>Câu 7:</hl> Một mạch điện hỗn hợp có hàm truyền \( H(j\omega) = \frac{j\omega}{R + j\omega L} \).  
+    Tính biên độ và pha của hàm truyền khi \( \omega = 1000 \, \text{rad/s} \), với \( R = 10 \, \Omega \) và \( L = 0.01 \, H \).
+    
+    <br>  <hl>Câu 8:</hl> Phân tích mạch điện sau bằng cách sử dụng phương pháp miền Laplace:  
+    - Mạch gồm \( R = 5 \, \Omega \), \( L = 0.2 \, H \), \( C = 50 \, \mu F \) và nguồn điện áp \( v(t) = 10 \delta(t) \, V \).
+    
+    <h2>Phần 3: Trắc nghiệm (3 điểm)</h2>
+    <ol>
+        <li>Mạch RLC nối tiếp có tổng trở tại cộng hưởng:
+            <ul>
+                <li>A. \( Z = R \)</li>
+                <li>B. \( Z = j\omega L \)</li>
+                <li>C. \( Z = \frac{1}{j\omega C} \)</li>
+                <li>D. Không ý nào đúng</li>
+            </ul>
+        </li>
+        <li>Trong mạch ba pha cân bằng nối hình sao (Y):
+            <ul>
+                <li>A. Dòng pha bằng dòng dây</li>
+                <li>B. Điện áp pha bằng điện áp dây</li>
+                <li>C. Dòng dây nhỏ hơn dòng pha</li>
+                <li>D. Công suất tiêu thụ phụ thuộc vào dòng dây</li>
+            </ul>
+        </li>
+        <li>Kỹ thuật Fourier được dùng để:
+            <ul>
+                <li>A. Biến đổi mạch điện sang miền Laplace</li>
+                <li>B. Phân tích tín hiệu trong miền tần số</li>
+                <li>C. Tính tổng trở trong mạch RLC</li>
+                <li>D. Không ý nào đúng</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <h2>Phần 4: Điền khuyết (2 điểm)</h2>
+    <p>Hoàn thành các câu sau:</p>
+    <ol>
+        <li>Tần số cộng hưởng của mạch RLC được xác định bởi \( \omega_0 = \hl{__________} \).</li>
+        <li>Trong mạch ba pha hình sao, điện áp dây lớn hơn điện áp pha một hệ số <hl>__________</hl>.</li>
+    </ol>
+    
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Toán rời rạc</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Toán</a>
+    </nav>
+
+    <h1>Toán rời rạc</h1>
+
+    <h1></h1>
+    <h1></h1>
+    <h2>Phương pháp sinh</h2>
+    <h1></h1>
+
+
+    <div style="max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h1>Kiến thức tổng hợp về Toán rời rạc</h1>
+    
+        <section id="set-theory">
+            <h2>1. Lý thuyết tập hợp (Set Theory)</h2>
+            <p>
+                Tập hợp là một nhóm các phần tử. Ký hiệu \( A = \{1, 2, 3\} \) là một tập hợp gồm các phần tử 1, 2, 3. Một số phép toán cơ bản trên tập hợp:
+            </p>
+            <ul>
+                <li><b>Hợp:</b> \( A \cup B = \{x \mid x \in A \text{ hoặc } x \in B\} \)</li>
+                <li><b>Giao:</b> \( A \cap B = \{x \mid x \in A \text{ và } x \in B\} \)</li>
+                <li><b>Phần bù:</b> \( A' = \{x \mid x \notin A\} \)</li>
+                <li><b>Hiệu:</b> \( A \setminus B = \{x \mid x \in A \text{ và } x \notin B\} \)</li>
+            </ul>
+        </section>
+    
+        <section id="logic">
+            <h2>2. Logic và mệnh đề (Logic and Propositions)</h2>
+            <p>
+                Mệnh đề là một câu khẳng định có giá trị đúng hoặc sai. Một số phép toán logic cơ bản:
+            </p>
+            <ul>
+                <li><b>Phủ định:</b> \( \neg p \) là phủ định của \( p \)</li>
+                <li><b>Hội:</b> \( p \land q \) là đúng nếu cả \( p \) và \( q \) đều đúng</li>
+                <li><b>Tuyển:</b> \( p \lor q \) là đúng nếu ít nhất một trong \( p \) hoặc \( q \) đúng</li>
+                <li><b>Hàm kéo theo:</b> \( p \implies q \) là sai chỉ khi \( p \) đúng và \( q \) sai</li>
+            </ul>
+            <p>
+                Bảng chân trị của phép kéo theo (\( p \implies q \)):
+            </p>
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>\( p \)</th><th>\( q \)</th><th>\( p \implies q \)</th>
+                </tr>
+                <tr><td>Đúng</td><td>Đúng</td><td>Đúng</td></tr>
+                <tr><td>Đúng</td><td>Sai</td><td>Sai</td></tr>
+                <tr><td>Sai</td><td>Đúng</td><td>Đúng</td></tr>
+                <tr><td>Sai</td><td>Sai</td><td>Đúng</td></tr>
+            </table>
+        </section>
+    
+        <section id="combinatorics">
+            <h2>3. Tổ hợp (Combinatorics)</h2>
+            <p>
+                Tổ hợp là nhánh của toán học nghiên cứu về việc đếm, sắp xếp và tổ hợp các phần tử. Một số công thức cơ bản:
+            </p>
+            <ul>
+                <li><b>Chỉnh hợp:</b> Số chỉnh hợp chập \( k \) của \( n \) phần tử:
+                    \[
+                    A(n, k) = \frac{n!}{(n - k)!}
+                    \]
+                </li>
+                <li><b>Tổ hợp:</b> Số tổ hợp chập \( k \) của \( n \) phần tử:
+                    \[
+                    C(n, k) = \binom{n}{k} = \frac{n!}{k!(n - k)!}
+                    \]
+                </li>
+                <li><b>Quy tắc cộng:</b> Nếu có \( m \) cách chọn một phần tử từ \( A \) và \( n \) cách từ \( B \), tổng số cách chọn là \( m + n \).</li>
+            </ul>
+        </section>
+    
+        <section id="graph-theory">
+            <h2>4. Lý thuyết đồ thị (Graph Theory)</h2>
+            <p>
+                Một đồ thị \( G \) là một cặp \( (V, E) \) trong đó \( V \) là tập các đỉnh và \( E \) là tập các cạnh. Một số khái niệm cơ bản:
+            </p>
+            <ul>
+                <li><b>Đồ thị vô hướng:</b> Các cạnh không có hướng.</li>
+                <li><b>Đồ thị có hướng:</b> Các cạnh có hướng từ đỉnh này tới đỉnh khác.</li>
+                <li><b>Đường đi:</b> Một dãy các đỉnh sao cho có cạnh nối giữa các đỉnh liên tiếp.</li>
+                <li><b>Chu trình:</b> Đường đi bắt đầu và kết thúc tại cùng một đỉnh.</li>
+            </ul>
+            <p>
+                Định lý Euler cho đồ thị liên thông không có chu trình lẻ:
+                \[
+                V - E + F = 2
+                \]
+                trong đó \( V \) là số đỉnh, \( E \) là số cạnh và \( F \) là số mặt.
+            </p>
+        </section>
+    
+        <section id="recurrence-relations">
+            <h2>5. Quan hệ đệ quy (Recurrence Relations)</h2>
+            <p>
+                Quan hệ đệ quy là công thức xác định dãy số dựa vào các giá trị trước đó. Ví dụ:
+            </p>
+            <ul>
+                <li><b>Dãy Fibonacci:</b>
+                    \[
+                    F(n) = F(n - 1) + F(n - 2), \quad F(0) = 0, \, F(1) = 1
+                    \]
+                </li>
+                <li><b>Giải phương trình đệ quy:</b> Sử dụng phương pháp thế hoặc tính toán nghiệm đặc biệt.
+                    Ví dụ: \( a_n = 2a_{n-1} + 3 \).
+                </li>
+            </ul>
+        </section>
+    
+        <footer>
+            <p>Trên đây là một số kiến thức cơ bản của Toán rời rạc. Học tốt và thành công!</p>
+        </footer>
+    </div>
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Đề cương</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html" class="active">Tín hiệu và hệ thống</a>
+    </nav>
+
+<section>
+    <h2>Chương 1: Khái niệm tín hiệu và hệ thống</h2>
+    <ol>
+        <li><details><summary>Định nghĩa tín hiệu và hệ thống</summary>
+            <h3><define>Tín hiệu:</define> là đại lượng vật lý mang thông tin và thay đổi theo thời gian.</h3>
+            <ex>Tiếng nói, Tín hiệu, vô tuyến</ex>
+            <h4>Biểu diễn toán học của Tín hiệu</h4>
+            <p><fr>\(s(t)\)</fr> với miền xác định <fr>\(t_1 \le t \ge t_2\)</fr></p>
+            
+            <h3><define>Hệ thống:</define> là quá trình biến đổi những tín hiệu đầu vào thành những tín hiệu đầu ra.</h3>
+        </details>
+
+        </li>
+        <li><details><summary>Các đặc trưng của tín hiệu và phân loại tín hiệu</summary>
+        
+            <hl>Đặc trưng cơ bản của tín hiệu:</hl>
+            <ul>
+                <li><strong>Biên độ (Amplitude):</strong> Là độ lớn của tín hiệu tại một thời điểm cụ thể.</li>
+                <li><strong>Tần số (Frequency):</strong> Là số lần lặp lại của tín hiệu trong một đơn vị thời gian.</li>
+                <li><strong>Pha (Phase):</strong> Là vị trí tương đối của tín hiệu trong chu kỳ của nó.</li>
+                <li><strong>Độ dài (Duration):</strong> Là khoảng thời gian mà tín hiệu tồn tại.</li>
+                <li><strong>Chu kỳ (Period):</strong> Là khoảng thời gian để tín hiệu lặp lại chính nó.</li>
+                <li><strong>Năng lượng và Công suất (Energy and Power):</strong> Đặc trưng cho mức độ mạnh yếu của tín hiệu qua thời gian.</li>
+            </ul>
+            <h4>Phân loại tín hiệu</h4>
+            <ul>
+                <li>Tín hiệu liên tục và rời rạc theo thời gian</li>
+                <li>Tín hiệu tương tự và số</li>
+                <li>Tín hiệu vô hạn và hữu hạn theo thời gian</li>
+                <li>Tín hiệu chẵn và tín hiệu lẻ</li>
+                <li>Tín hiệu tuần hoàn và không tuần hoàn theo thời gian</li>
+                <li>Tín hiệu công suất và năng lượng
+                    <p>Năng lượng: <fr>\( E = \int_{-\infty}^{\infty}|x(t)|^2dt \)</fr></p>
+    <p>Công suất: <fr>\( P = \lim_{T \rightarrow \infty} \frac{1}{2T} \int_{-T}^{T}|x(t)|^2dt \)</fr></p>
+                </li>
+            </ul>
+        
+        </details>
+            
+            
+        </li>
+        <li><details><summary>Một số phép tính cơ bản đối với tín hiệu</summary>
+            <ul>
+                <li>Phép dịch thời gian</li>
+                <li>Phép đảo</li>
+                <li>Phép co giãn thời gian</li>
+            </ul>
+        </details></li>
+
+        <li><details><summary>Các đặc trưng của hệ thống và phân loại hệ thống</summary>
+            <hl>Đặc trưng cơ bản của hệ thống:</hl>
+            <ul>
+                <li><strong>Tuyến tính (Linearity):</strong> Hệ thống là tuyến tính nếu đầu ra là một hàm tuyến tính của đầu vào.</li>
+                <li><strong>Bất biến thời gian (Time-Invariance):</strong> Hệ thống là bất biến thời gian nếu đặc tính của nó không thay đổi theo thời gian.</li>
+                <li><strong>Nhân quả (Causality):</strong> Hệ thống là nhân quả nếu đầu ra tại một thời điểm chỉ phụ thuộc vào đầu vào tại thời điểm đó và các thời điểm trước đó.</li>
+                <li><strong>Ổn định (Stability):</strong> Hệ thống là ổn định nếu đầu ra hữu hạn khi đầu vào hữu hạn.</li>
+                <li><strong>Biến đổi Fourier (Fourier Transform):</strong> Là công cụ phân tích tín hiệu và hệ thống trong miền tần số.</li>
+                <li><strong>Biến đổi Laplace (Laplace Transform):</strong> Là công cụ phân tích hệ thống và tín hiệu trong miền phức.</li>
+            </ul>
+            <h3>Phân loại hệ thống</h3>
+            <ul>
+                <li>Tuyến tính và phi tuyến</li>
+                <li>Bất biến và biến thiên</li>
+                <li>Có nhớ và không nhớ</li>
+                <li>Nhân quả và phi nhân quả</li>
+                <li>Khả nghịch và không khả nghịch</li>
+                <li>Ổn định và không ổn định</li>
+            </ul>
+        </details>
+            
+        </li>
+        <li><details><summary>Biểu diễn cấu trúc ghép nối hệ thống – Sơ đồ khối </summary>
+            <h3>Đại số sơ đồ khối</h3>
+            <h4>Sơ đồ khối: Sơ đồ khối của một hệ thống là hình vẽ mô tả chức năng của các phần tử và sự
+            tác động qua lại giữa các phần tử trong hệ thống. </h4>
+            <img src="imgs/dssdk.png" alt="Đại số sơ đồ khối">
+            <h4>Sơ đồ khối có 3 thành phần chính: </h4>
+            <ul>
+                <li><hl>Khối chức năng</hl>: tín hiệu ra bằng hàm truyền nhân tín hiệu vào </li>
+                <li><hl>Bộ tổng</hl>: tín hiệu ra bằng tổng đại số các tín hiệu vào </li>
+                <li><hl>Điểm rẽ nhánh</hl>: tất cả tín hiệu tại điểm rẽ nhánh đều bằng nhau </li>
+            </ul>
+            <h3>Hàm truyền các hệ thống</h3>
+            <img src="imgs/nt.png" alt="">
+            <img src="imgs/ss" alt="">
+            <img src="imgs/ht.png" alt="">
+            <img src="imgs/htdv.png" alt="">
+            <img src="imgs/htd.png" alt="">
+            <h3>Hàm truyền của hệ thống hồi tiếp nhiều vòng</h3>
+            <p>Đối với các hệ thống phức tạp gồm nhiều vòng hồi tiếp, ta thực hiện các phép
+                biến đổi tương đương sơ đồ khối để làm xuất hiện các dạng ghép nối đơn giản (nối
+                tiếp, song song, hồi tiếp 1 vòng) và tính hàm truyền tương đương theo thứ tự từ trong
+                ra ngoài.
+                </p>
+            <p>Hai sơ đồ khối được gọi là tương đương nếu hai sơ đồ khối đó có quan hệ giữa
+                các tín hiệu vào và tín hiệu ra như nhau.
+                </p>
+            <h4>Các phép biến đổi tương đương sơ đồ khối</h4>
+            <img src="imgs/bd1.png" alt="">
+            <img src="imgs/bd2.png" alt="">
+            <img src="imgs/bd3.png" alt="">
+            <img src="imgs/bd4.png" alt="">
+        </details></li>
+    </ol>
+</section>
+
+<section>
+    <h2>CHƯƠNG 2. MÔ TẢ HỆ THỐNG VÀ TÍNH ĐÁP ỨNG
+        TRÊN MIỀN THỜI GIAN
+    </h2>
+    <ol>
+        <li><details><summary>Phương trình vi phân</summary>
+        
+            <p>Phương trình vi phân là phương trình chứa các đạo hàm của một hàm số. Nó được sử dụng để mô tả mối quan hệ giữa một hàm số và các đạo hàm của nó.</p>
+            <ex>Phương trình vi phân bậc nhất: \[\frac{dy}{dt} + y = e^t\]</ex>
+            
+            <p>Đây là phương trình vi phân bậc nhất, trong đó \( \frac{dy}{dt} \) là đạo hàm bậc nhất của \( y \) theo \( t \).</p>
+
+
+        </details></li>
+        <li><details><summary>Phương trình sai phân</summary>
+            
+            <p>Phương trình sai phân là phương trình mô tả mối quan hệ giữa các giá trị của một chuỗi tại các thời điểm khác nhau. Nó thường được sử dụng trong phân tích chuỗi thời gian.</p>
+            <ex>Phương trình sai phân bậc nhất: \[y[n+1] - y[n] = x[n]\]</ex>
+            
+            <p>Đây là phương trình sai phân bậc nhất, trong đó \( y[n+1] \) và \( y[n] \) là các giá trị của chuỗi tại thời điểm \( n+1 \) và \( n \), còn \( x[n] \) là đầu vào tại thời điểm \( n \).</p>
+        
+        
+        </details></li>
+        <li><details><summary>Đáp ứng xung và tích chập</summary>
+        
+            <hl>Đáp ứng xung:</hl>
+            <p>Đáp ứng xung của một hệ thống là đáp ứng của hệ thống đối với một tín hiệu xung đơn vị. Nó cung cấp thông tin về hành vi của hệ thống khi nhận được một tín hiệu đột ngột.</p>
+            <ex>Đáp ứng xung \( h(t) \) của hệ thống: \[h(t) = e^{-t}u(t)\]</ex>
+            
+            <p>Đây là đáp ứng xung của một hệ thống tuyến tính bất biến theo thời gian, trong đó \( u(t) \) là hàm bước đơn vị.</p>
+
+            <hl>Tích chập:</hl>
+            <p>Tích chập là một phép toán dùng để xác định đầu ra của một hệ thống tuyến tính bất biến theo thời gian khi biết đầu vào và đáp ứng xung của hệ thống đó. Phép tích chập giữa hai hàm số \( x(t) \) và \( h(t) \) được định nghĩa như sau:</p>
+            \[y(t) = (x * h)(t) = \int_{-\infty}^{\infty} x(\tau)h(t - \tau) d\tau\]
+            <ex> Tích chập giữa hai hàm số \( x(t) \) và \( h(t) \):</ex>
+            \[
+            x(t) = u(t), \quad h(t) = e^{-t}u(t) \\
+            y(t) = (x * h)(t) = \int_{0}^{t} e^{-(t - \tau)} d\tau = 1 - e^{-t}
+            \]
+            <p>Trong ví dụ này, \( u(t) \) là hàm bước đơn vị.</p>
+        
+        </details></li>
+        <li>
+            <details>
+                <summary>Mô hình không gian trạng thái liên tục</summary>
+                <p>Mô hình không gian trạng thái liên tục mô tả hệ thống động bằng các phương trình vi phân bậc nhất. Nó được biểu diễn bằng cặp phương trình:</p>
+                
+                \(\dot{x}(t) = Ax(t) + Bu(t)\)  (phương trình trạng thái)
+                \(y(t) = Cx(t) + Du(t)\)  (phương trình đầu ra)
+
+                <p>Trong đó:
+                <ul>
+                    <li>\(x(t)\) là vector trạng thái</li>
+                    <li>\(u(t)\) là đầu vào</li>
+                    <li>\(y(t)\) là đầu ra</li>
+                    <li>A, B, C, D là các ma trận hệ thống</li>
+                </ul></p>
+                
+            </details>
+
+
+            <ul>
+                <li><details><summary>Dẫn xuất từ phương trình vi phân</summary>
+                <p>Phương trình vi phân bậc n:</p>
+
+                \(a_n \frac{d^n y}{dt^n} + a_{n-1} \frac{d^{n-1} y}{dt^{n-1}} + ... + a_1 \frac{dy}{dt} + a_0 y = b_m \frac{d^m u}{dt^m} + b_{m-1} \frac{d^{m-1} u}{dt^{m-1}} + ... + b_0 u\)
+                
+                <p>Có thể được chuyển đổi thành mô hình không gian trạng thái:</p>
+                
+                \(\dot{x}(t) = Ax(t) + Bu(t)\)
+                \(y(t) = Cx(t) + Du(t)\)
+
+                
+                </details></li>
+                <li><details><summary>Tính đáp ứng xung</summary>
+                
+                    <p>Đáp ứng xung của hệ thống liên tục được tính bằng cách giải phương trình trạng thái và đầu ra khi đầu vào là xung đơn vị.</p>
+
+                    
+                
+                </details></li>
+                <li><details><summary>Đáp ứng tự do và đáp ứng cưỡng bức</summary>
+                
+                    <p><strong>Đáp ứng tự do:</strong> Là đáp ứng của hệ thống khi đầu vào bằng 0, chỉ phụ thuộc vào điều kiện ban đầu.</p>
+                    <p><strong>Đáp ứng cưỡng bức:</strong> Là đáp ứng của hệ thống do tác động của đầu vào, khi điều kiện ban đầu bằng 0.</p>
+                
+                </details></li>
+            </ul>
+        </li>
+        <li><details><summary>Mô hình không gian trạng thái không liên tục
+            </summary>
+            
+            <p>Mô hình không gian trạng thái không liên tục mô tả hệ thống động bằng các phương trình sai phân. Nó được biểu diễn bằng cặp phương trình:</p>
+                
+                \(x[k+1] = Ax[k] + Bu[k]\)  (phương trình trạng thái)
+                \(y[k] = Cx[k] + Du[k]\)  (phương trình đầu ra)
+                
+        
+        </details>
+        <ul>
+            <li><details><summary>Dẫn xuất từ phương trình sai phân</summary>
+            
+                <p>Phương trình sai phân bậc n:</p>
+                
+                \(a_n y[k+n] + a_{n-1} y[k+n-1] + ... + a_1 y[k+1] + a_0 y[k] = b_m u[k+m] + b_{m-1} u[k+m-1] + ... + b_0 u[k]\)
+                
+                <p>Có thể được chuyển đổi thành mô hình không gian trạng thái:</p>
+                
+                \(x[k+1] = Ax[k] + Bu[k]\)
+                \(y[k] = Cx[k] + Du[k]\)
+                
+
+            </details></li>
+            <li><details><summary>Tính đáp ứng xung</summary>
+            
+                <p>Đáp ứng xung của hệ thống không liên tục được tính bằng cách giải phương trình trạng thái và đầu ra khi đầu vào là xung đơn vị.</p>
+
+
+
+            </details></li>
+            <li><details><summary>Đáp ứng tự do và đáp ứng cưỡng bức</summary>
+
+                <p><strong>Đáp ứng tự do:</strong> Là đáp ứng của hệ thống khi đầu vào bằng 0, chỉ phụ thuộc vào điều kiện ban đầu.</p>
+                <p><strong>Đáp ứng cưỡng bức:</strong> Là đáp ứng của hệ thống do tác động của đầu vào, khi điều kiện ban đầu bằng 0.</p>
+                            
+            
+            </details></li>
+        </ul>
+        </li>
+    </ol>
+</section>
+
+<section>
+    <h2>CHƯƠNG 3. CHUỖI FOURIER VÀ PHÉP BIẾN ĐỔI FOURIER LIÊN TỤC</h2>
+    <ol>
+        <li><details><summary>Tín hiệu hình sin và mô tả bằng hàm phức</summary>
+            <hl>Tín hiệu hình sin</hl>
+            <p>
+            Tín hiệu hình sin (sinusoidal signal) là một trong những dạng tín hiệu cơ bản và quan trọng nhất trong lý thuyết tín hiệu và hệ thống. Nó có dạng toán học như sau:
+            </p>
+            <ex>
+            \( x(t) = A \sin(2\pi f t + \phi) \)
+            </ex>
+            <p>
+            Trong đó:
+            <ul>
+                <li>\( A \) là biên độ (amplitude) của tín hiệu.</li>
+                <li>\( f \) là tần số (frequency) của tín hiệu, đo bằng Hertz (Hz).</li>
+                <li>\( t \) là thời gian (time).</li>
+                <li>\( \phi \) là pha ban đầu (initial phase) của tín hiệu.</li>
+            </ul>
+            </p>
+
+            <hl>Biểu diễn tín hiệu hình sin bằng hàm phức</hl>
+            <p>
+            Tín hiệu hình sin cũng có thể được biểu diễn bằng cách sử dụng số phức, giúp việc xử lý toán học trở nên dễ dàng hơn. Dạng biểu diễn này liên quan đến công thức Euler:
+            </p>
+            <ex>
+            \( e^{j\theta} = \cos(\theta) + j\sin(\theta) \)
+            </ex>
+            <p>
+            Trong đó \( j \) là đơn vị ảo (\( j^2 = -1 \)). Sử dụng công thức này, tín hiệu hình sin có thể được biểu diễn như sau:
+            </p>
+            <ex>
+            \( x(t) = A \sin(2\pi f t + \phi) = \Im\{ A e^{j(2\pi f t + \phi)} \} \)
+            </ex>
+            <p>
+            Ở đây, \( \Im\{ \cdot \} \) là phần ảo của số phức. Để đơn giản hóa, ta thường sử dụng dạng phức của tín hiệu:
+            </p>
+            <ex>
+            \( x(t) = A e^{j(2\pi f t + \phi)} \)
+            </ex>
+            <p>
+            Tín hiệu này có thể được chia thành hai phần:
+            <ul>
+                <li>Phần thực: \( \Re\{ A e^{j(2\pi f t + \phi)} \} = A \cos(2\pi f t + \phi) \)</li>
+                <li>Phần ảo: \( \Im\{ A e^{j(2\pi f t + \phi)} \} = A \sin(2\pi f t + \phi) \)</li>
+            </ul>
+            </p>
+
+            <hl>Ví dụ về biểu diễn tín hiệu hình sin bằng hàm phức</hl>
+            <p>
+            Giả sử chúng ta có tín hiệu hình sin với các tham số sau:
+            <ul>
+                <li>Biên độ \( A = 1 \)</li>
+                <li>Tần số \( f = 50 \) Hz</li>
+                <li>Pha ban đầu \( \phi = \pi/4 \)</li>
+            </ul>
+            </p>
+            <p>
+            Tín hiệu này có thể được viết như sau:
+            </p>
+            <ex>
+            \( x(t) = \sin(2\pi \cdot 50 \cdot t + \frac{\pi}{4}) \)
+            </ex>
+            <p>
+            Biểu diễn bằng hàm phức:
+            </p>
+            <ex>
+            \( x(t) = \Im\{ e^{j(2\pi \cdot 50 \cdot t + \frac{\pi}{4})} \} \)
+            </ex>
+            <p>
+            Hoặc đơn giản hơn:
+            </p>
+            <ex>
+            \( x(t) = e^{j(2\pi \cdot 50 \cdot t + \frac{\pi}{4})} \)
+            </ex>
+            <p>
+            Dạng biểu diễn này rất hữu ích trong các phân tích và xử lý tín hiệu, đặc biệt là trong miền tần số.
+            </p>
+
+        </details></li>
+        <li><details><summary>Chuỗi Fourier liên tục</summary>
+            
+           
+
+
+            Chuỗi Fourier liên tục là một công cụ quan trọng trong phân tích tín hiệu, đặc biệt là trong việc biểu diễn các tín hiệu tuần hoàn. Ý tưởng xuất phát từ tính chất xếp chồng của hệ tuyến tính bất biến thời gian (LTI).
+
+
+        
+        </details>
+            <ul>
+                <li><details><summary>Ý tưởng xuất phát: Tính chất xếp chồng của hệ LTI</summary>
+                    <p>
+                        Tính chất xếp chồng của hệ LTI cho phép ta biểu diễn một tín hiệu phức tạp như một tổng của các tín hiệu đơn giản hơn (ví dụ như sóng hình sin và cosin). Điều này làm cho việc phân tích và xử lý tín hiệu trở nên dễ dàng hơn.
+                      </p>
+                
+                </details></li>
+                <li><details><summary>Chuỗi Fourier cho tín hiệu liên tục</summary>
+                    <p>
+                        Chuỗi Fourier cho tín hiệu liên tục cho phép ta biểu diễn một tín hiệu tuần hoàn liên tục dưới dạng một tổng vô hạn của các sóng hình sin và cosin:
+                      </p>
+                      <ex>
+                        \( x(t) = \sum_{n=-\infty}^{\infty} c_n e^{j n \omega_0 t} \)
+                      </ex>
+                      <p>
+                        Trong đó:
+                        <ul>
+                          <li>\( c_n \) là các hệ số Fourier.</li>
+                          <li>\( \omega_0 \) là tần số cơ bản của tín hiệu.</li>
+                        </ul>
+                      </p>
+                
+                </details>
+                </li>
+                <li><details><summary>Xác định các hệ số chuỗi Fourier (liên tục)</summary>
+                    <p>
+                        Các hệ số Fourier \( c_n \) được xác định bằng công thức:
+                      </p>
+                      <ex>
+                        \( c_n = \frac{1}{T} \int_{T} x(t) e^{-j n \omega_0 t} \, dt \)
+                      </ex>
+                      <p>
+                        Trong đó \( T \) là chu kỳ của tín hiệu.
+                      </p>
+                
+                </details></li>
+                <li> <details><summary>Điều kiện Dirichlet</summary>
+                    <p>
+                        Để một tín hiệu có thể được biểu diễn bằng chuỗi Fourier, nó phải thỏa mãn các điều kiện Dirichlet:
+                        <ul>
+                          <li>Tín hiệu phải có chu kỳ.</li>
+                          <li>Tín hiệu phải có số lượng hữu hạn các cực đại và cực tiểu trong một chu kỳ.</li>
+                          <li>Tín hiệu phải có số lượng hữu hạn các điểm không liên tục trong một chu kỳ, và tại các điểm này, giá trị của tín hiệu phải hữu hạn.</li>
+                        </ul>
+                      </p>
+                
+                </details>
+                </li>
+                <li><details><summary>Các tính chất chuỗi Fourier (liên tục)</summary>
+                
+                    <p>
+                        Các tính chất quan trọng của chuỗi Fourier liên tục bao gồm:
+                        <ul>
+                          <li>Tính tuần hoàn: Các hệ số Fourier \( c_n \) cũng có tính tuần hoàn.</li>
+                          <li>Tính tuyến tính: Tổng của hai tín hiệu có chuỗi Fourier là tổng của các chuỗi Fourier của từng tín hiệu.</li>
+                          <li>Phân giải phổ: Chuỗi Fourier cung cấp một phân giải phổ của tín hiệu, cho thấy các thành phần tần số của nó.</li>
+                        </ul>
+                      </p>
+                </details></li>
+            </ul>
+        </li>
+        <li><details><summary>Phép biến đổi Fourier liên tục</summary>
+        
+           
+<p>
+  Phép biến đổi Fourier liên tục là một công cụ quan trọng trong phân tích tín hiệu và hệ thống, cho phép chuyển đổi một tín hiệu từ miền thời gian sang miền tần số.
+</p>
+
+        
+        </details>
+            <ul>
+                <li><details><summary>Dẫn xuất phép biến đổi Fourier liên tục</summary>
+                    
+<p>
+    Phép biến đổi Fourier liên tục của một tín hiệu \( x(t) \) được định nghĩa bằng công thức:
+  </p>
+  <ex>
+    \( X(f) = \int_{-\infty}^{\infty} x(t) e^{-j 2 \pi f t} \, dt \)
+  </ex>
+  <p>
+    Trong đó \( X(f) \) là hàm biến đổi Fourier của \( x(t) \), và \( f \) là tần số.
+  </p>
+                
+                </details></li>
+                <li><details><summary>Điều kiện áp dụng phép biến đổi Fourier</summary>
+                    <p>
+                        Để phép biến đổi Fourier có thể áp dụng, tín hiệu phải thỏa mãn các điều kiện sau:
+                        <ul>
+                          <li>Tín hiệu phải khả tích tuyệt đối, tức là \( \int_{-\infty}^{\infty} |x(t)| \, dt < \infty \).</li>
+                          <li>Tín hiệu phải có số lượng hữu hạn các điểm gián đoạn và các điểm cực đại trong miền thời gian.</li>
+                        </ul>
+                      </p>
+                
+                </details></li>
+                <li><details><summary>Các tính chất của phép biến đổi Fourier liên tục</summary>
+                    <p>
+                        Phép biến đổi Fourier liên tục có nhiều tính chất quan trọng, bao gồm:
+                        <ul>
+                          <li><b>Tuyến tính:</b> Phép biến đổi Fourier của tổng các tín hiệu là tổng các phép biến đổi Fourier của từng tín hiệu.</li>
+                          <li><b>Dịch thời gian:</b> Nếu \( x(t) \) có phép biến đổi Fourier là \( X(f) \), thì tín hiệu dịch \( x(t - t_0) \) có phép biến đổi Fourier là \( X(f) e^{-j 2 \pi f t_0} \).</li>
+                          <li><b>Biến đổi tần số:</b> Nếu \( x(t) \) có phép biến đổi Fourier là \( X(f) \), thì tín hiệu \( x(t) e^{j 2 \pi f_0 t} \) có phép biến đổi Fourier là \( X(f - f_0) \).</li>
+                          <li><b>Gấp đôi tần số:</b> Nếu \( x(t) \) có phép biến đổi Fourier là \( X(f) \), thì tín hiệu \( x(at) \) có phép biến đổi Fourier là \( \frac{1}{|a|} X\left(\frac{f}{a}\right) \).</li>
+                          <li><b>Đối xứng:</b> Nếu \( x(t) \) là một tín hiệu thực, thì \( X(f) \) có tính đối xứng Hermite, tức là \( X(-f) = X^*(f) \), với \( X^*(f) \) là liên hợp phức của \( X(f) \).</li>
+                        </ul>
+                      </p>
+                
+                </details></li>
+                <li><details><summary>Biến đổi Fourier ngược</summary>
+                    <p>
+                        Phép biến đổi Fourier ngược cho phép chuyển đổi một tín hiệu từ miền tần số trở lại miền thời gian. Nó được định nghĩa bằng công thức:
+                      </p>
+                      <ex>
+                        \( x(t) = \int_{-\infty}^{\infty} X(f) e^{j 2 \pi f t} \, df \)
+                      </ex>
+                      <p>
+                        Trong đó \( x(t) \) là tín hiệu ban đầu, và \( X(f) \) là hàm biến đổi Fourier của tín hiệu.
+                      </p>
+                
+                </details>
+                </li>
+            </ul>
+        </li>
+    </ol>
+</section>
+
+<section>
+    <h2>CHƯƠNG 4. CHUỖI FOURIER VÀ PHÉP BIẾN ĐỔI FOURIER RỜI RẠC</h2>
+    <ol>
+        <li><details><summary>Chuỗi Fourier rời rạc</summary>
+        
+        
+            </details>
+            <ul>
+                <li><details><summary>Chuỗi Fourier (rời rạc) cho tín hiệu không liên tục</summary>
+                    <hl>Chuỗi Fourier (rời rạc) cho tín hiệu không liên tục</hl>
+<p>
+    Chuỗi Fourier rời rạc cho phép biểu diễn một tín hiệu rời rạc tuần hoàn dưới dạng một tổng hữu hạn của các hàm sin
+    và cosin. Công thức tổng quát của chuỗi Fourier rời rạc cho một tín hiệu \( x[n] \) có chu kỳ \( N \) là:
+</p>
+<ex>
+    \( x[n] = \sum_{k=0}^{N-1} c_k e^{j \frac{2\pi}{N} k n} \)
+</ex>
+<p>
+    Trong đó \( c_k \) là các hệ số Fourier rời rạc.
+</p>
+                
+                </details></li>
+                <li><details><summary>Xác định các hệ số chuỗi Fourier rời rạc</summary>
+                
+                    <p>
+                        Các hệ số Fourier rời rạc \( c_k \) được xác định bằng công thức:
+                    </p>
+                    <ex>
+                        \( c_k = \frac{1}{N} \sum_{n=0}^{N-1} x[n] e^{-j \frac{2\pi}{N} k n} \)
+                    </ex>
+                
+                </details></li>
+                <li><details><summary>So sánh chuỗi Fourier liên tục và rời rạc</summary>
+                
+                    <p>
+                        <ul>
+                            <li>Chuỗi Fourier liên tục áp dụng cho các tín hiệu liên tục và tuần hoàn, trong khi chuỗi Fourier rời rạc áp dụng
+                                cho các tín hiệu rời rạc và tuần hoàn.</li>
+                            <li>Chuỗi Fourier liên tục sử dụng tích phân để tính các hệ số, trong khi chuỗi Fourier rời rạc sử dụng tổng.</li>
+                            <li>Chuỗi Fourier liên tục cho một phổ liên tục, trong khi chuỗi Fourier rời rạc cho một phổ rời rạc.</li>
+                        </ul>
+                        </p>
+                
+                </details></li>
+                
+            </ul>
+
+        </li>
+      
+
+        <li><details><summary>Phép biến đổi Fourier rời rạc</summary>
+                
+                
+            </details>
+            <ul>
+                <li><details><summary>Dẫn xuất phép biến đổi Fourier rời rạc</summary>
+                    
+                    <p>
+                        Phép biến đổi Fourier rời rạc (DFT) của một tín hiệu rời rạc \( x[n] \) có chiều dài \( N \) được định nghĩa bằng
+                        công thức:
+                    </p>
+                    <ex>
+                        \( X[k] = \sum_{n=0}^{N-1} x[n] e^{-j \frac{2\pi}{N} k n} \)
+                    </ex>
+                    <p>
+                        Trong đó \( X[k] \) là hàm biến đổi Fourier rời rạc của \( x[n] \).
+                    </p>
+                
+                </details></li>
+                <li><details><summary>So sánh với phép biến đổi Fourier liên tục</summary>
+                
+                    <p>
+                        <ul>
+                            <li>Phép biến đổi Fourier liên tục áp dụng cho các tín hiệu liên tục không tuần hoàn, trong khi DFT áp dụng cho các
+                                tín hiệu rời rạc có chiều dài hữu hạn.</li>
+                            <li>Phép biến đổi Fourier liên tục sử dụng tích phân, trong khi DFT sử dụng tổng.</li>
+                            <li>DFT cung cấp một phổ rời rạc của tín hiệu, trong khi phép biến đổi Fourier liên tục cung cấp một phổ liên tục.
+                            </li>
+                        </ul>
+                        </p>
+                
+                </details></li>
+                <li><details><summary>Các tính chất của phép biến đổi Fourier rời rạc</summary>
+                
+                    <p>
+                        DFT có nhiều tính chất quan trọng, bao gồm:
+                    <ul>
+                        <li><b>Tuyến tính:</b> DFT của tổng các tín hiệu là tổng của các DFT của từng tín hiệu.</li>
+                        <li><b>Dịch thời gian:</b> Nếu \( x[n] \) có DFT là \( X[k] \), thì tín hiệu dịch \( x[(n - n_0) \mod N] \) có DFT
+                            là \( X[k] e^{-j \frac{2\pi}{N} k n_0} \).</li>
+                        <li><b>Biến đổi tần số:</b> Nếu \( x[n] \) có DFT là \( X[k] \), thì tín hiệu \( x[n] e^{j \frac{2\pi}{N} k_0 n} \)
+                            có DFT là \( X[(k - k_0) \mod N] \).</li>
+                        <li><b>Gấp đôi tần số:</b> Nếu \( x[n] \) có DFT là \( X[k] \), thì tín hiệu \( x[an \mod N] \) có DFT là \(
+                            \frac{1}{|a|} X\left(\frac{k}{a} \mod N\right) \).</li>
+                        <li><b>Đối xứng:</b> Nếu \( x[n] \) là một tín hiệu thực, thì \( X[k] \) có tính đối xứng Hermite, tức là \( X[-k
+                            \mod N] = X^*[k] \), với \( X^*[k] \) là liên hợp phức của \( X[k] \).</li>
+                    </ul>
+                    </p>
+                
+                </details></li>
+             
+            </ul>
+        </li>
+        <li><details><summary>Thuật toán biến đổi Fourier nhanh (FFT)</summary>
+                
+            <p>
+                Thuật toán biến đổi Fourier nhanh (FFT) là một thuật toán hiệu quả để tính DFT và IDFT. FFT làm giảm đáng kể số
+                lượng phép toán cần thiết, từ \( O(N^2) \) trong DFT truyền thống xuống \( O(N \log N) \).
+            </p>
+            <p>
+                Các đặc điểm chính của FFT:
+            <ul>
+                <li>FFT sử dụng kỹ thuật chia để trị để phân chia tín hiệu ban đầu thành các tín hiệu nhỏ hơn, sau đó tính DFT của
+                    các tín hiệu này.</li>
+                <li>FFT có nhiều biến thể, bao gồm Cooley-Tukey FFT, Bluestein's FFT, và Rader's FFT, phù hợp với các trường hợp
+                    khác nhau.</li>
+                <li>FFT là công cụ nền tảng trong nhiều ứng dụng thực tế, từ xử lý tín hiệu số, nén dữ liệu, đến giải phương trình
+                    vi phân.</li>
+            </ul>
+            </p>
+                
+        </details></li>
+    </ol>
+</section>
+
+<section>
+    <h2>CHƯƠNG 5. ĐÁP ỨNG TẦN SỐ HỆ LIÊN TỤC</h2>
+    <ol>
+        <li>
+            <details><summary>Đáp ứng tần số với tín hiệu tuần hoàn</summary>
+                
+                <p>
+                    Đáp ứng tần số của một hệ thống LTI (Tuyến tính và Thời gian bất biến) cho biết cách hệ thống phản ứng với các thành
+                    phần tần số khác nhau của một tín hiệu vào. Đối với tín hiệu tuần hoàn, đáp ứng tần số có thể được phân tích bằng
+                    cách sử dụng chuỗi Fourier, cho phép phân tích tín hiệu dưới dạng tổng của các hàm sin và cosin.
+                </p>
+                
+            </details>
+            <ul>
+                <li><details><summary>Định nghĩa đáp ứng tần số</summary>
+                
+                    <p>
+                        Đáp ứng tần số của một hệ thống LTI được định nghĩa là hàm số \( H(f) \) biểu diễn tỷ số giữa tín hiệu ra và tín
+                        hiệu vào trong miền tần số:
+                    </p>
+                    <ex>
+                        \( H(f) = \frac{Y(f)}{X(f)} \)
+                    </ex>
+                    <p>
+                        Trong đó \( X(f) \) và \( Y(f) \) lần lượt là biến đổi Fourier của tín hiệu vào và tín hiệu ra.
+                    </p>
+                
+                </details></li>
+                <li><details><summary>Xác định đáp ứng tần số hệ liên tục</summary>
+                
+                    <p>
+                        Đáp ứng tần số của một hệ liên tục có thể được xác định bằng cách lấy biến đổi Fourier của đáp ứng xung h(n). Giả sử
+                        \( h(t) \) là đáp ứng xung của hệ, đáp ứng tần số \( H(f) \) được xác định bởi:
+                    </p>
+                    <ex>
+                        \( H(f) = \int_{-\infty}^{\infty} h(t) e^{-j 2 \pi f t} \, dt \)
+                    </ex>
+                    <p>
+                        Các bước xác định đáp ứng tần số của một hệ liên tục:
+                    <ul>
+                        <li>1. Xác định đáp ứng xung \( h(t) \) của hệ.</li>
+                        <li>2. Tính biến đổi Fourier của \( h(t) \) để thu được \( H(f) \).</li>
+                    </ul>
+                    </p>
+                    <p>
+                        Đối với các hệ thống có hàm truyền đạt \( H(s) \) trong miền Laplace, đáp ứng tần số có thể được xác định bằng cách
+                        thay \( s \) bằng \( j 2 \pi f \) trong hàm truyền đạt:
+                    </p>
+                    <ex>
+                        \( H(f) = H(s) \bigg|_{s = j 2 \pi f} \)
+                    </ex>
+                    <p>
+                        Ví dụ: Giả sử hệ thống có hàm truyền đạt \( H(s) = \frac{1}{s + 1} \). Đáp ứng tần số sẽ là:
+                    </p>
+                    <ex>
+                        \( H(f) = \frac{1}{j 2 \pi f + 1} \)
+                    </ex>
+                
+                </details></li>
+            </ul>
+        </li>
+        <li><details><summary>Quan hệ giữa đáp ứng tần số và đáp ứng xung</summary>
+                
+            <p>
+                Đáp ứng tần số \( H(f) \) và đáp ứng xung \( h(t) \) của một hệ LTI có mối quan hệ mật thiết với nhau. Cụ thể, đáp
+                ứng tần số là biến đổi Fourier của đáp ứng xung:
+            </p>
+            <ex>
+                \( H(f) = \int_{-\infty}^{\infty} h(t) e^{-j 2 \pi f t} \, dt \)
+            </ex>
+            <p>
+                Ngược lại, đáp ứng xung \( h(t) \) có thể được xác định bằng cách lấy biến đổi Fourier ngược của đáp ứng tần số:
+            </p>
+            <ex>
+                \( h(t) = \int_{-\infty}^{\infty} H(f) e^{j 2 \pi f t} \, df \)
+            </ex>
+                
+        </details></li>
+        <li><details><summary>Đặc tính tần số biên-pha</summary>
+                
+            <p>
+                Đặc tính tần số của một hệ thống bao gồm hai thành phần: biên độ và pha. Biên độ \( |H(f)| \) biểu thị mức độ khuếch
+                đại hoặc suy giảm của các thành phần tần số, trong khi pha \( \angle H(f) \) biểu thị sự thay đổi pha của các thành
+                phần tần số.
+            </p>
+            <p>
+                <b>Biên độ:</b>
+            </p>
+            <ex>
+                \( |H(f)| = \sqrt{\text{Re}\{H(f)\}^2 + \text{Im}\{H(f)\}^2} \)
+            </ex>
+            <p>
+                <b>Pha:</b>
+            </p>
+            <ex>
+                \( \angle H(f) = \arctan\left(\frac{\text{Im}\{H(f)\}}{\text{Re}\{H(f)\}}\right) \)
+            </ex>
+                
+        </details></li>
+        <li><details><summary>Đồ thị Bode và đồ thị Nyquist</summary>
+                
+            <p>
+                <b>Đồ thị Bode:</b>
+            </p>
+            <p>
+                Đồ thị Bode biểu diễn đặc tính tần số biên-pha của hệ thống trên hai đồ thị riêng biệt: một đồ thị biên độ và một đồ
+                thị pha. Trục hoành biểu thị tần số theo thang logarit, còn trục tung biểu thị biên độ (dB) và pha (độ).
+            </p>
+            <p>
+                <b>Đồ thị Nyquist:</b>
+            </p>
+            <p>
+                Đồ thị Nyquist biểu diễn đáp ứng tần số của hệ thống trên một mặt phẳng phức, với trục hoành là phần thực và trục
+                tung là phần ảo của \( H(f) \). Đồ thị này giúp phân tích tính ổn định của hệ thống trong miền tần số.
+            </p>
+                
+        </details></li>
+        <li><details><summary>Đáp ứng tần số của hệ ghép nối</summary>
+                
+            <p>
+                Đáp ứng tần số của một hệ ghép nối có thể được xác định bằng cách nhân đáp ứng tần số của từng hệ thống con. Giả sử
+                hai hệ thống có đáp ứng tần số lần lượt là \( H_1(f) \) và \( H_2(f) \), đáp ứng tần số của hệ ghép nối sẽ là:
+            </p>
+            <ex>
+                \( H(f) = H_1(f) \cdot H_2(f) \)
+            </ex>
+                
+        </details></li>
+        <li><details><summary>Các bộ lọc tín hiệu</summary>
+                
+            <p>
+                Các bộ lọc tín hiệu được sử dụng để loại bỏ hoặc giữ lại các thành phần tần số cụ thể của tín hiệu. Có nhiều loại bộ
+                lọc khác nhau, bao gồm:
+            <ul>
+                <li><b>Bộ lọc thông thấp:</b> Chỉ cho phép các tần số thấp hơn một ngưỡng nhất định đi qua.</li>
+                <li><b>Bộ lọc thông cao:</b> Chỉ cho phép các tần số cao hơn một ngưỡng nhất định đi qua.</li>
+                <li><b>Bộ lọc thông dải:</b> Chỉ cho phép các tần số trong một dải nhất định đi qua.</li>
+                <li><b>Bộ lọc chặn dải:</b> Chặn các tần số trong một dải nhất định, cho phép các tần số ngoài dải đi qua.</li>
+            </ul>
+            Mỗi loại bộ lọc có đáp ứng tần số đặc trưng và được thiết kế để đạt được các mục tiêu cụ thể trong xử lý tín hiệu.
+            </p>
+                
+        </details></li>
+       
+    </ol>
+
+</section>
+
+<section>
+    <h2>CHƯƠNG 6. PHÉP BIẾN ĐỔI LAPLACE</h2>
+    <ol>
+        <li>
+            <details>
+                <summary>Dẫn xuất phép biến đổi Laplace</summary>
+                <p>Phép biến đổi Laplace là một công cụ mạnh mẽ trong toán học và kỹ thuật, được sử dụng để giải các phương trình vi phân và phân tích các hệ thống động học. Nó được định nghĩa bởi tích phân sau:</p>
+                <ex>
+                    \( \mathcal{L}\{f(t)\} = F(s) = \int_{0}^{\infty} f(t) e^{-st} \, dt \)
+                </ex>
+                <p>Trong đó \( s \) là biến phức, và \( F(s) \) là ảnh của hàm \( f(t) \) dưới phép biến đổi Laplace.</p>
+            </details>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Vấn đề hội tụ của chuỗi/tích phân Fourier</summary>
+                        <p>Để một chuỗi hoặc tích phân Fourier hội tụ, hàm ban đầu phải thỏa mãn một số điều kiện nhất định (ví dụ: điều kiện Dirichlet). Tuy nhiên, các hàm không bị chặn hoặc không tuần hoàn có thể không thỏa mãn các điều kiện này, gây ra khó khăn trong việc hội tụ.</p>
+                        <p>Phép biến đổi Laplace mở rộng phạm vi hội tụ bằng cách sử dụng tích phân với hạt nhân mũ, giúp làm giảm độ lớn của hàm khi \( t \) tăng lên.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Phép biến đổi Laplace và miền hội tụ</summary>
+                        <p>Phép biến đổi Laplace tồn tại khi tích phân của nó hội tụ, điều này xảy ra khi hàm \( f(t) \) giảm đủ nhanh khi \( t \) tiến ra vô cùng. Miền hội tụ của phép biến đổi Laplace là tập hợp các giá trị của \( s \) mà tại đó tích phân hội tụ.</p>
+                        <p>Miền hội tụ có thể là một dải, một nửa mặt phẳng hoặc toàn bộ mặt phẳng phức, tùy thuộc vào tính chất của hàm \( f(t) \).</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Một số ví dụ biến đổi Laplace</summary>
+                        <p>Ví dụ 1: Biến đổi Laplace của hàm \( f(t) = e^{at} \) là:</p>
+                        <ex>
+                            \( \mathcal{L}\{e^{at}\} = \frac{1}{s-a}, \quad \text{Re}(s) > a \)
+                        </ex>
+                        <p>Ví dụ 2: Biến đổi Laplace của hàm \( f(t) = \sin(\omega t) \) là:</p>
+                        <ex>
+                            \( \mathcal{L}\{\sin(\omega t)\} = \frac{\omega}{s^2 + \omega^2}, \quad \text{Re}(s) > 0 \)
+                        </ex>
+                        <p>Các ví dụ này minh họa cách biến đổi Laplace được sử dụng để chuyển đổi các hàm thời gian thành hàm phức trong miền tần số.</p>
+                    </details>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <details>
+                <summary>Các tính chất của phép biến đổi Laplace</summary>
+                <p>Phép biến đổi Laplace có nhiều tính chất quan trọng, bao gồm:</p>
+                <ul>
+                    <li><b>Tuyến tính:</b> \( \mathcal{L}\{a f(t) + b g(t)\} = a \mathcal{L}\{f(t)\} + b \mathcal{L}\{g(t)\} \)</li>
+                    <li><b>Dịch thời gian:</b> \( \mathcal{L}\{f(t - t_0)\} = e^{-st_0} \mathcal{L}\{f(t)\} \)</li>
+                    <li><b>Tích phân:</b> \( \mathcal{L}\left\{\int_{0}^{t} f(\tau) \, d\tau\right\} = \frac{1}{s} \mathcal{L}\{f(t)\} \)</li>
+                    <li><b>Biến đổi ngược:</b> \( \mathcal{L}^{-1}\{F(s)\} \) là hàm ngược của phép biến đổi Laplace, giúp chuyển hàm từ miền tần số về miền thời gian.</li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Phép biến đổi Laplace ngược</summary>
+                <p>Phép biến đổi Laplace ngược được sử dụng để chuyển đổi một hàm trong miền tần số trở về miền thời gian. Nó được định nghĩa bởi công thức sau:</p>
+                <ex>
+                    \( \mathcal{L}^{-1}\{F(s)\} = f(t) = \frac{1}{2 \pi j} \int_{\sigma - j \infty}^{\sigma + j \infty} F(s) e^{st} \, ds \)
+                </ex>
+                <p>Trong đó \( \sigma \) là một số thực sao cho đường thẳng \( \text{Re}(s) = \sigma \) nằm trong miền hội tụ của \( F(s) \).</p>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Tính đáp ứng hệ thống với phép biến đổi Laplace</summary>
+                <p>Đáp ứng của một hệ thống LTI đối với một đầu vào có thể được xác định bằng cách sử dụng phép biến đổi Laplace. Đầu tiên, ta lấy biến đổi Laplace của tín hiệu vào và hàm truyền đạt của hệ thống:</p>
+                <ex>
+                    \( Y(s) = H(s) \cdot X(s) \)
+                </ex>
+                <p>Sau đó, ta lấy biến đổi Laplace ngược của \( Y(s) \) để thu được tín hiệu ra trong miền thời gian:</p>
+                <ex>
+                    \( y(t) = \mathcal{L}^{-1}\{Y(s)\} \)
+                </ex>
+                <p>Phương pháp này cho phép giải các phương trình vi phân phức tạp và xác định đáp ứng của hệ thống đối với các đầu vào khác nhau.</p>
+            </details>
+        </li>
+    </ol>
+</section>
+
+
+<section>
+    <h2>CHƯƠNG 7: HÀM TRUYỀN HỆ LIÊN TỤC</h2>
+    <ol>
+        <li>
+            <details>
+                <summary>Khái niệm hàm truyền</summary>
+                <p>Hàm truyền \( H(s) \) của một hệ thống LTI (hệ tuyến tính bất biến) là tỷ số giữa biến đổi Laplace của đầu ra \( Y(s) \) và biến đổi Laplace của đầu vào \( X(s) \) khi các điều kiện ban đầu bằng không:</p>
+                <ex>
+                    \( H(s) = \frac{Y(s)}{X(s)} \)
+                </ex>
+                <p>Hàm truyền mô tả mối quan hệ giữa đầu vào và đầu ra của hệ thống trong miền tần số, giúp phân tích và thiết kế hệ thống một cách dễ dàng hơn.</p>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Xác định hàm truyền từ phương trình vi phân</summary>
+                <p>Để xác định hàm truyền từ phương trình vi phân của hệ thống, ta thực hiện các bước sau:</p>
+                <ul>
+                    <li>Viết phương trình vi phân mô tả hệ thống.</li>
+                    <li>Áp dụng phép biến đổi Laplace cho cả hai vế của phương trình, với điều kiện ban đầu bằng không.</li>
+                    <li>Giải phương trình để tìm tỷ số giữa biến đổi Laplace của đầu ra và biến đổi Laplace của đầu vào.</li>
+                </ul>
+                <p>Ví dụ, với phương trình vi phân bậc hai:</p>
+                <ex>
+                    \( a_2 \frac{d^2y(t)}{dt^2} + a_1 \frac{dy(t)}{dt} + a_0 y(t) = b_1 \frac{dx(t)}{dt} + b_0 x(t) \)
+                </ex>
+                <p>Áp dụng biến đổi Laplace và giải phương trình để tìm hàm truyền:</p>
+                <ex>
+                    \( H(s) = \frac{Y(s)}{X(s)} = \frac{b_1 s + b_0}{a_2 s^2 + a_1 s + a_0} \)
+                </ex>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Hàm truyền của một số khâu cơ bản</summary>
+                <p>Một số hàm truyền cơ bản bao gồm:</p>
+                <ul>
+                    <li><b>Khâu tích phân:</b> \( H(s) = \frac{1}{s} \)</li>
+                    <li><b>Khâu vi phân:</b> \( H(s) = s \)</li>
+                    <li><b>Khâu khuếch đại:</b> \( H(s) = K \), trong đó \( K \) là hệ số khuếch đại.</li>
+                    <li><b>Khâu quán tính bậc nhất:</b> \( H(s) = \frac{K}{\tau s + 1} \), trong đó \( K \) là hệ số khuếch đại và \( \tau \) là hằng số thời gian.</li>
+                    <li><b>Khâu dao động tự do:</b> \( H(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2} \), trong đó \( \omega_n \) là tần số tự nhiên và \( \zeta \) là hệ số tắt dần.</li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Hàm truyền và đáp ứng động học của hệ thống</summary>
+                <p>Hàm truyền cung cấp thông tin về đáp ứng động học của hệ thống, bao gồm điểm cực và điểm không, hệ số khuếch đại tĩnh, và tính ổn định.</p>
+            </details>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Điểm cực, điểm không</summary>
+                        <p>Điểm cực (poles) của hàm truyền là các giá trị của \( s \) tại đó hàm truyền trở nên vô hạn. Điểm không (zeros) là các giá trị của \( s \) tại đó hàm truyền bằng không. Điểm cực và điểm không xác định hành vi động học của hệ thống.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Hệ số khuếch đại tĩnh</summary>
+                        <p>Hệ số khuếch đại tĩnh \( K \) là giá trị của hàm truyền tại \( s = 0 \), biểu thị mức độ khuếch đại của hệ thống ở trạng thái ổn định.</p>
+                        <ex>
+                            \( K = H(0) \)
+                        </ex>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Tính ổn định và đặc tính đáp ứng thời gian</summary>
+                        <p>Tính ổn định của hệ thống được xác định bởi vị trí của các điểm cực trong mặt phẳng phức. Nếu tất cả các điểm cực có phần thực âm, hệ thống là ổn định. Đặc tính đáp ứng thời gian, bao gồm thời gian quá độ, thời gian ổn định, và độ vượt, cũng được xác định bởi các điểm cực.</p>
+                    </details>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <details>
+                <summary>Quan hệ giữa hàm truyền và đặc tính tần số</summary>
+                <p>Hàm truyền cũng mô tả đặc tính tần số của hệ thống. Đặc tính tần số bao gồm biên độ và pha của đáp ứng hệ thống đối với các tần số khác nhau của tín hiệu đầu vào.</p>
+                <p>Phân tích đặc tính tần số giúp hiểu rõ hơn về hành vi của hệ thống đối với các tín hiệu có tần số khác nhau, và thiết kế các bộ lọc hoặc hệ thống điều khiển phù hợp.</p>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Dẫn xuất hàm truyền từ mô hình trạng thái</summary>
+                <p>Hàm truyền có thể được dẫn xuất từ mô hình trạng thái của hệ thống. Mô hình trạng thái thường được biểu diễn dưới dạng phương trình trạng thái và phương trình đầu ra:</p>
+                <ex>
+                    \[
+                    \begin{cases}
+                    \dot{x}(t) = A x(t) + B u(t) \\
+                    y(t) = C x(t) + D u(t)
+                    \end{cases}
+                    \]
+                </ex>
+                <p>Phép biến đổi Laplace của các phương trình này dẫn đến hàm truyền:</p>
+                <ex>
+                    \[
+                    H(s) = C (sI - A)^{-1} B + D
+                    \]
+                </ex>
+                <p>Trong đó, \( A, B, C, D \) là các ma trận trạng thái của hệ thống, và \( I \) là ma trận đơn vị.</p>
+            </details>
+        </li>
+    </ol>
+</section>
+
+
+<section>
+    <h2>CHƯƠNG 8. PHÉP BIẾN ĐỔI Z</h2>
+    <ol>
+        <li>
+            <details>
+                <summary>Dẫn xuất phép biến đổi Z từ biến đổi Laplace</summary>
+                <p>Phép biến đổi Z được xem là một trường hợp rời rạc hóa của phép biến đổi Laplace. Bằng cách thay đổi biến số từ liên tục sang rời rạc, ta thu được phép biến đổi Z:</p>
+                <fr>
+                    \(Z\{x[n]\} = X(z) = \sum_{n=-\infty}^{\infty} x[n]z^{-n}\)
+                </fr>
+                <p>Trong đó:</p>
+                <ul>
+                    <li>\(x[n]\): tín hiệu rời rạc</li>
+                    <li>\(z\): biến phức</li>
+                </ul>
+            </details>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Phép biến đổi Z và miền hội tụ</summary>
+                        <p>Miền hội tụ (ROC) của phép biến đổi Z là tập hợp các giá trị \(z\) sao cho tổng chuỗi hội tụ. Tùy thuộc vào tín hiệu \(x[n]\), miền hội tụ có thể là:</p>
+                        <ul>
+                            <li>\( |z| > r \): Hội tụ ngoài vòng tròn bán kính \(r\)</li>
+                            <li>\( |z| < r \): Hội tụ trong vòng tròn bán kính \(r\)</li>
+                            <li>\( r_1 < |z| < r_2 \): Hội tụ trong vòng tròn giữa hai bán kính \(r_1\) và \(r_2\)</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Một số ví dụ biến đổi Z</summary>
+                        <ex>
+                            <p>Ví dụ 1: Biến đổi Z của tín hiệu đơn vị \(x[n] = u[n]\):</p>
+                            \(X(z) = \frac{1}{1 - z^{-1}}, \quad |z| > 1\)
+                        </ex>
+                        <ex>
+                            <p>Ví dụ 2: Biến đổi Z của \(x[n] = a^n u[n]\):</p>
+                            \(X(z) = \frac{1}{1 - az^{-1}}, \quad |z| > |a|\)
+                        </ex>
+                    </details>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <details>
+                <summary>Các tính chất của phép biến đổi Z</summary>
+                <p>Phép biến đổi Z có nhiều tính chất quan trọng, bao gồm:</p>
+                <ul>
+                    <li>Tuyến tính: \(Z\{a x_1[n] + b x_2[n]\} = a X_1(z) + b X_2(z)\)</li>
+                    <li>Dịch thời gian: \(Z\{x[n-k]\} = z^{-k}X(z)\)</li>
+                    <li>Nhân chập: \(Z\{x_1[n] * x_2[n]\} = X_1(z)X_2(z)\)</li>
+                    <li>Đạo hàm: \(Z\{n x[n]\} = -z \frac{dX(z)}{dz}\)</li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Phép biến đổi Z ngược</summary>
+                <p>Phép biến đổi Z ngược được sử dụng để tìm lại tín hiệu \(x[n]\) từ biểu thức \(X(z)\). Công thức tổng quát:</p>
+                <fr>
+                   \(x[n] = \frac{1}{2\pi i} \oint_C X(z) z^{n-1} dz\)
+                </fr>
+                <p>Trong thực tế, phương pháp phổ biến để thực hiện biến đổi Z ngược là:</p>
+                <ul>
+                    <li>Phân tích thành phân thức đơn</li>
+                    <li>Sử dụng bảng tra cứu các tín hiệu chuẩn</li>
+                </ul>
+            </details>
+        </li>
+    </ol>
+</section>
+
+
+<section>
+    <h2>CHƯƠNG 9: ĐÁP ỨNG TẦN SỐ VÀ HÀM TRUYỀN HỆ KHÔNG LIÊN TỤC</h2>
+    <ol>
+        <li>
+            <details>
+                <summary>Đáp ứng tần số và hàm truyền hệ không liên tục</summary>
+                <p>Đáp ứng tần số mô tả cách hệ thống phản ứng với các tín hiệu đầu vào dạng hàm số mũ phức. Hàm truyền hệ không liên tục \(H(z)\) được định nghĩa là:</p>
+                <fr>
+                    \(H(z) = \frac{Y(z)}{U(z)}\)
+                </fr>
+                <p>Trong đó:</p>
+                <ul>
+                    <li>\(Y(z)\): Biến đổi Z của tín hiệu đầu ra</li>
+                    <li>\(U(z)\): Biến đổi Z của tín hiệu đầu vào</li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Xác định hàm truyền từ phương trình sai phân</summary>
+                <p>Từ phương trình sai phân:</p>
+                <fr>
+                    \(a_0 y[n] + a_1 y[n-1] + ... + a_m y[n-m] = b_0 u[n] + b_1 u[n-1] + ... + b_k u[n-k]\)
+                </fr>
+                <p>Có thể suy ra hàm truyền bằng cách sử dụng biến đổi Z:</p>
+                <fr>
+                    \(H(z) = \frac{b_0 + b_1 z^{-1} + ... + b_k z^{-k}}{a_0 + a_1 z^{-1} + ... + a_m z^{-m}}\)
+                </fr>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Hàm truyền của một số khâu cơ bản</summary>
+                <p>Một số khâu cơ bản và hàm truyền tương ứng:</p>
+                <ul>
+                    <li>Khâu tỉ lệ: \(H(z) = K\)</li>
+                    <li>Khâu tích phân: \(H(z) = \frac{1}{1 - z^{-1}}, \quad |z| > 1\)</li>
+                    <li>Khâu vi phân: \(H(z) = 1 - z^{-1}\)</li>
+                </ul>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Hàm truyền và đáp ứng động học của hệ thống</summary>
+                <p>Đáp ứng động học của hệ thống có thể được nghiên cứu thông qua hàm truyền \(H(z)\). Các đặc trưng chính bao gồm:</p>
+            </details>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Điểm cực, điểm không</summary>
+                        <p>Điểm cực và điểm không xác định các giá trị \(z\) mà tại đó hàm truyền bằng vô cực hoặc bằng 0. Chúng có vai trò quan trọng trong việc xác định đặc tính động học và ổn định của hệ thống.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Hệ số khuếch đại tĩnh</summary>
+                        <p>Hệ số khuếch đại tĩnh của hệ thống được tính tại \(z = 1\):</p>
+                        <fr>
+                            \(H(1) = \frac{B(1)}{A(1)}\)
+                        </fr>
+                        <p>Trong đó \(A(z)\) và \(B(z)\) là các đa thức mẫu số và tử số của hàm truyền.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Tính ổn định và đặc tính đáp ứng thời gian</summary>
+                        <p>Hệ thống ổn định khi tất cả các điểm cực của hàm truyền nằm trong vòng tròn đơn vị \(|z| < 1\). Đặc tính đáp ứng thời gian phụ thuộc vào vị trí của các điểm cực và điểm không.</p>
+                    </details>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <details>
+                <summary>Quan hệ giữa hàm truyền và đặc tính tần số</summary>
+                <p>Hàm truyền \(H(z)\) có thể được ánh xạ sang miền tần số để nghiên cứu đáp ứng tần số. Biến đổi \(z = e^{j\omega T}\) được sử dụng để chuyển từ miền \(z\) sang miền tần số:</p>
+                <fr>
+                    \(H(e^{j\omega T})\)
+                </fr>
+                <p>Đây là công cụ quan trọng để phân tích đáp ứng biên độ và pha của hệ thống.</p>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary>Dẫn xuất hàm truyền từ mô hình trạng thái gián đoạn</summary>
+                <p>Từ mô hình trạng thái gián đoạn:</p>
+                <fr>
+                    \(x[k+1] = A x[k] + B u[k]\)<br>
+                    \(y[k] = C x[k] + D u[k]\)
+                </fr>
+                <p>Hàm truyền được suy ra bằng cách sử dụng phép biến đổi Z:</p>
+                <fr>
+                    \(H(z) = C (zI - A)^{-1} B + D\)
+                </fr>
+            </details>
+        </li>
+    </ol>
+</section>
+
+
+<section>
+    <h2>CHƯƠNG 10. TRÍCH MẪU VÀ KHÔI PHỤC TÍN HIỆU</h2>
+    <ol>
+        <li>
+            <details>
+                <summary>Trích mẫu tín hiệu</summary>
+                <p>Trích mẫu tín hiệu là quá trình chuyển tín hiệu liên tục sang tín hiệu rời rạc bằng cách lấy mẫu tại các thời điểm cách đều nhau. Tín hiệu được trích mẫu thường sử dụng một chu kỳ trích mẫu \(T_s\).</p>
+            </details>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Trích mẫu tín hiệu hình sin</summary>
+                        <p>Khi trích mẫu tín hiệu hình sin \(x(t) = \sin(2\pi f t)\), tín hiệu rời rạc thu được là:</p>
+                        <fr>
+                            \(x[n] = \sin(2\pi f n T_s)\)
+                        </fr>
+                        <p>Chu kỳ trích mẫu \(T_s\) quyết định tần số Nyquist \(f_s = \frac{1}{T_s}\).</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Phân tích quá trình trích mẫu</summary>
+                        <p>Phân tích quá trình trích mẫu bao gồm các bước:</p>
+                        <ul>
+                            <li>Biểu diễn tín hiệu liên tục \(X(f)\) trong miền tần số</li>
+                            <li>Xác định phổ của tín hiệu sau khi trích mẫu</li>
+                            <li>Nhận diện và xử lý hiện tượng trùng phổ nếu xảy ra</li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Hiện tượng trùng phổ</summary>
+                        <p>Hiện tượng trùng phổ xảy ra khi tần số trích mẫu \(f_s\) không đủ lớn, dẫn đến sự chồng lấn phổ của tín hiệu gốc. Điều kiện để tránh trùng phổ:</p>
+                        <fr>
+                            \(f_s > 2f_{max}\)
+                        </fr>
+                        <p>Đây chính là tiêu chuẩn Nyquist, đảm bảo tín hiệu có thể được khôi phục chính xác.</p>
+                    </details>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <details>
+                <summary>Khôi phục tín hiệu</summary>
+                <p>Khôi phục tín hiệu là quá trình tái tạo tín hiệu liên tục từ tín hiệu rời rạc. Phương pháp phổ biến nhất sử dụng bộ lọc nội suy.</p>
+            </details>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Các phương pháp nhân quả</summary>
+                        <p>Phương pháp nhân quả chỉ sử dụng các giá trị mẫu hiện tại và trong quá khứ để khôi phục tín hiệu. Một ví dụ điển hình là bộ lọc trung bình động.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>Các phương pháp phi nhân quả</summary>
+                        <p>Phương pháp phi nhân quả sử dụng cả giá trị mẫu trong quá khứ và tương lai. Ví dụ, bộ lọc lý tưởng (Ideal Filter) với đáp ứng:</p>
+                        <fr>
+                            \(h(t) = \frac{\sin(\pi t / T_s)}{\pi t / T_s}\)
+                        </fr>
+                        <p>Bộ lọc lý tưởng tái tạo tín hiệu với độ chính xác cao nhưng không thực hiện được trong thực tế do tính không nhân quả.</p>
+                    </details>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <details>
+                <summary>Thuyết trích mẫu Nyquist-Shannon và ứng dụng</summary>
+                <p>Thuyết trích mẫu Nyquist-Shannon chỉ ra rằng để khôi phục tín hiệu liên tục từ tín hiệu rời rạc, tần số trích mẫu \(f_s\) cần lớn hơn hai lần tần số lớn nhất của tín hiệu gốc \(f_{max}\):</p>
+                <fr>
+                    \(f_s > 2f_{max}\)
+                </fr>
+                <p>Ứng dụng của thuyết này bao gồm:</p>
+                <ul>
+                    <li>Hệ thống xử lý tín hiệu số</li>
+                    <li>Các thiết bị chuyển đổi tín hiệu ADC/DAC</li>
+                    <li>Truyền thông số và nén dữ liệu</li>
+                </ul>
+            </details>
+        </li>
+    </ol>
+</section>
+
+
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

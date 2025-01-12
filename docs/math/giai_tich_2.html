@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Giải tích 2</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Toán</a>
+    </nav>
+
+    <h1>Giải tích 2</h1>
+
+    <ul>
+        <li><a href="/doc/source/Bai giang gt2 thay thao.pdf">Bài giảng Nguyễn Xuân Thảo</a></li>
+        <li><a href="/doc/exam/exam/math/giai_tich_2.html">Bài tập</a></li>
+    </ul>
+
+    <div style="max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h1>Kiến thức tổng hợp về Giải tích 2</h1>
+
+        <section id="multivariable-functions">
+            <h2>1. Hàm số nhiều biến (Multivariable Functions)</h2>
+            <p>
+                Hàm số nhiều biến là hàm số phụ thuộc vào nhiều biến độc lập, ví dụ: <code>f(x, y, z)</code>.
+            </p>
+            <ul>
+                <li>Ví dụ: <code>f(x, y) = x² + y²</code> là một hàm hai biến.</li>
+                <li>Đường mức của hàm số hai biến: là tập hợp các điểm <code>(x, y)</code> mà <code>f(x, y) = C</code>
+                    (C là hằng số).</li>
+            </ul>
+        </section>
+
+        <section id="partial-derivatives">
+            <h2>2. Đạo hàm riêng và vi phân toàn phần</h2>
+            <p>
+                Đạo hàm riêng của hàm số nhiều biến là đạo hàm của hàm theo một biến số, giữ các biến khác cố định.
+            </p>
+            <ul>
+                <li>Đạo hàm riêng theo x: <code>∂f/∂x</code></li>
+                <li>Đạo hàm riêng theo y: <code>∂f/∂y</code></li>
+                <li>Vi phân toàn phần: <code>df = (∂f/∂x) dx + (∂f/∂y) dy</code></li>
+            </ul>
+        </section>
+
+        <section id="gradient-divergence-curl">
+            <h3>Gradient, Divergence, và Curl</h3>
+            <ul>
+                <li>Gradient: <code>∇f = (∂f/∂x, ∂f/∂y, ∂f/∂z)</code></li>
+                <li>Divergence: <code>∇⋅F = ∂F₁/∂x + ∂F₂/∂y + ∂F₃/∂z</code></li>
+                <li>Curl: <code>∇×F = (∂F₃/∂y - ∂F₂/∂z, ∂F₁/∂z - ∂F₃/∂x, ∂F₂/∂x - ∂F₁/∂y)</code></li>
+            </ul>
+        </section>
+
+        <section id="multiple-integrals">
+            <h2>3. Tích phân bội (Multiple Integrals)</h2>
+            <p>
+                Tích phân bội dùng để tính thể tích và diện tích trên các miền phức tạp. Bao gồm:
+            </p>
+            <ul>
+                <li><b>Tích phân kép:</b> <code>∬_D f(x, y) dA</code>, dùng để tính diện tích trên mặt phẳng.</li>
+                <li><b>Tích phân bội ba:</b> <code>∭_V f(x, y, z) dV</code>, dùng để tính thể tích trong không gian.
+                </li>
+            </ul>
+        </section>
+
+        <section id="line-integrals">
+            <h2>4. Tích phân đường (Line Integrals)</h2>
+            <p>
+                Tích phân đường tính giá trị tích phân của một hàm số dọc theo một đường cong.
+            </p>
+            <ul>
+                <li><b>Tích phân đường của trường vô hướng:</b> <code>∫_C f(x, y) ds</code></li>
+                <li><b>Tích phân đường của trường vector:</b> <code>∫_C F⋅dr</code></li>
+            </ul>
+        </section>
+
+        <section id="surface-integrals">
+            <h2>5. Tích phân mặt (Surface Integrals)</h2>
+            <p>
+                Tích phân mặt tính tổng giá trị của một hàm trên một bề mặt trong không gian ba chiều.
+            </p>
+            <ul>
+                <li><b>Tích phân mặt của trường vô hướng:</b> <code>∬_S f(x, y, z) dS</code></li>
+                <li><b>Tích phân mặt của trường vector:</b> <code>∬_S F⋅dS</code></li>
+            </ul>
+        </section>
+
+        <section id="fundamental-theorems">
+            <h2>6. Các định lý quan trọng</h2>
+            <ul>
+                <li><b>Định lý Green:</b> <code>∮_C P dx + Q dy = ∬_D (∂Q/∂x - ∂P/∂y) dA</code></li>
+                <li><b>Định lý Gauss (Divergence Theorem):</b> <code>∬_S F⋅dS = ∭_V ∇⋅F dV</code></li>
+                <li><b>Định lý Stokes:</b> <code>∫_C F⋅dr = ∬_S ∇×F⋅dS</code></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Trên đây là một số kiến thức cơ bản của giải tích 2. Học tốt và thành công!</p>
+        </footer>
+    </div>
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

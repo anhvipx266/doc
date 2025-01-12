@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Công Thức Tích phân, Đạo hàm</title>
+
+    <link rel="stylesheet" href="/doc/style.css">
+</head>
+
+<body>
+    <h2>Bảng Công Thức Đạo Hàm và Tích Phân</h2>
+    <table>
+        <tr>
+            <th>Công Thức</th>
+            <th>Đạo Hàm</th>
+            <th>Tích Phân</th>
+        </tr>
+        <tr>
+            <td>Hằng số</td>
+            <td>\(\frac{d}{dx} (c) = 0\)</td>
+            <td>\(\int c \, dx = c \cdot x + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm số mũ</td>
+            <td>\(\frac{d}{dx} (e^x) = e^x\)</td>
+            <td>\(\int e^x \, dx = e^x + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm lũy thừa</td>
+            <td>\(\frac{d}{dx} (x^n) = n \cdot x^{n-1}\)</td>
+            <td>\(\int x^n \, dx = \frac{x^{n+1}}{n+1} + C\) với \(n \neq -1\)</td>
+        </tr>
+        <tr>
+            <td>Hàm logarit</td>
+            <td>\(\frac{d}{dx} (\ln x) = \frac{1}{x}\)</td>
+            <td>\(\int \frac{1}{x} \, dx = \ln |x| + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm số mũ cơ số a</td>
+            <td>\(\frac{d}{dx} (a^x) = a^x \ln a\)</td>
+            <td>\(\int a^x \, dx = \frac{a^x}{\ln a} + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm lượng giác \(\sin x\)</td>
+            <td>\(\frac{d}{dx} (\sin x) = \cos x\)</td>
+            <td>\(\int \sin x \, dx = -\cos x + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm lượng giác \(\cos x\)</td>
+            <td>\(\frac{d}{dx} (\cos x) = -\sin x\)</td>
+            <td>\(\int \cos x \, dx = \sin x + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm lượng giác \(\tan x\)</td>
+            <td>\(\frac{d}{dx} (\tan x) = \sec^2 x\)</td>
+            <td>\(\int \sec^2 x \, dx = \tan x + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm lượng giác ngược \(\arcsin x\)</td>
+            <td>\(\frac{d}{dx} (\arcsin x) = \frac{1}{\sqrt{1 - x^2}}\)</td>
+            <td>\(\int \frac{1}{\sqrt{1 - x^2}} \, dx = \arcsin x + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm lượng giác ngược \(\arctan x\)</td>
+            <td>\(\frac{d}{dx} (\arctan x) = \frac{1}{1 + x^2}\)</td>
+            <td>\(\int \frac{1}{1 + x^2} \, dx = \arctan x + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm hyperbolic \(\sinh x\)</td>
+            <td>\(\frac{d}{dx} (\sinh x) = \cosh x\)</td>
+            <td>\(\int \cosh x \, dx = \sinh x + C\)</td>
+        </tr>
+        <tr>
+            <td>Hàm hyperbolic \(\cosh x\)</td>
+            <td>\(\frac{d}{dx} (\cosh x) = \sinh x\)</td>
+            <td>\(\int \sinh x \, dx = \cosh x + C\)</td>
+        </tr>
+        <tr>
+            <td>Tích của 2 hàm số \(u(x)v(x)\)</td>
+            <td>\(\frac{d}{dx} (u \cdot v) = u' \cdot v + u \cdot v'\)</td>
+            <td>\(\int u \cdot v' \, dx = u \cdot v - \int u' \cdot v \, dx\)</td>
+        </tr>
+        <tr>
+            <td>Phân số \( \frac{u(x)}{v(x)} \)</td>
+            <td>\(\frac{d}{dx} \left(\frac{u}{v}\right) = \frac{u' \cdot v - u \cdot v'}{v^2}\)</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Mathjax -->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+</html>

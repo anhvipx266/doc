@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Lý thuyết trường</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+    </nav>
+
+    <h1>Lý thuyết trường</h1>
+
+    <section>
+
+        <details>
+            <summary>
+                <h2>I. Giới thiệu</h2>
+            </summary>
+            <div class="row">
+                <div class="col-6"><img src="imgs/i1.png" alt="" class="w-100 d-invert"></div>
+            </div>
+        </details>
+    </section>
+    <section>
+
+        <details>
+            <summary>
+                <h2>II. Giải tích véctơ</h2>
+            </summary>
+
+        </details>
+        <ol>
+            <li>
+                <details>
+                    <summary>Vô hướng & véctơ</summary>
+                    <table>
+                        <tr>
+                            <td>Vô hướng: đại lượng được biểu diễn bằng một số thực (âm hoặc
+                                dương)</td>
+                            <td>Véctơ: đại lượng được biểu diễn bằng độ lớn (luôn dương) &
+                                hướng trong không gian (2D, 3D, nD)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ex>khoảng cách, thời gian, nhiệt độ, …</ex>
+                            </td>
+                            <td>
+                                <ex>lực, vận tốc, gia tốc, …</ex>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vô hướng ký hiệu bằng chữ nghiêng. <ex><i>t, m, E,…</i></ex>
+                            </td>
+                            <td>Véctơ ký hiệu bằng chữ thẳng, đậm. <ex><b>A</b></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Có thể thay ký hiệu A bằng \({\rm{\bar A}}\)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>\[{\rm{E = 5}}{{\rm{a}}_x}\]</td>
+                        </tr>
+                    </table>
+                    <div class="row">
+                        <div class="col-6"></div>
+                    </div>
+
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Hệ tọa độ Descartes</summary>
+                    <div class="row">
+                        <div class="col-6">Quy tắc: <img src="imgs/i43.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6">Mặt phẳng: <img src="imgs/i44.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6">Vi diện, vi khối: <img src="imgs/i45.png" alt="" class="w-100 d-invert">
+                        </div>
+                        <div class="col-6">Tọa độ, bán kính, vector: <img src="imgs/i46.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                    <a href="slides/01_Gioi_thieu_2022_mk.pdf">VD: 23 - 26</a>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Tích vô hướng & tích hữu hướng</summary>
+
+                    <h3><define>Tích vô hướng</define></h3>
+                    \[A \bullet B = \left| A \right|\left| B \right|\cos {\theta _{AB}}\]
+                    \[A \bullet B = B \bullet A\]
+                    \[A \bullet B = {A_x}{B_x} + {A_y}{B_y} + {A_z}{B_z}\]
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i47.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                    <a href="slides/01_Gioi_thieu_2022_mk.pdf">VD: 29</a>
+
+                    <h3><define>Tích hữu hướng</define></h3>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i48.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i49.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Hệ tọa độ trụ tròn</summary>
+                    <div class="row">
+                        <div class="col-6">Thông số: <img src="imgs/i50.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6">Vi diện, vi khối: <img src="imgs/i51.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6">Tích vô hướng, tích hữu hướng: <img src="imgs/i52.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Hệ tọa độ cầu</summary>
+                    <div class="row">
+                        <div class="col-6">Thông số: <img src="imgs/i53.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6">Vi diện, vi khối: <img src="imgs/i54.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6">Tích vô hướng, tích hữu hướng: <img src="imgs/i55.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details><summary>DESCARTES, TRỤ TRÒN, CẦU</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i56.png" alt="" class="w-100 d-invert"></div>
+                        </div>
+                </details>
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h2>III. Luật Coulomb & cường độ điện trường</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li><details><summary>Luật Coulomb</summary>
+                <fr>\[F = k\frac{{{Q_1}{Q_2}}}{{{R^2}}}\]</fr>
+                \[\begin{array}{l}k = \frac{1}{{4\pi {\varepsilon _0}}}\\{\varepsilon _0} = 8,{854.10^{ - 12}} = \frac{1}{{36\pi }}{10^{ - 9}}\end{array}\]
+                <div class="row">
+                    <div class="col-6">Vector: <img src="imgs/i57.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                
+            </details></li>
+            <li><details><summary>Cường độ điện trường</summary>
+                <define>Cường độ điện trường:</define> véctơ lực tác dụng lên một điện tích 1C. <br>
+                Đơn vị V/m <br>
+                <fr>\[{\rm{E}} = k\frac{Q}{{{R^2}}}{{\rm{a}}_R}\]</fr>
+                <hl>Tính tuyến tính: E = tổng các E</hl>
+                <hl>Tổng quát: Tích phân theo mật độ điện tích p</hl>
+            </details></li>
+            <li><details><summary>Điện trường của một điện tích khối liên tục</summary>
+                <div class="row">
+                    <div class="col-6">Vector: <img src="imgs/i58.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6">Vector: <img src="imgs/i59.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Điện trường của một điện tích đường</summary>
+                <div class="row">
+                    <div class="col-6">Vector: <img src="imgs/i60.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Điện trường của một điện tích mặt</summary>
+                <div class="row">
+                    <div class="col-6">Vector: <img src="imgs/i61.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Các dạng phân bố điện tích</summary>
+                <div class="row">
+                    <div class="col-6">Vector: <img src="imgs/i62.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Đường sức</summary>   
+                <ul>
+                    <li> Minh hoạ trực quan một điện trường</li>
+                    <li>Tập hợp các véctơ chỉ hướng của điện trường</li>
+                    <li>Một điện tích tự do nhỏ dương được đặt trên một đường
+                        sức sẽ tăng tốc theo hướng của đường sức đó</li>
+   
+                </ul>
+            </details></li>
+            <li><details><summary>Ứng dụng</summary>
+                <ul>
+                    <li>Sơn tĩnh điện</li>
+                    <li>Lọc tĩnh điện</li>
+                    <li>Màn hình CRT</li>
+                    <li>Máy photocopy</li>
+                    <li>Máy in laser</li>
+                </ul>
+            </details></li>
+        </ol>
+    </section>
+    <section>
+        <h2>IV. Dịch chuyển điện, luật Gauss & đive</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li><details><summary> Dịch chuyển điện</summary>
+               <hl>Thông lượng (flux) thường được dùng để mô tả lượng đại lượng vật lý truyền qua một diện tích nhất định 
+                trong một khoảng thời gian</hl>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i63.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Luật Gauss</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i64.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i65.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i66.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Đive - Phân kỳ - <hl>divergence</hl> </summary>
+               <define> Phân kỳ (divergence)</define> của một trường vector đo mức độ mà trường vector lan tỏa hoặc hội tụ tại một điểm trong không gian. 
+               Nó là một đại lượng vô hướng.
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i67.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i68.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                <ul>
+                    <li>Đive của mật độ thông lượng véctơ A là thông lượng
+                        trên mỗi đơn vị thể tích, chảy ra từ một vùng kín nhỏ, có
+                        thể tích tiến đến zero</li>
+                    <li>Đive là một phép toán có đối số là một véctơ, nhưng kết
+                        quả là một giá trị vô hướng</li>
+                    <li>Đive chỉ cho kết quả là có bao nhiêu thông lượng (trên
+                        mỗi đơn vị thể tích) chảy ra khỏi một vùng nhỏ, chứ
+                        không phải là theo hướng nào</li>
+                </ul>
+            </details></li>
+            <li><details><summary>Phương trình Maxwell 1</summary>
+                <fr>\[{\rm{div D}} = {\rho _v}\]</fr>
+                <ul>
+                    <li>Áp dụng cho điện trường tĩnh & từ trường dừng</li>
+                    <li>Thông lượng (trên một đơn vị thể tích) chảy ra khỏi một thể tích
+                        rất nhỏ đúng bằng mật độ điện tích khối tại đó</li>
+                    <li>Có thể gọi là dạng vi phân của luật Gauss vì
+                        <ul>
+                            <li>Luật Gauss liên hệ thông lượng chảy ra khỏi một mặt kín với điện tích bao
+                                trong mặt kín đó</li>
+                            <li>Maxwell 1 phát biểu về thông lượng (trên mỗi đơn vị thể tích) chảy ra khỏi
+                                một thể tích rất nhỏ, nghĩa là tại 1 điểm</li>
+                        </ul>
+                    </li>
+                    <li> Maxwell 1 còn gọi là dạng phương trình vi phân của luật Gauss</li>
+                    <li>Luật Gauss còn gọi là dạng tích phân của Maxwell 1</li>
+                </ul>
+             
+            </details></li>
+            <li><details><summary>Toán tử véctơ \(\nabla \) - <hl>nabla</hl></summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i69.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Định lý đive</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i70.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+
+        </ol>
+    </section>
+    <section>
+        <h2>V. Năng lượng & điện thế</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li><details><summary> Dịch chuyển điện tích điểm trong điện trường</summary>
+                <fr>\[W =  - Q\int\limits_s^e {{\bf{E}}d{\bf{L}}} \]</fr>
+            </details></li>
+            <li><details><summary>Tích phân đường</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i71.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Hiệu điện thế & điện thế</summary>
+               <define> Hiệu điện thế V</define>: công cần thực hiện để dịch chuyển một
+                điện tích dương 1 C từ điểm này tới điểm khác trong điện
+                trường:
+                <fr>\[V_{AB} = - \int\limits_B^A {{\bf{E}}d{\bf{L}}} \]</fr>
+                Đơn vị: volt (V, J/C)
+                <h3>Điện thế</h3>
+                Lấy một điểm làm tham chiếu.
+            </details></li>
+            <li><details><summary>Trường thế của điện tích điểm</summary>
+                <fr>\[V = \frac{Q}{{4\pi {\varepsilon _0}r}}\]</fr>
+                <ul>
+                    <li>Điện thế ở xa vô cùng làm điểm tham chiếu</li>
+                    <li>Ý nghĩa vật lý: V tương ứng công dịch chuyển từ vô cùng về r</li>
+                    <li>Trường thế của một điện tích điểm: trường vô hướng, không có vector đơn vị</li>
+                    <li><define>Mặt đẳng thế:</define> Tập hợp tất cả các điểm có cùng điện thế.</li>
+                </ul>
+            </details></li>
+            <li><details><summary>Trường thế của một hệ điện tích</summary>
+                Là tổng điện thế của các điện tích trong hệ <br> 
+                <fr>\[{V_A} =  - \int\limits_\infty ^A {{\bf{E}}{\bf{.}}d{\bf{L}}} \]</fr> <br>
+                Đối với điện trường tĩnh: <fr>\[\oint {\bf{E}} d{\bf{L}} = 0\]</fr>
+            </details></li>
+            <li><details><summary>Gradient thế</summary>
+                <ul>
+                    <li>Đã có 2 phương pháp để tính điện thế: bằng cường độ
+                        điện trường & bằng phân bố điện tích</li>
+                    <li>Nhưng thường thì không biết cả E lẫn ρ</li>
+                    <li>→ Bài toán: tính cường độ điện trường từ điện thế</li>
+                    <li> Phương pháp: gradient thế</li>
+                    <li>Độ lớn của cường độ điện trường
+                        bằng giá trị cực đại của tốc độ biến
+                        thiên của điện thế theo khoảng cách</li>
+                    <li> Giá trị cực đại này đạt được nếu
+                        hướng của vi phân khoảng cách
+                        ngược với hướng của E, nói cách
+                        khác hướng của E ngược với
+                        hướng mà điện thế tăng nhanh nhất</li>
+                </ul>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i72.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                <fr>\[grad\;T = \frac{{dT}}{{dN}}{{\bf{a}}_N}\]</fr>
+                <fr>\[E = −grad V\]</fr>
+                <fr>\[grad\;V = \frac{{\partial V}}{{\partial x}}{{\bf{a}}_x} + \frac{{\partial V}}{{\partial y}}{{\bf{a}}_y} + \frac{{\partial V}}{{\partial z}}{{\bf{a}}_z}\]</fr>
+                <fr>\[{\bf{E}} =  - \nabla V\]</fr>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i73.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i74.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Lưỡng cực</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i75.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i76.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i77.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Mật độ năng lượng trong trường tĩnh điện</summary>
+                <ul>
+                    <li> Khi dịch chuyển một điện tích dương (1) ở vô cùng vào
+                        một điện trường của một điện tích dương khác (2), ta
+                        phải thực hiện một công</li>
+                    <li>Nếu điện tích 1 được giữ nguyên trong điện trường, nó
+                        có một thế năng</li>
+                    <li>Nếu thả điện tích 1 ra, nó sẽ lùi ra xa điện tích 2, & tích
+                        luỹ động năng trong quá trình chuyển động</li>
+                    <li>Bài toán: tìm thế năng của một hệ điện tích</li>
+                </ul>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i78.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i79.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i80.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+        </ol>
+    </section>
+    <section>
+        <h2>VI. Dòng điện & vật dẫn</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li><details><summary>Dòng điện & mật độ dòng điện</summary>
+                <h3>Dòng điện: <fr>\[I = \frac{{dQ}}{{dt}}\]</fr></h3>
+                <define>Dòng điện</define> là dòng chuyển động của các hạt mang điện tích dương <br>
+                <h3> Mật độ dòng điện: J (A/m2)</h3>
+                Dòng tổng: <fr>\[I = \int {{\bf{J}}.d{\bf{S}}} \]</fr> <br>
+                <fr>\[{\bf{J}} = {\rho _v}{\bf{v}}\]</fr>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i81.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i82.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Vật dẫn kim loại</summary>
+                <a href="slides/05_Dong_dien_2019_mk.pdf">Nguồn: 14</a>
+                <h3>Hệ số</h3>
+                <ul>
+                    <li>Độ cơ động của điện tử</li>
+                    <li>Độ dẫn điện</li>
+                </ul>
+            </details></li>
+            <li><details><summary>Tính chất vật dẫn & điều kiện bờ</summary>
+                <h3>Tính chất</h3>
+                <ul>
+                    <li>Tính chất 1: mật độ điện tích bên trong vật dẫn bằng
+                        zero, bề mặt vật dẫn có một điện tích mặt</li>
+                    <li>Tính chất 2: cường độ điện trường bên trong vật dẫn
+                        bằng zero</li>
+                </ul>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i83.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Phương pháp soi gương</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i84.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i85.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Bán dẫn</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i86.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+        </ol>
+    </section>
+    <section>
+        <h2>VII. Điện môi & điện dung</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li><details><summary>Điện môi</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i87.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i88.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i89.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i90.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Điều kiện bờ của điện môi lý tưởng</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i91.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i92.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i93.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Điện dung</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/i94.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i95.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i96.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i97.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i98.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/i99.png" alt="" class="w-100 d-invert"></div>
+                </div>
+                <a href="slides/06_Dien_moi_2018_mk.pdf">Công thức nâng cao: 26</a>
+            </details></li>
+            <li><details><summary>Phương pháp đường sức – đẳng thế</summary>
+                <ul>
+                    <li>Mặt dẫn biên giới là một mặt đẳng thế</li>
+                    <li>Cường độ điện trường E & dòng điện dịch D luôn vuông
+                        góc với các mặt đẳng thế</li>
+                    <li>E & D vuông góc với các mặt dẫn biên giới & có các
+                        thành phần tiếp tuyến bằng zero</li>
+                    <li>Các đường biểu diễn dòng điện dịch (đường sức) bắt đầu
+                        & kết thúc trên điện tích, do đó trong chất điện môi đồng
+                        chất & không có điện tích tự do, các đường này bắt đầu
+                        & kết thúc trên các mặt dẫn biên giới</li>
+                 
+                </ul>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/a1.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a2.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a3.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Mật độ dòng điện & dịch chuyển điện</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/a4.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+        </ol>
+    </section>
+    <section>
+        <h2>VIII. Các phương trình Poisson & Laplace</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li><details><summary>Phương trình Poisson</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/a5.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a6.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Phương trình Laplace</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/a7.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Định lý nghiệm duy nhất</summary>
+                Laplace có nghiệm duy nhất.
+            </details></li>
+            <li><details><summary>Giải phương trình Laplace</summary>
+                <a href="slides/07_Poisson_2019b_mk.pdf">VD: 14</a>
+            </details></li>
+            <li><details><summary>Giải phương trình Poisson</summary>
+                <a href="slides/07_Poisson_2019b_mk.pdf">VD: 23</a>
+            </details></li>
+            <li><details><summary>Nghiệm tích của phương trình Laplace</summary>
+                <a href="slides/07_Poisson_2019b_mk.pdf">Nguồn: 27</a>
+            </details></li>
+            <li><details><summary>Các phương pháp số</summary>
+                <div>
+                    <h2>Phương pháp sai phân hữu hạn (FDM)</h2>
+                    <p>
+                        Phương pháp sai phân hữu hạn thay thế các đạo hàm trong phương trình vi phân bằng các biểu thức sai phân gần đúng. 
+                        Không gian được chia thành các <b>lưới điểm (grid)</b>, và giá trị nghiệm chỉ được tính tại các điểm này.
+                    </p>
+                    <h3>Công thức cơ bản</h3>
+                    <ul>
+                        <li>
+                            <b>Đạo hàm bậc nhất:</b>
+                            <div>
+                                $$f'(x) \approx \frac{f(x+h) - f(x)}{h} \quad \text{(sai phân tiến)}$$
+                            </div>
+                            <div>
+                                $$f'(x) \approx \frac{f(x) - f(x-h)}{h} \quad \text{(sai phân lùi)}$$
+                            </div>
+                            <div>
+                                $$f'(x) \approx \frac{f(x+h) - f(x-h)}{2h} \quad \text{(sai phân trung tâm)}$$
+                            </div>
+                        </li>
+                        <li>
+                            <b>Đạo hàm bậc hai:</b>
+                            <div>
+                                $$f''(x) \approx \frac{f(x+h) - 2f(x) + f(x-h)}{h^2}$$
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>Phương pháp phần tử hữu hạn (FEM)</h2>
+                    <p>
+                        Phương pháp phần tử hữu hạn chia miền tính toán thành các <b>phần tử nhỏ (elements)</b> 
+                        và sử dụng các <b>hàm cơ sở (basis functions)</b> để xấp xỉ nghiệm của phương trình.
+                    </p>
+                    <h3>Các bước thực hiện</h3>
+                    <ol>
+                        <li>Phân chia miền thành các phần tử (tam giác, tứ giác, hoặc hình khối).</li>
+                        <li>Chọn hàm cơ sở, thường là các đa thức bậc thấp (tuyến tính, bậc hai).</li>
+                        <li>
+                            Lập hệ phương trình bằng phương pháp Galerkin:
+                            <div>
+                                $$\int \nabla u \cdot \nabla v \, dx = \int f v \, dx$$
+                            </div>
+                        </li>
+                        <li>Giải hệ phương trình bằng các phương pháp số.</li>
+                    </ol>
+                    <h3>Ví dụ: Giải bài toán đàn hồi</h3>
+                    <p>
+                        Phương trình:
+                        <div>
+                            $$-\nabla \cdot (\sigma) = f, \quad \text{với } \sigma = E \nabla u$$
+                        </div>
+                        Chia miền thành các tam giác và sử dụng hàm cơ sở tuyến tính \(u(x)\). Lập hệ phương trình từ công thức năng lượng.
+                    </p>
+                </div>
+            </details>
+                <ul>
+                    <li><details><summary>Phương pháp sai phân hữu hạn</summary>
+                        <a href="slides/07_Poisson_2019b_mk.pdf">Nguồn: 40</a>
+                    </details></li>
+                    <li><details><summary>Phương pháp phần tử hữu hạ</summary>
+                        <a href="slides/07_Poisson_2019b_mk.pdf">Nguồn: 51</a>
+                    </details></li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+    <section>
+
+        <details>
+            <summary>
+                <h2>IX. Từ trường dừng</h2>
+            </summary>
+            Từ trường dừng (tĩnh) sinh ra từ:
+            <ul>
+                <li>Nam châm vĩnh cửu</li>
+                <li>Điện trường biến thiên tuyến tính theo thời gian</li>
+                <li>Dòng điện một chiều</li>
+            </ul>
+        </details>
+        <ol>
+            <li>
+                <details>
+                    <summary>Luật Biot – Savart</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i2.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Luật dòng điện toàn phần tĩnh</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i3.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Rôta (xoáy, cuộn)</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i4.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i5.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Định lý Stokes</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i6.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Từ thông & cường độ từ cảm</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i7.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i8.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Từ thế</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i9.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i10.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i11.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Chứng minh các luật của từ trường dừng</summary>
+                    <a href="slides/08_Tu_truong_dung_2018c_mk.pdf">Nguồn: 87</a>
+                </details>
+            </li>
+
+        </ol>
+    </section>
+    <section>
+        <h2>X. Lực từ & điện cảm</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li>
+                <details>
+                    <summary>Lực tác dụng lên điện tích chuyển động</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i12.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Lực tác dụng lên nguyên tố dòng</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i13.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i14.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Lực giữa các nguyên tố dòng</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i15.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Lực & mô men tác dụng lên một mạch kín</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i16.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i17.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Cường độ phân cực từ & từ thẩm</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i18.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i19.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i20.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Điều kiện bờ từ trường</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i21.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i22.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Mạch từ</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i23.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i24.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Điện cảm & hỗ cảm</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i25.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i26.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+
+
+        </ol>
+    </section>
+    <section>
+        <h2>XI. Trường biến thiên & hệ phương trình Maxwell</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li>
+                <details>
+                    <summary> Luật Faraday</summary>
+                    E: Suất điện động (sđđ) cảm ứng, đơn vị là Volt (V).
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i27.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i28.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i29.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i30.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i31.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i32.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Dòng điện dịch</summary>
+                    Dòng điện dịch không phải là dòng điện thực (do sự chuyển động của các hạt mang điện) mà là dòng
+                    điện "tưởng tượng" sinh ra bởi sự thay đổi của điện trường theo thời gian. Nó được định nghĩa để đảm
+                    bảo rằng định luật Ampère mở rộng có thể áp dụng được cho cả trường hợp trong mạch kín mà không có
+                    dòng điện dẫn.
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i33.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i34.png" alt="" class="w-100 d-invert"></div>
+                        <div class="col-6"><img src="imgs/i35.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Các phương trình Maxwell dạng vi phân</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i36.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Các phương trình Maxwell dạng tích phân</summary>
+                    <div class="row">
+                        <div class="col-6"><img src="imgs/i37.png" alt="" class="w-100 d-invert"></div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary></summary>
+
+                </details>Thế chậm
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h2>XII. Sóng phẳng</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li><details><summary>Lan truyền sóng trong môi trường tự do</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/a8.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a9.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a10.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a11.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a12.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Lan truyền sóng trong điện môi</summary>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/a13.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Định lý Poynting & năng lượng sóng</summary>
+                <a href="slides/11_Song_phang_2019_mk.pdf">Nguồn: 33</a>
+            </details></li>
+            <li><details><summary>Lan truyền trong vật dẫn: hiệu ứng bề mặt</summary>
+                <a href="slides/11_Song_phang_2019_mk.pdf">Nguồn: 42</a>
+            </details></li>
+            <li><details><summary>Phân cực sóng</summary>
+                <a href="slides/11_Song_phang_2019_mk.pdf">Nguồn: 52</a>
+            </details></li>
+        </ol>
+    </section>
+    <section>
+        <h2>XIII. Phản xạ & tán xạ sóng phẳng</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li><details><summary>Phản xạ của sóng tới vuông góc</summary>
+                <a href="slides/12_Phan_xa_2013_mk.pdf">Nguồn: 4</a>
+            </details></li>
+            <li><details><summary>Tỉ số sóng dừng</summary>
+                <a href="slides/12_Phan_xa_2013_mk.pdf">Nguồn: 13</a>
+            </details></li>
+            <li><details><summary>Phản xạ sóng trên nhiều mặt</summary>
+                <a href="slides/12_Phan_xa_2013_mk.pdf">Nguồn: 18</a>
+            </details></li>
+            <li><details><summary>Lan truyền sóng phẳng theo hướng bất kỳ</summary>
+                <a href="slides/12_Phan_xa_2013_mk.pdf">Nguồn: 26</a>
+            </details></li>
+            <li><details><summary>Phản xạ của sóng tới xiên</summary>
+                <a href="slides/12_Phan_xa_2013_mk.pdf">Nguồn: 29</a>
+            </details></li>
+            <li><details><summary>Lan truyền sóng trong môi trường tán xạ</summary>
+                <a href="slides/12_Phan_xa_2013_mk.pdf">Nguồn: 43</a>
+            </details></li>
+        </ol>
+    </section>
+    <section>
+        <h2>XIV. Dẫn sóng & bức xạ</h2>
+        <details>
+            <summary></summary>
+        </details>
+        <ol>
+            <li><details><summary>Trường của đường dây dài</summary>
+                <a href="slides/13_Dan_song_2013_mk.pdf">Nguồn: 4</a>
+            </details></li>
+            <li><details><summary>Các kiểu dẫn sóng cơ bản</summary>
+                <a href="slides/13_Dan_song_2013_mk.pdf">Nguồn: 11</a>
+            </details></li>
+            <li><details><summary>Phân tích sóng phẳng của dẫn sóng song phẳng</summary>
+                <a href="slides/13_Dan_song_2013_mk.pdf">Nguồn: 16</a>
+            </details></li>
+            <li><details><summary>Phân tích dẫn sóng song phẳng bằng phương trình sóng</summary>
+                <a href="slides/13_Dan_song_2013_mk.pdf">Nguồn: 28</a>
+            </details></li>
+            <li><details><summary>Dẫn sóng chữ nhật</summary>
+                <a href="slides/13_Dan_song_2013_mk.pdf">Nguồn: 34</a>
+            </details></li>
+            <li><details><summary>Dẫn sóng điện môi phẳng</summary>
+                <a href="slides/13_Dan_song_2013_mk.pdf">Nguồn: 37</a>
+            </details></li>
+            <li><details><summary>Cáp quang</summary>
+                <a href="slides/13_Dan_song_2013_mk.pdf">Nguồn: 45</a>
+            </details></li>
+            <li><details><summary>Các nguyên lý cơ bản của anten</summary>
+                <a href="slides/13_Dan_song_2013_mk.pdf">Nguồn: 55</a>
+            </details></li>
+        </ol>
+    </section>
+
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

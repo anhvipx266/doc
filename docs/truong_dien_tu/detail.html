@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/doc/css/font/roboto.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/doc/style.css">
+
+
+
+    <title>Trường điện từ</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Trường điện từ</a>
+    </nav>
+
+    <h2>Trường điện từ</h2>
+    <div>
+
+        <h2>Chương 1: Điện trường tĩnh</h2>
+        <h3>1. Khái niệm về điện trường tĩnh</h3>
+        <p>Điện trường là một trường vectơ bao quanh các điện tích. Cường độ điện trường tại một điểm là lực mà điện
+            tích
+            đơn vị dương cảm nhận được tại điểm đó.</p>
+        <p><b>Biểu thức:</b></p>
+        $$ \vec{E} = \frac{\vec{F}}{q} $$
+        <p>với \( \vec{F} \) là lực điện tác dụng lên điện tích thử \( q \).</p>
+
+        <h3>2. Định luật Coulomb</h3>
+        <p>Phát biểu: Lực giữa hai điện tích điểm có độ lớn tỷ lệ thuận với tích của hai điện tích và tỷ lệ nghịch với
+            bình
+            phương khoảng cách giữa chúng.</p>
+        <p><b>Biểu thức:</b></p>
+        $$ F = k \frac{|q_1 \cdot q_2|}{r^2} $$
+        <p>với \( k \approx 9 \times 10^9 \, \text{Nm}^2/\text{C}^2 \).</p>
+
+        <h4>Ví dụ:</h4>
+        <p>Tính lực tương tác giữa hai điện tích \( q_1 = 2 \, \text{C} \) và \( q_2 = -1 \, \text{C} \) cách nhau 1m.
+        </p>
+        <p><b>Lời giải:</b></p>
+        $$ F = 9 \times 10^9 \times \frac{2 \times 1}{1^2} = 18 \times 10^9 \, \text{N} $$
+
+        <h3>3. Định luật Gauss</h3>
+        <p>Phát biểu: Tổng thông lượng điện trường qua một bề mặt kín bằng tích của điện tích bên trong và hằng số điện
+            môi.
+        </p>
+        <p><b>Biểu thức:</b></p>
+        $$ \oint \vec{E} \cdot d\vec{A} = \frac{Q}{\epsilon_0} $$
+
+        <h4>Bài tập:</h4>
+        <p>Sử dụng định luật Gauss, tính điện trường tại một điểm cách tâm của quả cầu tích điện đồng nhất bán kính \( R
+            \),
+            có điện tích tổng cộng \( Q \).</p>
+        <p><b>Gợi ý:</b> Với \( r > R \), \( E = \frac{Q}{4 \pi \epsilon_0 r^2} \).</p>
+
+        <hr>
+
+        <h2>Chương 2: Từ trường tĩnh</h2>
+        <h3>1. Định luật Biot-Savart</h3>
+        <p>Phát biểu: Từ trường tại một điểm do một đoạn dòng điện gây ra tỉ lệ thuận với cường độ dòng điện và tỉ lệ
+            nghịch
+            với bình phương khoảng cách.</p>
+        <p><b>Biểu thức:</b></p>
+        $$ d\vec{B} = \frac{\mu_0}{4\pi} \frac{I d\vec{l} \times \vec{r}}{r^3} $$
+
+        <h4>Ví dụ:</h4>
+        <p>Tính từ trường tại tâm của một vòng dây tròn bán kính \( R \), mang dòng điện \( I \).</p>
+        <p><b>Lời giải:</b></p>
+        $$ B = \frac{\mu_0 I}{2R} $$
+
+        <h3>2. Định luật Ampere</h3>
+        <p>Phát biểu: Tổng thông lượng từ trường qua một đường vòng kín bằng tích của dòng điện bao quanh và hằng số từ.
+        </p>
+        <p><b>Biểu thức:</b></p>
+        $$ \oint \vec{B} \cdot d\vec{l} = \mu_0 I $$
+
+        <h4>Bài tập:</h4>
+        <p>Sử dụng định luật Ampere để tính từ trường bên trong ống dây dài có \( n \) vòng dây trên một đơn vị chiều
+            dài,
+            mang dòng điện \( I \).</p>
+        <p><b>Gợi ý:</b> \( B = \mu_0 n I \).</p>
+
+        <hr>
+
+        <h2>Chương 3: Phương trình Maxwell</h2>
+        <h3>1. Hệ phương trình Maxwell dạng vi phân</h3>
+        <p><b>Định luật Gauss cho điện trường:</b></p>
+        $$ \nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
+        <p><b>Định luật Gauss cho từ trường:</b></p>
+        $$ \nabla \cdot \vec{B} = 0 $$
+
+        <h3>2. Hệ phương trình Maxwell dạng tích phân</h3>
+        <p><b>Định luật Faraday về cảm ứng điện từ:</b></p>
+        $$ \oint \vec{E} \cdot d\vec{l} = - \frac{d\Phi_B}{dt} $$
+
+        <h4>Ví dụ:</h4>
+        <p>Một cuộn dây có 100 vòng, diện tích mặt cắt ngang \( A = 0.01 \, \text{m}^2 \). Từ thông qua cuộn dây thay
+            đổi từ
+            0 đến 0.5 Wb trong 2 giây. Tính suất điện động cảm ứng.</p>
+        <p><b>Lời giải:</b></p>
+        $$ \mathcal{E} = - \frac{d\Phi}{dt} = -\frac{0.5}{2} = -0.25 \, \text{V} $$
+
+        <hr>
+
+        <h2>Chương 4: Sóng điện từ</h2>
+        <h3>1. Phương trình sóng điện từ</h3>
+        <p><b>Biểu thức:</b></p>
+        $$ \nabla^2 \vec{E} = \frac{1}{c^2} \frac{\partial^2 \vec{E}}{\partial t^2} $$
+
+        <h4>Ví dụ:</h4>
+        <p>Tính bước sóng của một sóng điện từ có tần số \( f = 3 \times 10^8 \, \text{Hz} \).</p>
+        <p><b>Lời giải:</b></p>
+        $$ \lambda = \frac{c}{f} = 1 \, \text{m} $$
+
+        <hr>
+
+        <h2>Chương 5: Ứng dụng của trường điện từ</h2>
+        <h3>1. Truyền thông không dây</h3>
+        <p>Sóng radio, vi sóng và tín hiệu truyền thông hiện đại sử dụng sóng điện từ để truyền tải thông tin.</p>
+
+        <h4>Ví dụ:</h4>
+        <p>Một sóng radio có tần số \( 100 \, \text{MHz} \). Tính bước sóng.</p>
+        <p><b>Lời giải:</b></p>
+        $$ \lambda = \frac{c}{f} = 3 \, \text{m} $$
+    </div>
+
+    <!-- Mathjax -->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+
+
+</html>

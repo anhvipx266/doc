@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Đại số</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Toán</a>
+    </nav>
+
+    <h1>Đại số</h1>
+
+    <ul>
+        <li><a href="/doc/source/dai so.pdf">Bài giảng BÙI XUÂN DIỆU</a></li>
+        <li><a href="/doc/exam/exam/math/dai_so.html">Bài tập</a></li>
+    </ul>
+
+    <div class="table-contents"></div>
+
+    <h2>Chương 1 . Tập hợp - Logic - Ánh xạ - Số phức</h2>
+    <h3>Logic</h3>
+    <table>
+        <thead>
+            <td>Phép</td>
+            <td>Kí hiệu</td>
+            <td>Phép tính</td>
+        </thead>
+        <tr>
+            <td>Đảo</td>
+            <td>\[\overline A \]</td>
+            <td>\[1 - A\]</td>
+        </tr>
+        <tr>
+            <td>Hội</td>
+            <td>\[ \vee \]</td>
+            <td>\[min\{A, B\}\]</td>
+        </tr>
+        <tr>
+            <td>Tuyển</td>
+            <td>\[ \wedge \]</td>
+            <td>\[ max\{A, B\} \]</td>
+        </tr>
+        <tr>
+            <td>Kéo theo</td>
+            <td>\[ \to \]</td>
+            <td>\[ max\{1 − A, B\} \]</td>
+        </tr>
+        <tr>
+            <td>Tương đương</td>
+            <td>\[ \leftrightarrow \]</td>
+            <td>\[ A = B \]</td>
+        </tr>
+    </table>
+    <details>
+        <summary>Tính chất</summary>
+        <ol>
+            <li>Giao hoán: </li>
+            <li>Kết hợp: </li>
+            <li>Phân phối: </li>
+            <li>Kéo theo: \(A \to B \Leftrightarrow \overline A  \vee B\)</li>
+            <li>Tương đương: \(A \leftrightarrow B \Leftrightarrow (A \to B) \wedge (B \to A)\)</li>
+        </ol>
+    </details>
+
+    <h3>Tập hợp</h3>
+    <p><hl>Phép toán trên tập hợp:</hl> Hợp, Giao, Trừ, Lấy phần bù</p>
+    <details>
+        <summary>Tính chất</summary>
+        <ol>
+            <li>Giao hoán: </li>
+            <li>Kết hợp: </li>
+            <li>Phân phối: </li>
+            <li>Phép trừ: Nếu \( A, B ⊂ X \) thì \(A \ B = A ∩ \overline B\)</li>
+            <li>Công thức De Moorgan: \[\begin{array}{l}\overline {A \cap B}  = \overline A  \cup \overline B \\\overline {A \cup B}  = \overline A  \cap \overline B \end{array}\]</li>
+        </ol>
+    </details>
+
+    <h3>Ánh xạ</h3>
+    <p><define>Tập ảnh, tập nghịch ảnh</define></p>
+    <details>
+        <summary>Đơn ánh, toàn ánh, song ánh</summary>
+    </details>
+
+    <h3>Cấu trúc đại số</h3>
+    <h3>Số phức</h3>
+
+    <h2>Chương 2 . Ma trận - Định thức - Hệ phương trình</h2>
+
+    <h3>Ma trận</h3>
+    <details>
+        <summary>Các phép toán trên ma trận</summary>
+        <ol>
+            <li> Phép cộng, trừ hai ma trận</li>
+            <li>Phép nhân ma trận với một số</li>
+            <li>Phép nhân hai ma trận</li>
+            <li>Ma trận chuyển vị</li>
+        </ol>
+    </details>
+
+    <h3>Định thức</h3>
+    <h3>Ma trận nghịch đảo</h3>
+    <h3>Hạng của ma trận</h3>
+    <p>Hạng của ma trận A là cấp cao nhất của các định thức con khác không
+        của A, kí hiệu r(A) hay ρ(A)</p>
+    <p>Phương pháp tính hạng của ma trận bằng biến đổi
+        sơ cấp về hàng</p>
+        
+    <h3>Hệ phương trình tuyến tính</h3>
+    <p>Hệ Cramer</p>
+    <p>Định lý Kronecker-Capelli</p>
+    <p>Phương pháp Gauss giải hệ phương trình tuyến
+        tính tổng quát</p>
+
+    <h2>Chương 3 . Không gian véctơ</h2>
+    <p>Tập hợp V 6= ∅ được gọi là một không gian véctơ trên R nếu nó được
+        trang bị hai phép toán gồm:</p>
+
+    <h2>Chương 4 . Ánh xạ tuyến tính</h2>
+
+    <h2>Chương 5 . Dạng toàn phương, không gian Euclide</h2>
+
+    <div style="max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h1>Kiến thức tổng hợp về Đại số</h1>
+
+        <section id="matrices">
+            <h2>1. Ma trận (Matrices)</h2>
+            <p>
+                Ma trận là một bảng hình chữ nhật gồm các phần tử, được sắp xếp theo hàng và cột. Một ma trận cỡ \( m
+                \times n \) có \( m \) hàng và \( n \) cột.
+            </p>
+            <p>
+                Ví dụ, một ma trận \( A \) cỡ \( 2 \times 3 \):
+                \[
+                A = \begin{bmatrix}
+                a_{11} & a_{12} & a_{13} \\
+                a_{21} & a_{22} & a_{23}
+                \end{bmatrix}
+                \]
+            </p>
+            <ul>
+                <li><b>Ma trận vuông:</b> Ma trận có số hàng bằng số cột (\( m = n \)).</li>
+                <li><b>Ma trận đơn vị:</b> Ma trận vuông với các phần tử trên đường chéo chính bằng 1, các phần tử khác
+                    bằng 0.</li>
+                <li><b>Ma trận chuyển vị:</b> \( A^T \), được tạo ra bằng cách đổi hàng thành cột của \( A \).</li>
+            </ul>
+        </section>
+
+        <section id="determinants">
+            <h2>2. Định thức (Determinants)</h2>
+            <p>
+                Định thức là một số được tính từ ma trận vuông. Định thức của ma trận \( A \) ký hiệu là \( \det(A) \)
+                hoặc \( |A| \).
+            </p>
+            <p>
+                Với ma trận \( 2 \times 2 \):
+                \[
+                A = \begin{bmatrix}
+                a & b \\
+                c & d
+                \end{bmatrix}, \quad \det(A) = ad - bc
+                \]
+            </p>
+            <p>
+                Với ma trận \( 3 \times 3 \):
+                \[
+                \det(A) = a(ei - fh) - b(di - fg) + c(dh - eg)
+                \]
+            </p>
+        </section>
+
+        <section id="linear-systems">
+            <h2>3. Hệ phương trình tuyến tính (Linear Systems)</h2>
+            <p>
+                Một hệ phương trình tuyến tính có dạng tổng quát:
+                \[
+                \begin{cases}
+                a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\
+                a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\
+                \vdots \\
+                a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m
+                \end{cases}
+                \]
+            </p>
+            <p>
+                Dạng ma trận của hệ phương trình trên:
+                \[
+                A\mathbf{x} = \mathbf{b}, \quad \text{với } A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\
+                a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots &
+                a_{mn} \end{bmatrix},
+                \quad \mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}, \quad \mathbf{b} =
+                \begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_m \end{bmatrix}
+                \]
+            </p>
+        </section>
+
+        <section id="vector-space">
+            <h2>4. Không gian vector (Vector Space)</h2>
+            <p>
+                Một không gian vector \( V \) là tập hợp các vector thỏa mãn các điều kiện đóng dưới phép cộng và phép
+                nhân vô hướng. Một không gian vector thường được xác định bởi một tập hợp các vector cơ sở.
+            </p>
+            <p>
+                Ví dụ, không gian \( \mathbb{R}^3 \) với cơ sở:
+                \[
+                \mathbf{e_1} = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \quad
+                \mathbf{e_2} = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, \quad
+                \mathbf{e_3} = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
+                \]
+            </p>
+        </section>
+
+        <section id="eigenvalues-eigenvectors">
+            <h2>5. Giá trị riêng và vector riêng (Eigenvalues and Eigenvectors)</h2>
+            <p>
+                Với một ma trận vuông \( A \), một vector \( \mathbf{v} \neq \mathbf{0} \) là một vector riêng của \( A
+                \) nếu tồn tại một số \( \lambda \) sao cho:
+                \[
+                A\mathbf{v} = \lambda\mathbf{v}
+                \]
+            </p>
+            <p>
+                Số \( \lambda \) được gọi là giá trị riêng tương ứng với vector riêng \( \mathbf{v} \). Để tìm các giá
+                trị riêng, ta giải phương trình đặc trưng:
+                \[
+                \det(A - \lambda I) = 0
+                \]
+            </p>
+        </section>
+
+        <footer>
+            <p>Trên đây là một số kiến thức cơ bản của Đại số. Học tốt và thành công!</p>
+        </footer>
+    </div>
+
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

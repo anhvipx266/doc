@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Lý thuyết mạch</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a> 
+    </nav>
+    <nav>
+        <a href="ltm1.html">Lý thuyết mạch 1</a>
+        <a href="ltm2.html">Lý thuyết mạch 2</a>
+    </nav>
+
+    <h2>Lý thuyết mạch</h2>
+
+    <h3>Tổng quan phần tử RLC</h3>
+    <table class="font-weight-bold">
+        <tr>
+            <th>Đặc tính</th>
+            <th>Điện trở (R)</th>
+            <th>Tụ điện (C)</th>
+            <th>Cuộn cảm (L)</th>
+        </tr>
+        <tr>
+            <td>Đặc tính</td>
+            <td>Cản trở dòng điện</td>
+            <td>Tích trữ từ trường</td>
+            <td>Tích trữ điện trường</td>
+        </tr>
+        <tr>
+            <td>Trạng thái</td>
+            <td></td>
+            <td>DC: <hl>Hở mạch</hl></td>
+            <td>DC: <hl>Ngắn mạch</hl></td>
+        </tr>
+        <tr>
+            <td>Pha</td>
+            <td>cùng pha</td>
+            <td>I chậm 90 U</td>
+            <td>I nhanh 90 U</td>
+        </tr>
+       
+        <tr>
+            <td>Trở</td>
+            <td>R</td>
+            <td>\[ Z = 1 / wC \]</td>
+            <td>\[ Z = wL \]</td>
+        </tr>
+        <tr>
+            <td>Công suất tiêu thụ</td>
+            <td>Công suất thực (P = V × I)</td>
+            <td>Công suất phản kháng (không có công suất thực trong mạch lý tưởng)</td>
+            <td>Công suất phản kháng (không có công suất thực trong mạch lý tưởng)</td>
+        </tr>
+        <tr>
+            <td>Vi phân</td>
+            <td>\( u(t) = R \cdot i(t) \)</td>
+            <td>\( i(t) = C \frac{du(t)}{dt} \)</td>
+            <td>\( u_L(t) = L \frac{di(t)}{dt} \)</td>
+        </tr>
+        <tr>
+            <td>Tích phân</td>
+            <td>\( i(t) = \frac{1}{R} \int u(t) \, dt \)</td>
+            <td>\( u(t) = \frac{1}{C} \int i(t) \, dt \)</td>
+            <td>\( i(t) = \frac{1}{L} \int u_L(t) \, dt \)</td>
+        </tr>
+        <tr>
+            <td>Quan hệ khác</td>
+            <td>-</td>
+            <td>\( Q(t) = C \cdot u(t) \)</td>
+            <td>\( \Phi_L(t) = L \cdot i(t) \)</td>
+        </tr>
+       
+        <tr>
+            <td>Vi phân khác</td>
+            <td>-</td>
+            <td>\( i(t) = \frac{dQ(t)}{dt} \)</td>
+            <td>\( u_L(t) = \frac{d\Phi_L(t)}{dt} \)</td>
+        </tr>
+        <tr>
+            <td>Tích phân khác</td>
+            <td>-</td>
+            <td>\( Q(t) = \int i(t) \, dt \)</td>
+            <td>\( \Phi_L(t) = \int u_L(t) \, dt \)</td>
+        </tr>
+       
+    </table>
+
+    <ol>
+        <li>Giới thiệu về Lý thuyết Mạch
+            <ul>
+                <li>Khái niệm cơ bản về mạch điện</li>
+                <li>Các loại mạch điện (mạch DC, mạch AC, mạch tuyến tính, mạch phi tuyến)</li>
+                <li>Các đại lượng cơ bản: Điện áp, Dòng điện, Công suất</li>
+            </ul>
+        </li>
+        <li>Định luật cơ bản của mạch điện
+            <ul>
+                <li>Định luật Ohm</li>
+                <li>Định luật Kirchoff (Định luật dòng điện KCL, Định luật điện áp KVL)</li>
+            </ul>
+        </li>
+        <li>Phân tích mạch DC
+            <ul>
+                <li>Phương pháp nút và phương pháp vòng</li>
+                <li>Phân tích nguồn độc lập và phụ thuộc</li>
+                <li>Định lý Thevenin và Norton</li>
+                <li>Nguyên lý xếp chồng</li>
+            </ul>
+        </li>
+        <li>Phân tích mạch xoay chiều (AC)
+            <ul>
+                <li>Số phức và đại lượng phức</li>
+                <li>Mạch RLC nối tiếp và song song</li>
+                <li>Công suất trong mạch AC (Công suất thực, Công suất phản kháng, Công suất biểu kiến)</li>
+                <li>Hệ số công suất</li>
+            </ul>
+        </li>
+        <li>Phân tích mạch trong miền tần số
+            <ul>
+                <li>Biến đổi Laplace trong phân tích mạch</li>
+                <li>Đáp ứng tần số của mạch</li>
+                <li>Hàm truyền đạt và Bode Plot</li>
+            </ul>
+        </li>
+        <li>Phân tích mạch ba pha
+            <ul>
+                <li>Các cấu hình mạch ba pha (Δ, Y)</li>
+                <li>Phân tích cân bằng và không cân bằng</li>
+                <li>Đo công suất trong hệ ba pha</li>
+            </ul>
+        </li>
+        <li>Hệ thống mạch điện phi tuyến
+            <ul>
+                <li>Giới thiệu về mạch phi tuyến</li>
+                <li>Phân tích tín hiệu lớn và tín hiệu nhỏ</li>
+                <li>Ứng dụng trong mạch khuếch đại và điều chế</li>
+            </ul>
+        </li>
+        <li>Ứng dụng của lý thuyết mạch
+            <ul>
+                <li>Mạch lọc thông thấp, thông cao, thông dải</li>
+                <li>Mạch khuếch đại và dao động</li>
+                <li>Ứng dụng trong hệ thống điện tử và viễn thông</li>
+            </ul>
+        </li>
+    </ol>
+
+   
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

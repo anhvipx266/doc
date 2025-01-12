@@ -7,3 +7,7 @@
 ## Quy tắc
 
 - Link: trực tiếp từ ổ D
+
+## Ghi chú
+
+- mã html không thực sử cần thiết reformat

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Lý thuyết mạch 2</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Lý thuyết mạch</a>
+    </nav>
+
+    <h1>Lý thuyết mạch 2</h1>
+    <a href="slides/bai tap mach 2.pdf" target="_blank">Bài tập</a> <br>
+
+    <img src="imgs/khpt.png" alt="Kí hiệu phần tử" class="d-invert">
+
+    <section>
+        <h2>Chương 1: Quá trình quá độ</h2>
+        <ol>
+            <li>
+                <details>
+                    <summary>Giới thiệu</summary>
+                    <ul>
+                        <li>Tất cả các mạch điện trong Lý thuyết mạch I đều ở
+                            trạng thái/chế độ xác lập.</li>
+                        <li>
+                            <hl>Chế độ xác lập</hl>: mọi thông số trong mạch điện
+                            (dòng điện, điện áp, công suất, năng lượng) đều là
+                            hằng số (mạch một chiều) hoặc biến thiên chu kỳ
+                            (mạch xoay chiều).
+                        </li>
+                        <li>
+                            <hl>Quá độ</hl>: chuyển từ chế độ này
+                            sang chế độ khác.
+                        </li>
+                        <li>
+                            <hl>Quá trình quá độ</hl>: quá trình mạch
+                            điện chuyển từ chế độ xác lập này sang chế độ xác
+                            lập khác.
+                            <img src="imgs/i1.png" alt="" class="d-invert">
+                        </li>
+                    </ul>
+                    Các phương pháp giải mạch điện quá độ:
+                    <ol>
+                        <li> Tích phân kinh điển</li>
+                        <li>Toán tử</li>
+                    </ol>
+                    <ul>
+                        <li>Quá trình quá độ xảy ra khi có thay đổi đột ngột về
+                            cấu trúc hoặc thông số của các mạch điện quán tính.</li>
+                        <li>Quán tính: có cuộn dây hoặc/và tụ điện.</li>
+                        <li>Một số giả thiết đơn giản hóa:
+                            <ul>
+                                <li>Các phần tử lý tưởng (điện trở của cuộn dây bằng 0, điện
+                                    trở của tụ điện vô cùng lớn),</li>
+                                <li>Động tác đóng mở lý tưởng:
+                                    <ul>
+                                        <li>Thay khóa (K) bằng R,</li>
+                                        <li>R chỉ nhận các giá trị 0 (khi K đóng) & ∞ (khi K mở),</li>
+                                        <li>Thời gian đóng mở bằng 0.</li>
+                                    </ul>
+
+                                </li>
+                                <li>Luật Kirchhoff luôn đúng.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-6"><img src="imgs/i3.png" class="w-100 d-invert"></div>
+                        <div class="col-md-6"><img src="imgs/i4.png" class="w-100 d-invert"></div>
+                        <div class="col-md-6"><img src="imgs/i5.png" class="w-100 d-invert"></div>
+                    </div>
+                    
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Sơ kiện</summary>
+                    <hl>Định nghĩa</hl>: giá trị (& đạo hàm các cấp) ngay
+                    sau thời điểm đóng mở của <b> dòng điện qua
+                        cuộn cảm</b> & <b>điện áp trên tụ điện</b>.
+                    \(i_L(0), u_C(0), i'_L(0), u'_C(0), ...\)
+                    <ul>
+                        <li>Thường tính bằng phương pháp dòng nhánh.</li>
+                        <li>Sơ kiện PHẢI là số thực.</li>
+                    </ul>
+
+                    Việc tính sơ kiện dựa vào:
+                    <ul>
+                        <li>Thông số mạch trước thời điểm đóng mở(chế độ cũ): \[i_L(0^-), u_C(0^+)\]</li>
+                        <li>Hai luật Kirchhoff</li>
+                        <li>Hai luật đóng mở.</li>
+                    </ul>
+                    <details>
+                        <summary>Hàm phổ biến</summary>
+                        <div class="row">
+                            <div class="col-md-6"><img src="imgs/i6.png" class="w-100 d-invert"></div>
+                            <div class="col-md-6"><img src="imgs/i7.png" class="w-100 d-invert"></div>
+                            <div class="col-md-6"><img src="imgs/i8.png" class="w-100 d-invert"></div>
+                            <div class="col-md-6"><img src="imgs/i9.png" class="w-100 d-invert"></div>
+                        </div>
+                    </details>
+                   
+                    <p>
+                        <hl>Luật đóng mở(trên sơ kiện) - dễ</hl>
+                    </p>
+                    <ol>
+                        <li>Cuộn cảm: \[i_L(0^+) = i_L(0^-)\]</li>
+                        <li>Tụ điện: \[u_C(0^+) = u_C(0^-)\]</li>
+                    </ol>
+                    <details>
+                        <summary>VD1</summary>
+                        <img src="imgs/i10.png" alt="" class="d-invert">
+                    </details>
+                    <a href="slides/06_Qua_do2023b_mk.pdf">VD: 24 - 48</a>
+                    <p>
+                        <hl>Luật đóng mở tổng quát(trên sơ kiện) - dễ(dấu bằng)</hl>
+                    </p>
+                    <ol>
+                        <li>Cuộn cảm - Từ thông - Vòng kín: ΣΨ(+0) = ΣΨ(–0)</li>
+                        <li>Tụ điện - Điện tích - Nút: Σq(+0) = Σq(–0)</li>
+                    </ol>
+                    <a href="slides/06_Qua_do2023b_mk.pdf">VD: 50 - 53</a>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Phương pháp tích phân kinh điển</summary>
+                    <img src="imgs/i11.png" alt="" class="d-invert">
+                    <h2>Bước giải</h2>
+                    <ol>
+                        <li><b>Tính các sơ kiện</b> (đã có ở phần trước);</li>
+                        <li><b>Tìm nghiệm xác lập</b> (dùng các phương pháp (dòng nhánh, thế nút, dòng vòng,
+                            xếp chồng, mạng một cửa, mạng hai
+                            cửa,...) trong Lý thuyết mạch I);</li>
+                        <li><b>Tìm nghiệm tự do</b>:
+                            <ul>
+                                <li>Lập phương trình đặc trưng & giải;
+                                    <a href="slides/06_Qua_do2023b_mk.pdf">VD: 59 - 69</a>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>Viết nghiệm tự do;</summary>
+                                        Nghiệm thực đơn s = a: \[x(t) = Ae^{at}\] <br>
+                                        Nghiệm thực lặp s1 = s2 = a: \[x(t) = (A + B)e^{at}\] <br>
+                                        Nghiệm phức liên hợp s1,2 = α ± jω: \[x(t) = (Acosωt + Bsinωt)e^{αt} =
+                                        M\e^{αt}cos(ωt + θ)] <br>
+                                        <a href="slides/06_Qua_do2023b_mk.pdf">VD: 72 </a>
+                                    </details>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Tìm các hằng số tích phân;</summary>
+                                <a href="slides/06_Qua_do2023b_mk.pdf">VD: 74 - 97 </a>
+                            </details>
+                        </li>
+                        <li><b>Tổng hợp kết quả</b>: \[ x(t) = x_xl(t) + x_td(t)\].</li>
+                    </ol>
+
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Phương pháp toán tử</summary>
+                    <ul>
+                        <li>
+                            <details>
+                                <summary> Biến đổi thuận Laplace</summary>
+
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary> Biến đổi ngược Laplace</summary>
+
+
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Sơ đồ toán tử</summary>
+                                <a href="slides/06_Qua_do2023b_mk.pdf">121 - <b>129</b> - 131</a>
+
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Giải bài toán quá độ bằng phương pháp toán tử</summary>
+
+                                <a href="slides/06_Qua_do2023b_mk.pdf">133</a>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+        </ol>
+        <img src="imgs/qtqd.png" alt="" class="d-invert">
+    </section>
+
+    <section>
+        <h2>Chương 2: Mạch phi tuyến</h2>
+        <ol>
+            <li>
+                <details>
+                    <summary>Giới thiệu</summary>
+                    <ul>
+                        <li>Mạch phi tuyến: có ít nhất một phần tử thụ động
+                            (tải) phi tuyến.</li>
+                        <li>Phần tử thụ động phi tuyến: đầu vào (ví dụ dòng
+                            điện) và đầu ra (ví dụ điện áp) có quan hệ phi tuyến.</li>
+                        <li>Cách giải
+                            <ul>
+                                <li>Tuyến tính hóa phần tử phi tuyến & xây dựng (hệ)
+                                    phương trình tuyến tính & giải, hoặc,</li>
+                                <li>Xây dựng (hệ) phương trình phi tuyến & giải.</li>
+                            </ul>
+                        </li>
+                        <li>Xây dựng (hệ) phương trình:
+                            <ul>
+                                <li>Phương pháp dòng nhánh,</li>
+                                <li>Biến đổi tương đương mạch điện.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Đặc tính của phần tử phi tuyến</summary>
+                    <img src="imgs/i12.png" alt="" class="d-invert">
+
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Chế độ xác lập</summary>
+
+
+                </details>
+                <h3>Mạch 1 chiều</h3>
+                <ol>
+                    <li>
+                        <details>
+                            <summary>Phương pháp đồ thị</summary>
+                            <ul>
+                                <li>Dùng đồ thị trên mặt phẳng 2
+                                    chiều (hoặc mặt phẳng trong
+                                    không gian 3 chiều) để tìm
+                                    nghiệm.</li>
+                                <li>Chỉ dùng cho phương trình tối đa
+                                    2 ẩn</li>
+                                <li>Các phép toán cơ bản trên đồ thị:
+                                    <ul>
+                                        <li>Cộng</li>
+                                        <li>Trừ</li>
+                                        <li>Tỉ lệ</li>
+                                        <li>Bình phương</li>
+                                        <li>Căn</li>
+                                        <li>Tìm nghiệm</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>Dùng đồ thị để giải phương trình một ẩn số:
+                                    <fr>\(y(x) = ax + b\)</fr>
+                                </li>
+                                <li>Áp dụng cho mạch điện có ít phần tử phi tuyến.</li>
+                                <li>Các bước thực hiện:
+                                    <ol>
+                                        <li>Lập 01 phương trình 01 ẩn số (α) bằng một trong hai
+                                            cách:
+                                            <ul>
+                                                <li>Lập (hệ) phương trình (phương pháp dòng nhánh) mô tả
+                                                    mạch, rồi rút gọn về dạng (α), hoặc,</li>
+                                                <li>Dùng phương pháp biến đổi tương đương để đưa mạch điện
+                                                    về mạch có tất cả các phần tử nối tiếp với nhau, từ đó lập (α).
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Vẽ đường thẳng \[f(x) = ax + b\]</li>
+                                        <li>Tìm giao điểm M của đường cong y(x) & đường thẳng
+                                            f(x), nghiệm của (α) là hoành độ hoặc tung độ của M.</li>
+                                    </ol>
+                                    <img src="imgs/i13.png" alt="" class="d-invert">
+                                </li>
+                            </ul>
+                            <a href="slides/07_Phi_tuyen2023_mk.pdf">VD: 17</a>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Phương pháp dò</summary>
+                            <img src="imgs/i14.png" class="d-invert">
+                            <h4>Phép nội suy - Chưa hoàn thành</h4>
+                            <ul>
+                                <li>Tìm nghiệm x của phương trình:
+                                    <fr>\(M(x) = N = const\)</fr>
+                                    bằng cách chọn các giá trị x* khác nhau sao cho sai lệch
+                                    giữa M(x*) và N nhỏ hơn một ngưỡng cho trước.
+                                </li>
+                                <li>Nếu không tìm được x* thỏa mãn điều kiện về sai lệch
+                                    thì có thể dùng phương pháp nội suy tuyến tính.</li>
+                                <li>Lập phương trình (α) bằng một trong hai cách:
+                                    <ol>
+                                        <li>Lập (hệ) phương trình (phương pháp dòng nhánh) mô tả
+                                            mạch, rồi rút gọn về dạng (α), hoặc,</li>
+                                        <li>Dùng phương pháp biến đổi tương đương để đơn giản hóa
+                                            mạch điện, sau đó lập (α).</li>
+                                    </ol>
+                                </li>
+                                <li>Có thể áp dụng cho mạch điện phức tạp, có nhiều phần
+                                    tử phi tuyến.</li>
+                            </ul>
+
+                            <div class="row">
+                                <div class="col-md-6"><img src="imgs/i15.png" class="d-invert w-100"></div>
+                            </div>
+                            
+                            <h3>Nội/ngoại suy</h3>
+                            <div class="row">
+                                <div class="col-md-6"><img src="imgs/a45.png" class="d-invert w-100"></div>
+                            </div>
+                            <a href="slides/07_Phi_tuyen2023_mk.pdf">VD: 36</a>
+                            <details><summary>Phân tích</summary>
+                                <hl>Nội/Ngoại suy nhanh: \(x = \frac{{\Delta x}}{{\Delta y}}y + \frac{{A.B}}{{\Delta y}}\)</hl>
+                                <br>
+                                <hl>Khi cho bảng quan hệ phi tuyến, nếu không có giá trị nên dùng <u>nội suy</u></hl>
+                            </details>
+                        </details>
+                    </li>
+                </ol>
+
+                <h3>Mạch xoay chiều</h3>
+                <ol>
+                    <li>
+                        <details>
+                            <summary>Cân bằng điều hòa</summary>
+                            <h3>Phức hóa các phần tử cơ bản</h3>
+                            <div class="row">
+                                <div class="col-md-6"><img src="imgs/a44.png" class="d-invert w-100"></div>
+                            </div>
+                            <hr>
+                            <hl>Chỉ áp dụng nếu mạch rất đơn giản (RL, RC, LC,
+                                RLC) & quan hệ phi tuyến là hàm giải tích.</hl> <br>
+                            
+                            <p>Cân bằng điều hòa trong mạch xoay chiều là trạng thái mà tất cả các phần tử trong
+                                mạch (điện trở, cuộn cảm, tụ điện) đáp ứng với tín hiệu đầu vào xoay chiều theo cùng
+                                một tần số. Phương pháp này thường sử dụng các kỹ thuật phân tích mạch như phương
+                                pháp phasor để đơn giản hóa các phép toán.</p>
+                            <ex>
+                                \[
+                                V = V_m \cos(\omega t + \phi)
+                                \]
+                            </ex>
+                            <p>Trong đó, \( V \) là điện áp, \( V_m \) là biên độ, \( \omega \) là tần số góc, và \(
+                                \phi \) là pha.</p>
+                                <a href="slides/07_Phi_tuyen2023_mk.pdf">VD: 65</a>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Tuyến tính điều hòa</summary>
+                            <ul>
+                                <li>Áp dụng khi biết các quan hệ phi tuyến</li>
+                                <li>Các bước thực hiện
+                                    <ol>
+                                        <li> Phức hóa mạch điện,</li>
+                                        <li>Lập (hệ) phương trình (phương pháp dòng
+                                            nhánh) mô tả mạch, rồi rút gọn về dạng
+                                            M(X) = N = const,</li>
+                                        <li> Giải trực tiếp phương trình trên hoặc giải bằng
+                                            phương pháp dò.</li>
+                                    </ol>
+                                </li>
+                                <li>Nếu mạch điện phức tạp thì có thể đơn giản
+                                    hóa mạch điện trước khi lập phương trình.</li>
+                            </ul>
+                            <p>Tuyến tính điều hòa là phương pháp phân tích mạch xoay chiều tuyến tính, trong đó các
+                                phần tử mạch được mô hình hóa bởi các phương trình vi phân tuyến tính. Kỹ thuật này
+                                cho phép sử dụng các công cụ toán học mạnh mẽ như phép biến đổi Fourier và Laplace
+                                để giải quyết các vấn đề phức tạp.</p>
+                            <ex>
+                                \[
+                                H(s) = \frac{V_{\text{out}}(s)}{V_{\text{in}}(s)}
+                                \]
+                            </ex>
+                            <p>Trong đó, \( H(s) \) là hàm truyền của mạch, \( V_{\text{out}}(s) \) và \(
+                                V_{\text{in}}(s) \) lần lượt là biến đổi Laplace của điện áp đầu ra và đầu vào.</p>
+                                <a href="slides/07_Phi_tuyen2023_mk.pdf">VD: 72</a>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Tuyến tính hóa quanh điểm làm việc</summary>
+                            <ul>
+                                <li>Áp dụng khi mạch có nguồn một chiều lớn & nguồn
+                                    xoay chiều có biên độ nhỏ.
+                                    </li>
+                                <li>
+                                    Các bước thực hiện <br>
+1. Tìm điểm làm việc (do nguồn DC tạo ra), <br>
+2. Tuyến tính hóa phần tử phi tuyến (tìm đặc tính động), <br>
+3. Giải mạch AC với phần tử phi tuyến đã tuyến tính hóa, <br>
+4. Tổng hợp đáp số
+                                </li>
+                            </ul>
+                            <p>Tuyến tính hóa quanh điểm làm việc là kỹ thuật phân tích mạch phi tuyến bằng cách
+                                tuyến tính hóa mạch quanh một điểm làm việc cụ thể. Kỹ thuật này thường được sử dụng
+                                trong phân tích các mạch chứa linh kiện bán dẫn như transistor.</p>
+                            <ex>
+                                \[
+                                I = I_0 + \left( \frac{\partial I}{\partial V} \right)_{V=V_0} \cdot (V - V_0)
+                                \]
+                            </ex>
+                            <p>Trong đó, \( I \) là dòng điện, \( V \) là điện áp, \( I_0 \) và \( V_0 \) lần lượt
+                                là dòng và áp tại điểm làm việc.</p>
+                                
+                                <a href="slides/07_Phi_tuyen2023_mk.pdf">VD: 96</a>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Tuyến tính hóa từng đoạn</summary>
+                            <p>Tuyến tính hóa từng đoạn là phương pháp phân tích mạch phi tuyến bằng cách chia nhỏ
+                                mạch thành các đoạn tuyến tính và phân tích từng đoạn một cách độc lập. Kỹ thuật này
+                                thường được sử dụng trong mô hình hóa các mạch với các đặc tính phi tuyến phức tạp.
+                            </p>
+                            <ex>
+                                <p>Mô hình hóa một diode bằng hai đoạn tuyến tính:</p>
+                                \[
+                                I = \begin{cases}
+                                0 & \text{khi} \ V < V_D \\ \frac{V - V_D}{R_D} & \text{khi} \ V \ge V_D \end{cases} \]
+                                    </ex>
+                                   
+                                    <a href="slides/07_Phi_tuyen2023_mk.pdf">VD: 109</a>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Đồ thị</summary>
+                            <p>Phân tích đồ thị trong mạch xoay chiều liên quan đến việc sử dụng các công cụ đồ thị
+                                như đường cong Bode, Nyquist để trực quan hóa đáp ứng tần số của mạch. Các đồ thị
+                                này giúp đánh giá hiệu suất của mạch và xác định các điểm yếu cần cải thiện.</p>
+                          
+                            <a href="slides/07_Phi_tuyen2023_mk.pdf">VD: 113</a>
+                        </details>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <details>
+                    <summary>Chế độ quá độ</summary>
+
+
+                </details>
+
+                <ul>
+                    <li>
+                        <details>
+                            <summary>Tuyến tính hóa quanh điểm làm việc</summary>
+                            <p>Tuyến tính hóa quanh điểm làm việc trong chế độ quá độ là phương pháp tiếp cận các hệ
+                                thống phi tuyến bằng cách tuyến tính hóa chúng quanh điểm làm việc trong thời gian ngắn.
+                                Phương pháp này rất hiệu quả khi phân tích đáp ứng quá độ của các mạch có chứa các linh
+                                kiện phi tuyến.</p>
+                            <ex>
+                                \[
+                                \frac{dI}{dt} = \left( \frac{\partial I}{\partial V} \right)_{V=V_0} \cdot \frac{dV}{dt}
+                                \]
+                            </ex>
+                            <p>Trong đó, \( I \) là dòng điện, \( V \) là điện áp, và \( V_0 \) là điện áp tại điểm làm
+                                việc.</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Tuyến tính hóa từng đoạn</summary>
+                            <p>Tuyến tính hóa từng đoạn trong chế độ quá độ là kỹ thuật chia hệ thống phi tuyến thành
+                                các đoạn tuyến tính ngắn và phân tích từng đoạn một cách độc lập trong thời gian ngắn.
+                                Phương pháp này cho phép phân tích mạch phi tuyến một cách dễ dàng hơn.</p>
+                            <ex>
+                                \[
+                                V(t) = \begin{cases}
+                                V_1(t) & \text{khi} \ t \in [t_0, t_1] \\
+                                V_2(t) & \text{khi} \ t \in [t_1, t_2] \\
+                                \cdots & \cdots \\
+                                V_n(t) & \text{khi} \ t \in [t_{n-1}, t_n]
+                                \end{cases}
+                                \]
+                            </ex>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Tham số bé</summary>
+                            <p>Phương pháp tham số bé trong chế độ quá độ liên quan đến việc sử dụng các tham số bé để
+                                đơn giản hóa các phương trình phi tuyến và chuyển chúng thành các phương trình tuyến
+                                tính. Điều này giúp phân tích và giải các mạch phức tạp trở nên dễ dàng hơn.</p>
+                            <ex>
+                                \[
+                                I(t) = I_0 + \epsilon I_1(t) + \epsilon^2 I_2(t) + \cdots
+                                \]
+                            </ex>
+                            <p>Trong đó, \( \epsilon \) là tham số bé và \( I(t) \) là dòng điện tổng cộng.</p>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Sai phân</summary>
+                            <p>Phương pháp sai phân là kỹ thuật số sử dụng các công thức sai phân để xấp xỉ các đạo hàm
+                                trong phân tích đáp ứng quá độ của mạch. Kỹ thuật này rất hữu ích trong việc mô phỏng
+                                các hệ thống phi tuyến và phân tích hành vi động học của chúng.</p>
+                            <ex>
+                                \[
+                                \frac{dV}{dt} \approx \frac{V(t+\Delta t) - V(t)}{\Delta t}
+                                \]
+                            </ex>
+                            <p>Trong đó, \( \Delta t \) là bước thời gian và \( V(t) \) là điện áp tại thời điểm \( t
+                                \).</p>
+                        </details>
+                    </li>
+                </ul>
+
+
+            </li>
+            <li>
+                <details>
+                    <summary>Điốt và tranzito</summary>
+
+
+                </details>
+
+
+                <ul>
+                    <li>
+                        <details>
+                            <summary>Điốt</summary>
+                            <p>Phân tích chế độ quá độ của điốt tập trung vào đáp ứng của điốt khi có sự thay đổi đột
+                                ngột của điện áp hoặc dòng điện. Điều này bao gồm việc xem xét hành vi của điốt trong
+                                quá trình bật (turn-on) và tắt (turn-off).</p>
+                            <ex>
+                                <p>Mô hình điốt trong chế độ quá độ:</p>
+                                <p>Điện áp ngưỡng (threshold voltage) và điện trở động (dynamic resistance) có thể được
+                                    sử dụng để mô tả điốt trong các điều kiện quá độ.</p>
+                            </ex>
+                            <p>Ví dụ về mô hình SPICE của điốt:</p>
+                            <pre>
+.model D1 D (IS=1e-14 RS=0.01 N=1 TT=1e-7 CJO=1e-12)
+            </pre>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Tranzito</summary>
+                            <p>Phân tích chế độ quá độ của tranzito (BJT, FET) liên quan đến việc nghiên cứu đáp ứng của
+                                tranzito đối với các thay đổi đột ngột của tín hiệu đầu vào. Điều này bao gồm các hiện
+                                tượng như trễ chuyển mạch (switching delay) và các đáp ứng tần số cao.</p>
+                            <ex>
+                                <p>Mô hình đơn giản của BJT trong chế độ quá độ:</p>
+                                \[
+                                I_C(t) = \beta I_B(t)
+                                \]
+                            </ex>
+                            <p>Trong đó, \( I_C \) là dòng điện collector, \( I_B \) là dòng điện base, và \( \beta \)
+                                là hệ số khuếch đại dòng.</p>
+                            <p>Ví dụ về mô hình SPICE của BJT:</p>
+                            <pre>
+.model Q1 NPN (IS=1e-14 BF=100 VAF=100 IKF=0.3 ISE=1e-13 NE=1.5)
+            </pre>
+                        </details>
+                    </li>
+                </ul>
+
+
+            </li>
+
+        </ol>
+    </section>
+
+    <section>
+        <h2>Chương 3: Đường dây dài</h2>
+        <ol>
+            <li><details><summary>Giới thiệu</summary>
+                <a href="slides/08_Duong_day_dai2023_mk.pdf">slide</a>
+                <ul>
+                    <li>Đường dây dài: mô hình áp dụng cho mạch
+                        điện có kích thước đủ lớn so với bước sóng
+                        lan truyền trong mạch.</li>
+                    <li> Mạch cao tần & mạch truyền tải điện.</li>
+                    <li>Tại các điểm khác nhau trên cùng một đoạn
+                        mạch tại cùng một thời điểm, giá trị của dòng
+                        (hoặc áp) nói chung là khác nhau.</li>
+                        <li> → ngoài dòng và áp, mô hình đường dây dài
+                            còn phải kể đến yếu tố không gian.</li>
+            
+                </ul>
+                <div class="row">
+                    <div class="col-6"><img src="imgs/a31.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a32.png" alt="" class="w-100 d-invert"></div>
+                    <div class="col-6"><img src="imgs/a33.png" alt="" class="w-100 d-invert"></div>
+                </div>
+            </details></li>
+            <li><details><summary>Chế độ xác lập điều hòa</summary>
+            
+            </details>
+                <ul>
+                    <li><details><summary>Điện áp và dòng điện</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 10 - 15</a>
+                        Dòng, áp là một hàm theo tọa độ x
+                    </details></li>
+                    <li><details><summary>Các thông số đặc trưng</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 17</a>
+                    </details></li>
+                    <li><details><summary>Phản xạ sóng</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 24</a>
+                    </details></li>
+                    <li><details><summary>Phân bố dạng hyperbole</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 30</a>
+                    </details></li>
+                    <li><details><summary> Đường dây dài đều không tiêu tán</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 46</a>
+                    </details></li>
+                    <li><details><summary>Mạng hai cửa tương đương</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 62</a>
+                    </details></li>
+               
+                </ul>
+        </li>
+            <li><details><summary>Chế độ quá độ</summary>
+            
+            </details>
+                <ul>
+                  
+                    <li><details><summary> Điện áp và dòng điện</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 72</a>
+                    </details></li>
+                    <li><details><summary>Phương pháp sơ đồ tương đương</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 75</a>
+                    </details></li>
+                    <li><details><summary>Phản xạ nhiều lần</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 86</a>
+                    </details></li>
+                    <li><details><summary>Đóng cắt tải</summary>
+                        <a href="slides/08_Duong_day_dai2023_mk.pdf">Nguồn: 93</a>
+                    </details></li>
+                </ul>
+            </li> 
+        </ol>
+    </section>
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+
+</html>

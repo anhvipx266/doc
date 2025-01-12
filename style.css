@@ -1,93 +1,294 @@
+/* 
+table mặc định dùng cho lập bảng công thức là chủ yếu
+*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+
+@import "css/theme.css";
+@import "css/display.css";
+@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url("https://fonts.cdnfonts.com/css/latin-modern-math");
+@import url("https://fonts.cdnfonts.com/css/noto-sans-math");
+@import url("https://fonts.cdnfonts.com/css/maulysia");
+@import url("https://fonts.cdnfonts.com/css/belita");
+@import url("https://fonts.cdnfonts.com/css/elora");
+@import url("https://fonts.cdnfonts.com/css/meldina");
+@import url("https://fonts.cdnfonts.com/css/times-new-roman");
+@import url("https://fonts.cdnfonts.com/css/tex-gyre-termes?styles=842,840");
+
+:root {
+  --theme: #4caf50;
+  --theme-l3: #b7dfb8;
+  --theme-d3: #357a38;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    /* Kích thước chữ mặc định */
-    line-height: 1.6;
-    padding: 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  /* Kích thước chữ mặc định */
+  line-height: 1.6;
+  padding: 0 10px;
 }
 
-:root{
-
+details summary::-webkit-details-marker {
+  display:none;
+}
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
 }
 
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Khoảng cách giữa các thẻ a */
+}
 
 nav a {
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    line-height: 1.6;
-    padding: 10px;
+  display: block;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.6;
+  padding: 5px;
 }
 
+bi {
+  font-weight: bold;
+  font-style: italic;
+}
 
+num {
+  font-family: "TeXGyreTermes", "Times New Roman", "Meldina", "Belita",
+    "Maulysia", "Noto Sans Math", "Latin Modern Math", sans-serif;
+}
 
+hl{
+  color:red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.table-contents {
+  display: flex;
+  flex-direction: column;
+}
+.table-contents a {
+  text-decoration: none;
+}
+
+/* theme */
+.theme-l5 {
+  color: #000 !important;
+  background-color: #f4faf4 !important;
+}
+.theme-l4 {
+  color: #000 !important;
+  background-color: #dbefdc !important;
+}
+.theme-l3 {
+  color: #000 !important;
+  background-color: #b7dfb8 !important;
+}
+.theme-l2 {
+  color: #000 !important;
+  background-color: #93cf95 !important;
+}
+.theme-l1 {
+  color: #fff !important;
+  background-color: #6ec071 !important;
+}
+.theme-d1 {
+  color: #fff !important;
+  background-color: #459c48 !important;
+}
+.theme-d2 {
+  color: #fff !important;
+  background-color: #3d8b40 !important;
+}
+.theme-d3 {
+  color: #fff !important;
+  background-color: #357a38 !important;
+}
+.theme-d4 {
+  color: #fff !important;
+  background-color: #2e6830 !important;
+}
+.theme-d5 {
+  color: #fff !important;
+  background-color: #265728 !important;
+}
+
+.theme-light {
+  color: #000 !important;
+  background-color: #f4faf4 !important;
+}
+.theme-dark {
+  color: #fff !important;
+  background-color: #265728 !important;
+}
+.theme-action {
+  color: #fff !important;
+  background-color: #265728 !important;
+}
+
+.theme {
+  color: #fff !important;
+  background-color: #4caf50 !important;
+}
+.text-theme {
+  color: #4caf50 !important;
+}
+.border-theme {
+  border-color: #4caf50 !important;
+}
+
+.hover-theme:hover {
+  color: #fff !important;
+  background-color: #4caf50 !important;
+}
+.hover-text-theme:hover {
+  color: #4caf50 !important;
+}
+.hover-border-theme:hover {
+  border-color: #4caf50 !important;
+}
+/* end theme */
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
-    :root{
-        --color: white;
-    }
-    
+  :root {
+    --color: white;
+  }
 
-    body {
-        background-color: #121212;
-        color: #ffffff;
-    }
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
 
-    a {
-        color: white;
-    }
+  a {
+    color: white;
+  }
 
-    a:hover {
-        color: white;
-    }
+  a:hover {
+    color: white;
+  }
 
-    nav a.active {
-        background-color: darkgreen;
-        color: white;
-    }
+  nav a.active {
+    background-color: var(--theme-d3);
+    color: white;
+  }
 
-    nav a:hover {
-        text-decoration: none;
-        background-color: darkseagreen;
-        color: black;
-    }
+  nav a:hover {
+    text-decoration: none;
+    background-color: var(--theme);
+  }
 
+  .table-contents {
+    width: fit-content;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: hsl(0, 0%, 25%);
+  }
 
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: hsl(0, 0%, 25%);
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: hsl(0, 0%, 10%);
+  }
+
+  num,
+  mjx-container {
+    color: #ffe100;
+  }
 }
 
 /* Light theme */
 @media (prefers-color-scheme: light) {
-    :root{
-        --color: black;
-    }
-    body {
-        background-color: #ffffff;
-        color: #000000;
-    }
+  :root {
+    --color: black;
+  }
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
 
-    a {
-        color: black;
-    }
+  a {
+    color: black;
+  }
 
-    a:hover {
-        color: black;
-    }
+  a:hover {
+    color: black;
+  }
 
-    nav a.active {
-        background-color: darkseagreen;
-    }
+  nav a.active {
+    background-color: var(--theme-l3);
+  }
 
-    nav a:hover {
-        text-decoration: none;
-        background-color: darkgreen;
-        color: white;
-    }
+  nav a:hover {
+    text-decoration: none;
+    background-color: var(--theme);
+    color: white;
+  }
+
+  .table-contents {
+    width: fit-content;
+    border: 1px solid hsl(0, 0%, 20%);
+    padding: 10px;
+    background-color: hsl(0, 0%, 75%);
+  }
+
+  th,
+  td {
+    border: 1px solid hsl(0, 0%, 20%);
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: hsl(0, 0%, 75%);
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: hsl(0, 0%, 90%);
+  }
+
+  num,
+  mjx-container {
+    color: #001eff;
+  }
 }
 
-summary{
-    border-bottom: solid 1px var(--color);;
+summary {
+  border-bottom: solid 1px var(--color);
 }
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 3px;
+  border-bottom: solid 1px var(--color);
+}
 /* class style */

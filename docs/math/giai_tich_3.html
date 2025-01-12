@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Giải tích 3</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Toán</a>
+    </nav>
+
+    <h1>Giải tích 3</h1>
+
+    <ul>
+        <li><a href="/doc/source/bai giang gt3 thay thao.pdf">Bài giảng Nguyễn Xuân Thảo</a></li>
+        <li><a href="/doc/exam/exam/math/giai_tich_3.html">Bài tập</a></li>
+    </ul>
+    <h1>Chuỗi số</h1>
+
+    <details>
+        <summary><h2>Chương 1: Chuỗi số</h2></summary>
+        <h3>Chuỗi</h3>
+    </details>
+
+    <div class="table-contents"></div>
+    <h1>Chuỗi số</h1>
+    <h2>Bài 1: Chuỗi số, chuỗi số dương</h2>
+    <h3>Chuỗi số</h3>
+    <details>
+        <summary>
+            <define>Định nghĩa</define>
+        </summary>
+        <p>
+            <define>Dãy số: </define>Với mỗi số tự nhiên \(n\), cho tương ứng với một số thực \(a<sub>n</sub>
+            \), ta có dãy
+            số kí hiệu là \({a<sub>n</sub>}\).
+        </p>
+        <p>
+            <define>Chuỗi số: </define>Cho dãy số \({a<sub>n</sub>}\), ta gọi tổng vô hạn \(\({a_1} + {a_2} +
+            {a_3} + ...\)\) là chuỗi số, ký hiệu \(\sum\limits_{n = 1}^\infty {{a_n}} \), \(a<sub>n</sub>
+            \) là số hạng tổng quát.
+        </p>
+        <p>\({S_n} = {a_1} + {a_2} + {a_3} + ... + {a_n}\) là tổng riêng thứ \(n\). Nếu \(\mathop {\lim
+            }\limits_{n \to \infty } {S_n} = S\) thì ta bảo chuỗi hội tụ, có tổng \(S\) và viết:</p>
+        \[\sum\limits_{n = 1}^\infty {{a_n} = S} \]
+    </details>
+    <details>
+        <summary>
+            <define>Chuỗi số dương</define>
+        </summary>
+        <p>
+            <define>Định lý 1: </define>Tiêu chuẩn so sánh -> <hl>Hội tụ hay Phân kì</hl>
+        </p>
+        <p>
+            <define>Định lý 2: Tiêu chuẩn chia.</define>Giới hạn tỉ lệ 2 => Cùng <hl>Hội tụ/Phân kì</hl>
+        </p>
+    </details>
+    <details>
+        <summary>
+            <define>Tiêu chuẩn hội tụ</define>
+        </summary>
+        <div class="d-flex card">
+            <div class="block">
+                <p>
+                    <define>TC D'Alembert</define>
+                </p>
+                \[\mathop {\lim }\limits_{n \to \infty } \frac{{{a_{n + 1}}}}{{{a_n}}} = D\]
+                <p>Khi \(D < 1\) thì <hl>Hội tụ</hl>
+                </p>
+                <p>Khi \(D > 1\) thì <hl>Phân kì</hl>
+                </p>
+                <p>Khi \(D = 1\) thì <hl>Không xác định</hl>
+                </p>
+            </div>
+            <div class="block">
+                <p>
+                    <define>TC Cauchy</define>
+                </p>
+                \[\mathop {\lim }\limits_{n \to \infty } \sqrt[n]{{{a_n}}} = C\]
+                <p>Khi \(C < 1\) thì <hl>Hội tụ</hl>
+                </p>
+                <p>Khi \(C > 1\) thì <hl>Phân kì</hl>
+                </p>
+                <p>Khi \(C = 1\) thì <hl>Không xác định</hl>
+                </p>
+            </div>
+        </div>
+        <p>
+            <define>TC Tích phân</define>
+        </p>
+        <p>Nếu \(f(x)\) liên tục, dương giảm(\(x \ge 1\)) \(\mathop {\lim }\limits_{x \to \infty } f(x) = 0\),
+            khi đó S và \(\int\limits_1^\infty {f(x)dx} \) cùng <hl>Hội tụ/Phân kì</hl>
+        </p>
+    </details>
+    <h2>Bài 2: Chuỗi số với dấu bất kì</h2>
+    <details>
+        <summary>
+            <define>Hội tụ tuyệt đối, bán hội tụ</define>
+        </summary>
+        <p>
+            <hl>Tuyệt đối hội tụ => Chuỗi hội tụ</hl>
+        </p>
+    </details>
+    <details>
+        <summary>
+            <define>Chuỗi đan dấu</define>
+        </summary>
+        <p>
+            <define>Định nghĩa</define>
+        </p>
+        <p>
+            <define>Định lý Leibnitz: </define>
+        </p>
+        <p>Dãy \({a<sub>n</sub>}\) giảm, \(a<sub>n</sub>
+            < 0\), \(\mathop {\lim }\limits_{n \to \infty } {a_n}=0\) </p>
+                \[ \Rightarrow \sum\limits_{n = 1}^\infty {{{( - 1)}^{n - 1}}{a_n}} \]
+                và \(S < a_1\) </details>
+                    <details>
+                        <summary>Tính chất chuỗi hội tụ tuyệt đối</summary>
+                        <p>Các tập chuỗi con cũng hội tụ</p>
+                        <p>\(\sum\limits_{n = 1}^\infty {{a_n} = S} \), \(\sum\limits_{n = 1}^\infty {|{a_n}|} \) phân
+                            kì. Có
+                            thể thay đổi thứ tự các số hạng của nó
+                            để chuỗi thu được hội tụ và có tổng là một số bất kì cho trước hoặc trở nên phân
+                            kì.
+                        </p>
+                        <p>Phép nhân chuỗi</p>
+                    </details>
+    </details>
+    <h2>Bài 3: Chuỗi hàm số</h2>
+    <details>
+        <summary>
+            <define>Định nghĩa</define>
+        </summary>
+        <p>Tập các điểm hội tụ của (1) gọi là <define>tập hội tụ</define> của nó. Tổng của chuỗi hàm số là
+            hàm số xác định trong tập hội tụ của nó.
+        </p>
+
+    </details>
+    <details>
+        <summary>Chuỗi hàm số hội tụ đều</summary>
+        <p>
+            <define>Định nghĩa</define>
+        </p>
+        <p>Tiêu chuẩn Cauchy</p>
+        <p>Tiêu chuẩn Weierstrass: Chuỗi hội tụ => Chuỗi hàm hội tụ tuyệt đối</p>
+        <p>Tiêu chuẩn Dirichlet</p>
+    </details>
+    <details>
+        <summary>Tính chất chuỗi hàm hội tụ đều</summary>
+        <p>Tách lim</p>
+        <p>TC tích phân</p>
+        <p>Tính khả vi</p>
+    </details>
+    <h2>Bài 4: Chuỗi lũy thừa</h2>
+    <details>
+        <summary>
+            <define>Định nghĩa</define>
+        </summary>
+        <p>\(\sum\limits_{n = 0}^\infty {{a_n}{x^n}} \), \(x\) là biến số</p>
+        <p>
+            <define>Định lí 1(Abel): </define>
+            \(S\) hội tụ tại \(x<sub>0</sub> khác 0\) => hội tụ tuyệt đối tại \(x:\left| x \right|
+            < \left| {{x_0}} \right|\)</p>
+                <p>
+                    <define>Định lý 2: Bán kính hội tụ</define>. Gần giống dl D và Cauchy
+                </p>
+    </details>
+    <details>
+        <summary>Tính chất của chuỗi lũy thừa</summary>
+        <h2>Các tính chất của chuỗi lũy thừa</h2>
+
+        <h3>1. Định nghĩa chuỗi lũy thừa</h3>
+        <p>
+            Một chuỗi lũy thừa có dạng tổng:
+            \[
+            \sum_{n=0}^{\infty} a_n (x - x_0)^n = a_0 + a_1 (x - x_0) + a_2 (x - x_0)^2 + \dots
+            \]
+            Trong đó \( a_n \) là các hệ số, \( x_0 \) là tâm của chuỗi, và \( x \) là biến số.
+        </p>
+
+        <h3>2. Bán kính hội tụ</h3>
+        <p>
+            Bán kính hội tụ \( R \) của chuỗi lũy thừa được tính bằng:
+            \[
+            \frac{1}{R} = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|
+            \]
+            hoặc
+            \[
+            R = \frac{1}{\limsup_{n \to \infty} \sqrt[n]{|a_n|}}
+            \]
+        </p>
+
+        <h3>3. Khoảng hội tụ</h3>
+        <p>
+            Chuỗi lũy thừa \(\sum_{n=0}^{\infty} a_n (x - x_0)^n\) hội tụ tuyệt đối khi:
+            \[
+            |x - x_0| < R \] và phân kỳ khi: \[ |x - x_0|> R
+                \]
+                Với \( |x - x_0| = R \), cần kiểm tra hội tụ theo từng điểm cụ thể.
+        </p>
+
+        <h3>4. Đạo hàm và tích phân của chuỗi lũy thừa</h3>
+        <p>
+            Nếu chuỗi lũy thừa \(\sum_{n=0}^{\infty} a_n (x - x_0)^n\) hội tụ khi \( |x - x_0| < R \), thì: <ul>
+                <li>Đạo hàm của chuỗi lũy thừa là:
+                    \[
+                    \left(\sum_{n=0}^{\infty} a_n (x - x_0)^n\right)' = \sum_{n=1}^{\infty} n a_n (x -
+                    x_0)^{n-1}
+                    \]
+                </li>
+                <li>Tích phân của chuỗi lũy thừa là:
+                    \[
+                    \int \sum_{n=0}^{\infty} a_n (x - x_0)^n \, dx = C + \sum_{n=0}^{\infty} \frac{a_n (x -
+                    x_0)^{n+1}}{n + 1}
+                    \]
+                </li>
+                </ul>
+        </p>
+
+        <h3>5. Tính chất giải tích</h3>
+        <p>
+            Chuỗi lũy thừa có thể được dùng để biểu diễn hàm giải tích \( f(x) \) trong một khoảng hội tụ:
+            \[
+            f(x) = \sum_{n=0}^{\infty} c_n (x - x_0)^n
+            \]
+            với hệ số \( c_n \) được xác định bởi:
+            \[
+            c_n = \frac{f^{(n)}(x_0)}{n!}
+            \]
+        </p>
+    </details>
+    <details>
+        <summary>Khai triển thành chuỗi luỹ thừa</summary>
+        <p>Chuỗi Taylor</p>
+    </details>
+    <h2>Bài 5: Chuỗi lũy thừa</h2>
+    <details>
+        <summary>Khai triển hàm sơ cấp</summary>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hàm số</th>
+                    <th>Khai triển chuỗi lũy thừa</th>
+                    <th>Bán kính hội tụ \( R \)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>\(\frac{1}{1 - x}\)</td>
+                    <td>\[
+                        \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + \dots
+                        \]</td>
+                    <td>\(|x| < 1\)</td>
+                </tr>
+                <tr>
+                    <td>\(\ln(1 + x)\)</td>
+                    <td>\[
+                        \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots
+                        \]</td>
+                    <td>\(|x| \le 1, x \neq -1\)</td>
+                </tr>
+                <tr>
+                    <td>\(e^x\)</td>
+                    <td>\[
+                        \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots
+                        \]</td>
+                    <td>\(R = \infty\)</td>
+                </tr>
+                <tr>
+                    <td>\(\sin(x)\)</td>
+                    <td>\[
+                        \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} +
+                        \frac{x^5}{5!} - \dots
+                        \]</td>
+                    <td>\(R = \infty\)</td>
+                </tr>
+                <tr>
+                    <td>\(\cos(x)\)</td>
+                    <td>\[
+                        \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} -
+                        \dots
+                        \]</td>
+                    <td>\(R = \infty\)</td>
+                </tr>
+                <tr>
+                    <td>\(\arctan(x)\)</td>
+                    <td>\[
+                        \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} -
+                        \dots
+                        \]</td>
+                    <td>\(|x| \le 1, x \neq \pm 1\)</td>
+                </tr>
+                <tr>
+                    <td>\(\frac{1}{1 + x}\)</td>
+                    <td>\[
+                        \sum_{n=0}^{\infty} (-1)^n x^n = 1 - x + x^2 - x^3 + \dots
+                        \]</td>
+                    <td>\(|x| < 1\)</td>
+                </tr>
+                <tr>
+                    <td>\(\ln(1 - x)\)</td>
+                    <td>\[
+                        -\sum_{n=1}^{\infty} \frac{x^n}{n} = -x - \frac{x^2}{2} - \frac{x^3}{3} - \dots
+                        \]</td>
+                    <td>\(|x| < 1\)</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+    <details>
+        <summary>Ứng dụng chuỗi lũy thừa</summary>
+        <p>Tính gần đúng</p>
+        <p>Tính giới hạn</p>
+    </details>
+    <h2>Bài 6: Chuỗi Fourier</h2>
+    <details>
+        <summary>Chuỗi lượng giác</summary>
+        \[{a_0} + \sum\limits_{n = 1}^\infty {({a_n}\cos nx + {b_n}\sin nx)} ,{a_n},{b_n} \in R\]
+    </details>
+    <details>
+        <summary>
+            <define>Chuỗi Fourier</define>
+        </summary>
+        <p>Định lí Dirichlet</p>
+    </details>
+    <details>
+        <summary>Khai triển hàm chẵn lẻ</summary>
+        <p></p>
+    </details>
+    <h1>Chương 2: Phương trình vi phân</h1>
+    <h2>Bài 7: Phương trình vi phân cấp 1</h2>
+    <section>
+        <p>
+            Phương trình vi phân cấp 1 là phương trình có dạng tổng quát:
+            \(F(x, y, y') = 0\) hoặc \(y' = f(x, y)\), trong đó \(y' = \frac{dy}{dx}\).
+        </p>
+        <p><define>? Định lí về sự tồn tại và duy nhất nghiệm</define></p>
+        <h3><define>Phương trình vi phân khuyết</define></h3>
+        <div class="d-flex">
+            <div class="block">\[\begin{array}{l}F(x,y') = 0\\y' = f(x) \Rightarrow y = \int {f(x)dx} \\x = f(y),y' = t \Rightarrow x = f(t);y = \int {tf'(t)dt} \end{array}\]</div>
+            <div class="block" >\[\begin{array}{l}F\left( {y,{\rm{ }}y'} \right){\rm{  =  }}0\\y' = f(y) \Rightarrow dx = \frac{{dy}}{{f(y)}} \Rightarrow x = \int {\frac{1}{{f(y)}}dy} \\y = f(y'),y' = t \Rightarrow y = f(t),x = \int {\frac{{f'(t)}}{t}dt} \\F(y,y') = 0,y = f(t) \Rightarrow y' = g(t) \Rightarrow x = \int {\frac{{f'(t)}}{{g(t)}}dt} \end{array}\]</div>
+        </div>
+        <h3><define>Phương trình vi phân phân li biến số</define></h3>
+        <div class="d-flex"><div>\[\begin{array}{l}f(y)dy = g(x)dx\\\int {f(y)dy}  = \int {g(x)dx} \\F(y) = \int {g(x)dx} \end{array}\]</div></div>
+        <h3><define>Phương trình thuần nhất(đẳng cấp)</define></h3>
+        <div class="d-flex"><div>\[\begin{array}{l}\frac{{dy}}{{dx}} = F(\frac{y}{x})\\v = \frac{y}{x} \Rightarrow \frac{{dy}}{{dx}} = v + x\frac{{dv}}{{dx}}\\x\frac{{dv}}{{dx}} = F(v) - v\end{array}\]</div></div>
+        <h3><define>Phương trình tuyến tính</define></h3>
+        <div class="d-flex"><div>\[\begin{array}{*{20}{l}}{\frac{{dy}}{{dx}} + p(x)y = q(x)}\\\begin{array}{l}\rho (x) = {e^{\int {p(x)dx} }}\\{D_x}(\rho (x)y(x)) = \frac{d}{{dx}}(\rho (x)y(x)) = \rho (x)q(x)\end{array}\\{\rho (x)y(x) = \int {\rho (x)q(x)dx}  + C}\end{array}\]</div></div>
+        
+        <p>
+            Một số dạng phương trình vi phân cấp 1 thông dụng:
+        <ul>
+            <li>
+                <define>Phương trình tách biến</define>: \(\frac{dy}{dx} = g(x)h(y)\)
+            </li>
+            <li>
+                <define>Phương trình vi phân đồng nhất</define>: \(\frac{dy}{dx} = f\left(\frac{y}{x}\right)\)
+            </li>
+            <li>
+                <define>Phương trình vi phân tuyến tính</define>: \(\frac{dy}{dx} + P(x)y = Q(x)\)
+            </li>
+        </ul>
+        </p>
+        <hl>
+            <p>Ví dụ:</p>
+            <p>
+                Giải phương trình \(\frac{dy}{dx} = y^2 - 1\).
+                <br>
+                Tách biến: \(\frac{dy}{y^2 - 1} = dx\).
+                <br>
+                Tích phân hai vế: \(\int \frac{1}{y^2 - 1} dy = \int dx\).
+            </p>
+        </hl>
+    </section>
+    <h2>Bài 8: Phương trình vi phân cấp 2 khuyết</h2>
+    <section>
+        <p>
+            Phương trình vi phân cấp 2 có dạng tổng quát:
+            \(F(x, y, y', y'') = 0\), trong đó \(y'' = \frac{d^2y}{dx^2}\).
+        </p>
+        <p>
+            Một số dạng phương trình vi phân cấp 2 thông dụng:
+        <ul>
+            <li>
+                <define>Phương trình vi phân cấp 2 thuần nhất</define>: \(y'' + P(x)y' + Q(x)y = 0\)
+            </li>
+            <li>
+                <define>Phương trình vi phân cấp 2 không thuần nhất</define>: \(y'' + P(x)y' + Q(x)y = R(x)\)
+            </li>
+            <li>
+                <define>Phương trình vi phân tuyến tính</define>: \(y'' + a_1y' + a_0y = b(x)\)
+            </li>
+        </ul>
+        </p>
+        <hl>
+            <p>Ví dụ:</p>
+            <p>
+                Giải phương trình \(y'' - 3y' + 2y = 0\).
+                <br>
+                Phương trình đặc trưng: \(r^2 - 3r + 2 = 0\).
+                <br>
+                Nghiệm: \(r = 1, 2\).
+                <br>
+                Lời giải tổng quát: \(y = C_1e^x + C_2e^{2x}\).
+            </p>
+        </hl>
+    </section>
+    <h2>Bài 9. Phương trình vi phân cấp hai với hệ số biến đổi</h2>
+    <h1>Phương trình vi phân cấp hai với hệ số biến đổi</h1>
+
+    <section>
+        <h2>Tổng quan</h2>
+        <p>
+            Phương trình vi phân cấp hai với hệ số biến đổi có dạng tổng quát:
+            \(a(x)y'' + b(x)y' + c(x)y = d(x)\), trong đó:
+        <ul>
+            <li>
+                \(y'' = \frac{d^2y}{dx^2}\): đạo hàm cấp hai của \(y\) theo \(x\)
+            </li>
+            <li>
+                \(y' = \frac{dy}{dx}\): đạo hàm cấp một của \(y\) theo \(x\)
+            </li>
+            <li>
+                \(a(x), b(x), c(x), d(x)\): các hàm số của \(x\)
+            </li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Phương pháp giải</h2>
+        <p>
+            Để giải phương trình vi phân cấp hai với hệ số biến đổi, ta thường sử dụng các phương pháp sau:
+        <ul>
+            <li>
+                <define>Phương pháp biến đổi Laplace</define>
+            </li>
+            <li>
+                <define>Phương pháp biến đổi Fourier</define>
+            </li>
+            <li>
+                <define>Phương pháp sử dụng chuỗi lũy thừa</define>
+            </li>
+            <li>
+                <define>Phương pháp biến phân</define>
+            </li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ</h2>
+        <hl>
+            <p>Giải phương trình: \(x^2y'' - xy' + y = 0\).</p>
+            <p>
+            <ul>
+                <li>Đặt \(y = x^r\)
+                </li>
+                <li>Ta có: \(y' = rx^{r-1}\) và \(y'' = r(r-1)x^{r-2}\)
+                </li>
+                <li>Thay vào phương trình: \(x^2[r(r-1)x^{r-2}] - x[rx^{r-1}] + x^r = 0\)
+                </li>
+                <li>Đơn giản: \(r(r-1)x^r - rx^r + x^r = 0\)
+                </li>
+                <li>Phương trình đặc trưng: \(r^2 - 2r + 1 = 0\)
+                </li>
+                <li>Nghiệm kép: \(r = 1\)
+                </li>
+                <li>Lời giải tổng quát: \(y = (C_1 + C_2\ln{x})x\)
+                </li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <h2>Bài 10. Phương trình vi phân cấp hai với hệ số hằng số</h2>
+    <h1>Phương trình vi phân cấp hai với hệ số biến đổi</h1>
+
+    <section>
+        <h2>Tổng quan</h2>
+        <p>
+            Phương trình vi phân cấp hai với hệ số biến đổi có dạng tổng quát:
+            \(a(x)y'' + b(x)y' + c(x)y = d(x)\), trong đó:
+        <ul>
+            <li> \( y'' = \frac{d^2y}{dx^2} \) : đạo hàm cấp hai của \( y \) theo \( x \)</li>
+            <li> \( y' = \frac{dy}{dx} \) : đạo hàm cấp một của \( y \) theo \( x \)</li>
+            <li> \( a(x), b(x), c(x), d(x) \) : các hàm số của \( x \)</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Phương pháp giải</h2>
+        <p>
+            Để giải phương trình vi phân cấp hai với hệ số biến đổi, ta thường sử dụng các phương pháp sau:
+        <ul>
+            <li>
+                <define>Phương pháp biến đổi Laplace</define>
+            </li>
+            <li>
+                <define>Phương pháp biến đổi Fourier</define>
+            </li>
+            <li>
+                <define>Phương pháp sử dụng chuỗi lũy thừa</define>
+            </li>
+            <li>
+                <define>Phương pháp biến phân</define>
+            </li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ</h2>
+        <hl>
+            <p>Giải phương trình: \( x^2y'' - xy' + y = 0 \)</p>
+            <p>
+            <ul>
+                <li>Đặt \( y = x^r \)</li>
+                <li>Ta có: \( y' = rx^{r-1} \) và \( y'' = r(r-1)x^{r-2} \)</li>
+                <li>Thay vào phương trình: \( x^2[r(r-1)x^{r-2}] - x[rx^{r-1}] + x^r = 0 \)</li>
+                <li>Đơn giản: \( r(r-1)x^r - rx^r + x^r = 0 \)</li>
+                <li>Phương trình đặc trưng: \(r^2 - 2r + 1 = 0\)</li>
+                <li>Nghiệm kép: \(r = 1\)</li>
+                <li>Lời giải tổng quát: \( y = (C_1 + C_2\ln{x})x \)</li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <h1>Phương trình vi phân cấp hai với hệ số hằng số</h1>
+
+    <section>
+        <h2>Tổng quan</h2>
+        <p>
+            Phương trình vi phân cấp hai với hệ số hằng số có dạng tổng quát:
+            \(ay'' + by' + cy = d\), trong đó:
+        <ul>
+            <li> \( y'' = \frac{d^2y}{dx^2} \) : đạo hàm cấp hai của \( y \) theo \( x \)</li>
+            <li> \( y' = \frac{dy}{dx} \) : đạo hàm cấp một của \( y \) theo \( x \)</li>
+            <li> \( a, b, c, d \) : các hằng số</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Phương pháp giải</h2>
+        <p>
+            Để giải phương trình vi phân cấp hai với hệ số hằng số, ta thường sử dụng phương pháp giải phương trình đặc
+            trưng. Phương trình đặc trưng được xác định bởi:
+            \(ar^2 + br + c = 0\)
+        </p>
+        <p>
+            Dựa vào nghiệm của phương trình đặc trưng, ta có các trường hợp:
+        <ul>
+            <li>Nếu phương trình có hai nghiệm phân biệt \( r_1, r_2 \), lời giải tổng quát: \( y = C_1e^{r_1x} +
+                C_2e^{r_2x} \)</li>
+            <li>Nếu phương trình có nghiệm kép \( r \), lời giải tổng quát: \( y = (C_1 + C_2x)e^{rx} \)</li>
+            <li>Nếu phương trình có hai nghiệm phức \( r = \alpha \pm \beta i \), lời giải tổng quát: \( y = e^{\alpha
+                x}(C_1\cos{\beta x} + C_2\sin{\beta x}) \)</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ</h2>
+        <hl>
+            <p>Giải phương trình: \(y'' - 3y' + 2y = 0\)</p>
+            <p>
+            <ul>
+                <li>Phương trình đặc trưng: \(r^2 - 3r + 2 = 0\)</li>
+                <li>Nghiệm: \(r = 1, 2\)</li>
+                <li>Lời giải tổng quát: \( y = C_1e^x + C_2e^{2x} \)</li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <h2>Bài 11. Phương trình Euler, hệ phương trình vi phân</h2>
+    <h1>Phương trình Euler</h1>
+
+    <section>
+        <h2>Tổng quan</h2>
+        <p>
+            Phương trình Euler là một loại phương trình vi phân cấp hai có dạng đặc biệt:
+            \(x^2y'' + axy' + by = 0\), trong đó:
+        <ul>
+            <li> \( y'' = \frac{d^2y}{dx^2} \) : đạo hàm cấp hai của \( y \) theo \( x \)</li>
+            <li> \( y' = \frac{dy}{dx} \) : đạo hàm cấp một của \( y \) theo \( x \)</li>
+            <li> \( a, b \) : các hằng số</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Phương pháp giải</h2>
+        <p>
+            Để giải phương trình Euler, ta sử dụng phương pháp đặt:
+        <ul>
+            <li>Đặt \( y = x^r \)</li>
+            <li>Suy ra: \( y' = rx^{r-1} \) và \( y'' = r(r-1)x^{r-2} \)</li>
+            <li>Thay vào phương trình: \(x^2[r(r-1)x^{r-2}] + a x[rx^{r-1}] + b x^r = 0\)</li>
+            <li>Đơn giản: \(r(r-1) + ar + b = 0\)</li>
+        </ul>
+        </p>
+        <p>
+            Phương trình đặc trưng: \(r^2 + (a-1)r + b = 0\)
+        </p>
+        <p>
+            Dựa vào nghiệm của phương trình đặc trưng, ta có các trường hợp:
+        <ul>
+            <li>Nếu phương trình có hai nghiệm phân biệt \( r_1, r_2 \), lời giải tổng quát: \( y = C_1x^{r_1} +
+                C_2x^{r_2} \)</li>
+            <li>Nếu phương trình có nghiệm kép \( r \), lời giải tổng quát: \( y = x^r(C_1 + C_2\ln{x}) \)</li>
+            <li>Nếu phương trình có hai nghiệm phức \( r = \alpha \pm \beta i \), lời giải tổng quát: \( y =
+                x^{\alpha}(C_1\cos{(\beta \ln{x})} + C_2\sin{(\beta \ln{x})}) \)</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ</h2>
+        <hl>
+            <p>Giải phương trình: \(x^2y'' + 3xy' + y = 0\)</p>
+            <p>
+            <ul>
+                <li>Phương trình đặc trưng: \(r^2 + 2r + 1 = 0\)</li>
+                <li>Nghiệm kép: \(r = -1\)</li>
+                <li>Lời giải tổng quát: \( y = x^{-1}(C_1 + C_2\ln{x}) \)</li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <h1>Hệ phương trình vi phân</h1>
+
+    <section>
+        <h2>Tổng quan</h2>
+        <p>
+            Hệ phương trình vi phân bao gồm nhiều phương trình vi phân được giải đồng thời. Dạng tổng quát của hệ phương
+            trình vi phân là:
+        <ul>
+            <li> \( \frac{dy_1}{dx} = f_1(x, y_1, y_2, \ldots, y_n) \)</li>
+            <li> \( \frac{dy_2}{dx} = f_2(x, y_1, y_2, \ldots, y_n) \)</li>
+            <li> \( \vdots \)</li>
+            <li> \( \frac{dy_n}{dx} = f_n(x, y_1, y_2, \ldots, y_n) \)</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Phương pháp giải</h2>
+        <p>
+            Để giải hệ phương trình vi phân, ta có thể sử dụng nhiều phương pháp khác nhau, trong đó phổ biến nhất là:
+        <ul>
+            <li>
+                <define>Phương pháp biến đổi Laplace</define>
+            </li>
+            <li>
+                <define>Phương pháp sử dụng ma trận</define>
+            </li>
+            <li>
+                <define>Phương pháp biến đổi Fourier</define>
+            </li>
+            <li>
+                <define>Phương pháp Euler</define> (cho hệ phương trình vi phân tuyến tính)
+            </li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ</h2>
+        <hl>
+            <p>Giải hệ phương trình vi phân:</p>
+            <p>
+                \[
+                \begin{cases}
+                \frac{dy_1}{dx} = 3y_1 + 4y_2 \\
+                \frac{dy_2}{dx} = -4y_1 + 3y_2
+                \end{cases}
+                \]
+            </p>
+            <p>
+            <ul>
+                <li>Viết dưới dạng ma trận: \( \mathbf{Y}' = \mathbf{A} \mathbf{Y} \), trong đó:
+                    \[
+                    \mathbf{A} = \begin{pmatrix}
+                    3 & 4 \\
+                    -4 & 3
+                    \end{pmatrix},
+                    \mathbf{Y} = \begin{pmatrix}
+                    y_1 \\
+                    y_2
+                    \end{pmatrix}
+                    \]
+                </li>
+                <li>Tìm giá trị riêng và vector riêng của ma trận \( \mathbf{A} \)</li>
+                <li>Lời giải tổng quát: \( \mathbf{Y} = c_1 e^{\lambda_1 x} \mathbf{v_1} + c_2 e^{\lambda_2 x}
+                    \mathbf{v_2} \)</li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <h2>Bài 12. Phép biến đổi Laplace và phép biến đổi ngược</h2>
+    <h1>Phép biến đổi Laplace và phép biến đổi ngược</h1>
+
+    <section>
+        <h2>Tổng quan về phép biến đổi Laplace</h2>
+        <p>
+            Phép biến đổi Laplace là một công cụ quan trọng trong toán học và kỹ thuật, được sử dụng để giải các phương
+            trình vi phân. Phép biến đổi Laplace của một hàm \( f(t) \) được định nghĩa bởi:
+            \(\mathcal{L}\{f(t)\} = F(s) = \int_{0}^{\infty} e^{-st} f(t) \, dt\), trong đó:
+        <ul>
+            <li> \( \mathcal{L} \) là ký hiệu của phép biến đổi Laplace</li>
+            <li> \( f(t) \) là hàm thời gian</li>
+            <li> \( F(s) \) là hàm ảnh tương ứng trong miền Laplace</li>
+            <li> \( s \) là biến phức trong miền Laplace</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Tính chất của phép biến đổi Laplace</h2>
+        <p>
+            Phép biến đổi Laplace có nhiều tính chất hữu ích, bao gồm:
+        <ul>
+            <li>
+                <define>Tuyến tính</define>: \( \mathcal{L}\{af(t) + bg(t)\} = aF(s) + bG(s) \)
+            </li>
+            <li>
+                <define>Dịch chuyển thời gian</define>: \( \mathcal{L}\{e^{at}f(t)\} = F(s-a) \)
+            </li>
+            <li>
+                <define>Biến đổi của đạo hàm</define>: \( \mathcal{L}\{f'(t)\} = sF(s) - f(0) \)
+            </li>
+            <li>
+                <define>Biến đổi của tích phân</define>: \( \mathcal{L}\left\{\int_{0}^{t} f(\tau) \, d\tau\right\} =
+                \frac{F(s)}{s} \)
+            </li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Phép biến đổi ngược Laplace</h2>
+        <p>
+            Phép biến đổi ngược Laplace được sử dụng để chuyển hàm ảnh \( F(s) \) trở lại miền thời gian \( f(t) \).
+            Phép biến đổi ngược Laplace được định nghĩa bởi:
+            \(\mathcal{L}^{-1}\{F(s)\} = f(t)\\), trong đó:
+        <ul>
+            <li> \( \mathcal{L}^{-1} \) là ký hiệu của phép biến đổi ngược Laplace</li>
+            <li> \( F(s) \) là hàm ảnh trong miền Laplace</li>
+            <li> \( f(t) \) là hàm thời gian tương ứng</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Phương pháp giải phương trình vi phân bằng phép biến đổi Laplace</h2>
+        <p>
+            Để giải phương trình vi phân bằng phép biến đổi Laplace, ta thực hiện các bước sau:
+        <ul>
+            <li>Áp dụng phép biến đổi Laplace cho tất cả các thành phần trong phương trình vi phân</li>
+            <li>Sử dụng các tính chất của phép biến đổi Laplace để biến đổi phương trình từ miền thời gian sang miền
+                Laplace</li>
+            <li>Giải phương trình đại số trong miền Laplace để tìm hàm ảnh \( F(s) \)</li>
+            <li>Áp dụng phép biến đổi ngược Laplace để tìm hàm thời gian \( f(t) \)</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ</h2>
+        <hl>
+            <p>Giải phương trình vi phân bằng phép biến đổi Laplace: \(y'' + 3y' + 2y = \delta(t-1)\), với điều kiện ban
+                đầu \( y(0) = 0 \) và \( y'(0) = 0 \)</p>
+            <p>
+            <ul>
+                <li>Áp dụng phép biến đổi Laplace: \( \mathcal{L}\{y''\} + 3\mathcal{L}\{y'\} + 2\mathcal{L}\{y\} =
+                    \mathcal{L}\{\delta(t-1)\} \)</li>
+                <li>Sử dụng các tính chất của phép biến đổi Laplace:
+                    <ul>
+                        <li> \( \mathcal{L}\{y''\} = s^2Y(s) - sy(0) - y'(0) = s^2Y(s) \)</li>
+                        <li> \( \mathcal{L}\{y'\} = sY(s) - y(0) = sY(s) \)</li>
+                        <li> \( \mathcal{L}\{\delta(t-1)\} = e^{-s} \)</li>
+                    </ul>
+                </li>
+                <li>Phương trình trong miền Laplace: \(s^2Y(s) + 3sY(s) + 2Y(s) = e^{-s}\)</li>
+                <li>Giải phương trình đại số: \(Y(s)(s^2 + 3s + 2) = e^{-s}\)</li>
+                <li> \( Y(s) = \frac{e^{-s}}{s^2 + 3s + 2} \)</li>
+                <li>Phân tích thành phần: \( Y(s) = e^{-s} \left( \frac{1}{(s+1)(s+2)} \right) \)</li>
+                <li>Phân tích thành các phân số đơn: \( \frac{1}{(s+1)(s+2)} = \frac{1}{s+1} - \frac{1}{s+2} \)</li>
+                <li> \( Y(s) = e^{-s} \left( \frac{1}{s+1} - \frac{1}{s+2} \right) \)</li>
+                <li>Áp dụng phép biến đổi ngược Laplace:
+                    <ul>
+                        <li> \( \mathcal{L}^{-1}\left\{\frac{e^{-s}}{s+1}\right\} = e^{t-1}u(t-1) \)</li>
+                        <li> \( \mathcal{L}^{-1}\left\{\frac{e^{-s}}{s+2}\right\} = e^{2(t-1)}u(t-1) \)</li>
+                    </ul>
+                </li>
+                <li>Lời giải tổng quát: \( y(t) = e^{t-1}u(t-1) - e^{2(t-1)}u(t-1) \)</li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <h2>Bài 13. Phép biến đổi của bài toán giá trị ban đầu</h2>
+    <h1>Phép biến đổi Laplace trong bài toán giá trị ban đầu</h1>
+
+    <section>
+        <h2>Tổng quan về bài toán giá trị ban đầu</h2>
+        <p>
+            Bài toán giá trị ban đầu cho phương trình vi phân là bài toán tìm hàm \( y(t) \) thỏa mãn phương trình vi
+            phân và các điều kiện ban đầu cho trước. Dạng tổng quát của bài toán giá trị ban đầu là:
+            \(y'' + a y' + b y = f(t)\), với các điều kiện ban đầu:
+            \(y(0) = y_0, \quad y'(0) = y_1\)
+        </p>
+    </section>
+
+    <section>
+        <h2>Phương pháp giải bằng phép biến đổi Laplace</h2>
+        <p>
+            Để giải bài toán giá trị ban đầu bằng phép biến đổi Laplace, ta thực hiện các bước sau:
+        <ul>
+            <li>Áp dụng phép biến đổi Laplace cho tất cả các thành phần trong phương trình vi phân</li>
+            <li>Sử dụng các tính chất của phép biến đổi Laplace để biến đổi phương trình từ miền thời gian sang miền
+                Laplace</li>
+            <li>Giải phương trình đại số trong miền Laplace để tìm hàm ảnh \( Y(s) \)</li>
+            <li>Áp dụng phép biến đổi ngược Laplace để tìm hàm thời gian \( y(t) \)</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ</h2>
+        <hl>
+            <p>Giải bài toán giá trị ban đầu: \(y'' + 3y' + 2y = 0\), với điều kiện ban đầu \( y(0) = 1 \) và \(
+                y'(0) = 0 \)</p>
+            <p>
+            <ul>
+                <li>Áp dụng phép biến đổi Laplace: \( \mathcal{L}\{y''\} + 3\mathcal{L}\{y'\} + 2\mathcal{L}\{y\} =
+                    \mathcal{L}\{0\} \)</li>
+                <li>Sử dụng các tính chất của phép biến đổi Laplace:
+                    <ul>
+                        <li> \( \mathcal{L}\{y''\} = s^2Y(s) - sy(0) - y'(0) = s^2Y(s) - s \)</li>
+                        <li> \( \mathcal{L}\{y'\} = sY(s) - y(0) = sY(s) - 1 \)</li>
+                        <li> \( \mathcal{L}\{y\} = Y(s) \)</li>
+                        <li> \( \mathcal{L}\{0\} = 0 \)</li>
+                    </ul>
+                </li>
+                <li>Phương trình trong miền Laplace: \(s^2Y(s) - s + 3(sY(s) - 1) + 2Y(s) = 0\)
+                </li>
+                <li>Giải phương trình đại số:
+                    <ul>
+                        <li> \( s^2Y(s) + 3sY(s) + 2Y(s) - s - 3 = 0 \)</li>
+                        <li> \( Y(s)(s^2 + 3s + 2) = s + 3 \)</li>
+                        <li> \( Y(s) = \frac{s + 3}{s^2 + 3s + 2} \)</li>
+                        <li>Phân tích thành các phân số đơn: \( Y(s) = \frac{s + 3}{(s+1)(s+2)} = \frac{A}{s+1} +
+                            \frac{B}{s+2} \)</li>
+                        <li>Giải hệ phương trình:
+                            <ul>
+                                <li> \( A(s+2) + B(s+1) = s + 3 \)</li>
+                                <li> \( A + B = 1 \)</li>
+                                <li> \( 2A + B = 3 \)</li>
+                                <li>Giải: \( A = 2, B = -1 \)</li>
+                            </ul>
+                        </li>
+                        <li> \( Y(s) = \frac{2}{s+1} - \frac{1}{s+2} \)</li>
+                    </ul>
+                </li>
+                <li>Áp dụng phép biến đổi ngược Laplace:
+                    <ul>
+                        <li> \( \mathcal{L}^{-1}\left\{\frac{2}{s+1}\right\} = 2e^{-t} \)</li>
+                        <li> \( \mathcal{L}^{-1}\left\{\frac{1}{s+2}\right\} = e^{-2t} \)</li>
+                    </ul>
+                </li>
+                <li>Lời giải tổng quát: \( y(t) = 2e^{-t} - e^{-2t} \)</li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <h2>Bài 14. Phép tịnh tiến và phân thức đơn giản</h2>
+    <h1>Phép tịnh tiến và phân tích phân thức đơn giản</h1>
+
+    <section>
+        <h2>Phép tịnh tiến trong biến đổi Laplace</h2>
+        <p>
+            Phép tịnh tiến trong miền thời gian là một trong những tính chất quan trọng của phép biến đổi Laplace, cho
+            phép chúng ta dịch chuyển hàm theo trục thời gian. Định nghĩa phép tịnh tiến:
+        <p>
+            \(\mathcal{L}\{e^{at} f(t)\} = F(s - a)\)
+        </p>
+        trong đó:
+        <ul>
+            <li>\( \mathcal{L} \) là ký hiệu của phép biến đổi Laplace</li>
+            <li>\( f(t) \) là hàm thời gian</li>
+            <li>\( F(s) \) là hàm ảnh trong miền Laplace</li>
+            <li>\( a \) là hằng số dịch chuyển</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ về phép tịnh tiến</h2>
+        <hl>
+            <p>Giả sử cần tìm phép biến đổi Laplace của \( e^{2t} \sin(t) \)</p>
+            <p>
+            <ul>
+                <li>Phép biến đổi Laplace của \( \sin(t) \) là \( \mathcal{L}\{\sin(t)\} = \frac{1}{s^2 + 1} \)</li>
+                <li>Áp dụng tính chất tịnh tiến: \( \mathcal{L}\{e^{2t} \sin(t)\} = \frac{1}{(s - 2)^2 + 1} \)</li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <section>
+        <h2>Phân tích phân thức đơn giản</h2>
+        <p>
+            Phân tích phân thức đơn giản là quá trình chia một phân thức phức tạp thành tổng của các phân thức đơn giản
+            hơn. Phương pháp này thường được sử dụng để giải các phương trình đại số trong miền Laplace.
+        </p>
+    </section>
+
+    <section>
+        <h2>Phương pháp phân tích phân thức đơn giản</h2>
+        <p>
+            Giả sử chúng ta cần phân tích một phân thức có dạng:
+        <p>
+            \(\frac{P(s)}{Q(s)}\)
+        </p>
+        <ul>
+            <li>Viết \( Q(s) \) dưới dạng tích của các nhân tử tuyến tính và/hoặc bậc hai</li>
+            <li>Sử dụng các phương pháp phân tích để tách \( \frac{P(s)}{Q(s)} \) thành tổng của các phân thức đơn giản
+            </li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ về phân tích phân thức đơn giản</h2>
+        <hl>
+            <p>Giả sử cần phân tích: \( \frac{s + 3}{(s + 1)(s + 2)} \)</p>
+            <p>
+            <ul>
+                <li>Giả sử phân thức có dạng: \( \frac{s + 3}{(s + 1)(s + 2)} = \frac{A}{s + 1} + \frac{B}{s + 2} \)
+                </li>
+                <li>Nhân cả hai vế với \( (s + 1)(s + 2) \) để tìm \( A \) và \( B \): \( s + 3 = A(s + 2) + B(s + 1) \)
+                </li>
+                <li>Giải hệ phương trình:
+                    <ul>
+                        <li> \( s + 3 = A(s + 2) + B(s + 1) \)</li>
+                        <li> \( s = -1 \rightarrow A(-1 + 2) + B(-1 + 1) = -1 + 3 \rightarrow A = 2 \)</li>
+                        <li> \( s = -2 \rightarrow A(-2 + 2) + B(-2 + 1) = -2 + 3 \rightarrow B = -1 \)</li>
+                    </ul>
+                </li>
+                <li>Phân thức phân tích được: \( \frac{s + 3}{(s + 1)(s + 2)} = \frac{2}{s + 1} - \frac{1}{s + 2} \)
+                </li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <h2>Bài 15. Đạo hàm, tích phân và tích các phép biến đổi</h2>
+    <h1>Đạo hàm, tích phân và tích các phép biến đổi Laplace</h1>
+
+    <section>
+        <h2>Đạo hàm của phép biến đổi Laplace</h2>
+        <p>
+            Phép biến đổi Laplace của đạo hàm của một hàm \( f(t) \) có thể được tính bằng các tính chất sau:
+        <p>
+            \(\mathcal{L}\{f'(t)\} = sF(s) - f(0)\)
+        </p>
+        <p>
+            \(\mathcal{L}\{f''(t)\} = s^2F(s) - sf(0) - f'(0)\)
+        </p>
+        trong đó:
+        <ul>
+            <li>\( F(s) \) là phép biến đổi Laplace của \( f(t) \)</li>
+            <li>\( f(0) \) là giá trị ban đầu của hàm \( f(t) \) tại \( t = 0 \)</li>
+            <li>\( f'(0) \) là giá trị ban đầu của đạo hàm của \( f(t) \) tại \( t = 0 \)</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ về đạo hàm</h2>
+        <hl>
+            <p>Giả sử cần tìm phép biến đổi Laplace của \( y'' + 3y' + 2y = 0 \) với các điều kiện ban đầu \( y(0) = 1
+                \) và \( y'(0) = 0 \)</p>
+            <p>
+            <ul>
+                <li>Áp dụng phép biến đổi Laplace:
+                    <p>\(\mathcal{L}\{y''\} + 3\mathcal{L}\{y'\} + 2\mathcal{L}\{y\} = \mathcal{L}\{0\}\)</p>
+                </li>
+                <li>Sử dụng các tính chất của phép biến đổi Laplace:
+                    <ul>
+                        <li>\(\mathcal{L}\{y''\} = s^2Y(s) - sy(0) - y'(0) = s^2Y(s) - s\)</li>
+                        <li>\(\mathcal{L}\{y'\} = sY(s) - y(0) = sY(s) - 1\)</li>
+                        <li>\(\mathcal{L}\{y\} = Y(s)\)</li>
+                    </ul>
+                </li>
+                <li>Phương trình trong miền Laplace:
+                    <p>\(s^2Y(s) - s + 3(sY(s) - 1) + 2Y(s) = 0\)</p>
+                    <p>\(Y(s)(s^2 + 3s + 2) = s + 3\)</p>
+                    <p>\(Y(s) = \frac{s + 3}{s^2 + 3s + 2}\)</p>
+                </li>
+                <li>Phân tích thành các phân thức đơn giản:
+                    <p>\(Y(s) = \frac{s + 3}{(s + 1)(s + 2)} = \frac{2}{s + 1} - \frac{1}{s + 2}\)</p>
+                </li>
+                <li>Áp dụng phép biến đổi ngược Laplace:
+                    <ul>
+                        <li>\(\mathcal{L}^{-1}\left\{\frac{2}{s + 1}\right\} = 2e^{-t}\)</li>
+                        <li>\(\mathcal{L}^{-1}\left\{\frac{1}{s + 2}\right\} = e^{-2t}\)</li>
+                    </ul>
+                    <p>Lời giải tổng quát: \(y(t) = 2e^{-t} - e^{-2t}\)</p>
+                </li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <section>
+        <h2>Tích phân của phép biến đổi Laplace</h2>
+        <p>
+            Phép biến đổi Laplace của tích phân của một hàm \( f(t) \) được định nghĩa bởi:
+        <p>
+            \(\mathcal{L}\left\{\int_{0}^{t} f(\tau) \, d\tau\right\} = \frac{F(s)}{s}\)
+        </p>
+        trong đó:
+        <ul>
+            <li>\( F(s) \) là phép biến đổi Laplace của \( f(t) \)</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ về tích phân</h2>
+        <hl>
+            <p>Giả sử cần tìm phép biến đổi Laplace của \( \int_{0}^{t} e^{3\tau} \, d\tau \)</p>
+            <p>
+            <ul>
+                <li>Sử dụng tính chất của phép biến đổi Laplace:
+                    <p>\(\mathcal{L}\left\{\int_{0}^{t} e^{3\tau} \, d\tau\right\} =
+                        \frac{\mathcal{L}\{e^{3\tau}\}}{s}\)</p>
+                </li>
+                <li>Phép biến đổi Laplace của \( e^{3\tau} \) là:
+                    <p>\(\mathcal{L}\{e^{3\tau}\} = \frac{1}{s - 3}\)</p>
+                </li>
+                <li>Áp dụng phép biến đổi:
+                    <p>\(\mathcal{L}\left\{\int_{0}^{t} e^{3\tau} \, d\tau\right\} = \frac{1}{s(s - 3)}\)</p>
+                </li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+    <section>
+        <h2>Tích các phép biến đổi Laplace</h2>
+        <p>
+            Tính chất tích của phép biến đổi Laplace cho phép chúng ta tính phép biến đổi Laplace của tích của hai hàm.
+            Định nghĩa tính chất tích:
+        <p>
+            \(\mathcal{L}\{f(t) * g(t)\} = F(s)G(s)\)
+        </p>
+        trong đó:
+        <ul>
+            <li>\( f(t) * g(t) \) là tích chập của hai hàm \( f(t) \) và \( g(t) \)</li>
+            <li>\( F(s) \) và \( G(s) \) là phép biến đổi Laplace của \( f(t) \) và \( g(t) \) tương ứng</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Ví dụ về tích các phép biến đổi</h2>
+        <hl>
+            <p>Giả sử cần tìm phép biến đổi Laplace của \( \sin(t) * \cos(t) \)</p>
+            <p>
+            <ul>
+                <li>Phép biến đổi Laplace của \( \sin(t) \) là:
+                    <p>\(\mathcal{L}\{\sin(t)\} = \frac{1}{s^2 + 1}\)</p>
+                </li>
+                <li>Phép biến đổi Laplace của \( \cos(t) \) là:
+                    <p>\(\mathcal{L}\{\cos(t)\} = \frac{s}{s^2 + 1}\)</p>
+                </li>
+                <li>Áp dụng tính chất tích:
+                    <p>\(\mathcal{L}\{\sin(t) * \cos(t)\} = \left(\frac{1}{s^2 + 1}\right)\left(\frac{s}{s^2 + 1}\right)
+                        = \frac{s}{(s^2 + 1)^2}\)</p>
+                </li>
+            </ul>
+            </p>
+        </hl>
+    </section>
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

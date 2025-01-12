@@ -23,20 +23,68 @@
 
     <h2>Tín hiệu</h2>
 
-    <div class="container">
+    <p>ĐN: Tín hiệu là đại lượng vật lý mang thông tin và thay đổi theo thời gian.</p>
+    <p>VD: Tiếng nói, hình ảnh vô tuyến, điện báo</p>
+
+    <h3> Biểu diễn toán học của tín hiệu</h3>
+
+    $$ s(t) với t_{1} \leq t_{2} $$
+
+    <h3>Phân loại tín hiệu</h3>
+    <ul>
+        <li>Liên tục và rời rạc (Trục thời gian)</li>
+        <li>Tương tự và số (Trục tín hiệu)</li>
+        <li>Vô hạn và hữu hạn</li>
+        <li>Chẵn và lẻ (Hàm số)</li>
+        <li>Tuần hoàn và không tuần hoàn</li>
+        <li>Công suất và năng lượng</li>
+    </ul>
+
+    <h3>Tín hiệu mũ phức</h3>
+
+    $$ e^{jx} = cos(x) + jsin(x) $$
+
+    <h3>Tín hiệu năng lượng và công suất</h3>
+    <ul>
+        <li>Năng lượng: $ E = \int_{-\infty}^{\infty}|x(t)|^2dt $</li>
+        <li>Công suất: $ P = \lim_{T \rightarrow \infty} \frac{1}{2T} \int_{-T}^{T}|x(t)|^2dt $</li>
+    </ul>
+
+    <bi>Tín hiệu hoặc là tín hiệu năng lượng hoặc tín hiệu công suất</bi>
+
+    <details open>
+        <summary>Phép biến đổi</summary>
         <ul>
-            <li>
-                <a href="signal.html">Tín hiệu</a>
-                <a href="system.html">Hệ thống</a>
-            </li>
+            <li>Phép dịch</li>
+            <li>Phép đảo</li>
+            <li>Phép co giãn thời gian</li>
         </ul>
-    </div>
+    </details>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <details open>
+        <summary>Tín hiệu tiêu biểu</summary>
+        <ul>
+            <li>Tín hiệu bước đơn vị</li>
+            <li>Tín hiệu dốc</li>
+            <li>Xung chữ nhật</li>
+            <li>Xung đơn vị</li>
+        </ul>
+    </details>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <details open>
+        <summary>Tính chất</summary>
+        <ul>
+            <li>Tính lấy mẫu</li>
+            <li>Tính sàng lọc</li>
+            <li>Tính co giãn thời gian</li>
+        </ul>
+    </details>
+
+    <h3>Hàm lấy mẫu</h3>
+
+    <!-- Mathjax -->
+    <script src="/doc/js/math-inline.js"></script>
+    <script id="MathJax-script" async src="/doc/js/tex-mml-chtml.js"></script>
 </body>
 
 

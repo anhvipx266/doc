@@ -1,0 +1,43 @@
+.d-flex{ display: flex;}
+.d-none{ display: none;}
+.d-block{ display: block;}
+.d-inline{display: inline;}
+.d-inline-block{display: inline-block;}
+.d-inlineflex{display: inline-flex;}
+
+.d-flex > div, .block, fr{margin: 10px;padding: 10px;box-shadow: 2px 2px 2px 2px lightblue;}
+
+fr mjx-container{display: inline-block !important; width: fit-content; height: fit-content;}
+
+ex:before {
+    content:"VD: ";
+    font-weight: bold;
+}
+
+ex {
+    display: block;
+    margin-bottom: 30pt;
+    margin-left: 0;
+}
+
+/* Tạo hình dạng và kiểu dáng cho radio buttons */
+input[type="radio"] {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+input[type="radio"]:checked {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #2196F3;
+    border-radius: 50%;
+}

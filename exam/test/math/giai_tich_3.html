@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Giải tích 3</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="/doc/exam/test/index.html">Bài kiểm tra</a>
+    </nav>
+
+    <h1>Đề kiểm tra Giải tích 3</h1>
+
+    <h2>Phần 1: Lý thuyết (3 điểm)</h2>
+    <hl>Câu 1:</hl>
+    <define>Định nghĩa tích phân mặt</define> và nêu cách tính tích phân mặt của một trường vector.
+    <br>
+    <hl>Câu 2:</hl> Phát biểu và giải thích định lý Gauss-Ostrogradsky.
+    <br>
+    <hl>Câu 3:</hl> Trình bày khái niệm trường bảo toàn (conservative field) và điều kiện cần để một trường vector là
+    bảo toàn.
+
+    <h2>Phần 2: Bài tập tự luận (7 điểm)</h2>
+    <hl>Câu 1:</hl> Tính tích phân ba lớp sau:
+    \[
+    \iiint_D x^2y \, dx \, dy \, dz,
+    \]
+    với \( D \) là hình hộp giới hạn bởi \( 0 \leq x \leq 1, 0 \leq y \leq 2, 0 \leq z \leq 3 \).
+
+    <br>
+    <hl>Câu 2:</hl> Sử dụng định lý Stokes để tính tích phân đường:
+    \[
+    \int_C (y \, dx + z \, dy + x \, dz),
+    \]
+    với \( C \) là biên của mặt phẳng \( x + y + z = 1 \) trong không gian, cắt trục tọa độ tại các điểm \( (1, 0, 0),
+    (0, 1, 0), (0, 0, 1) \).
+
+    <br>
+    <hl>Câu 3:</hl> Tính thông lượng của trường vector \( \mathbf{F} = (x^2, y^2, z^2) \) qua mặt phẳng \( z = 1 \) giới
+    hạn bởi \( x^2 + y^2 \leq 1 \).
+
+    <br>
+    <hl>Câu 4:</hl> Tìm tập hợp các điểm mà tại đó trường vector \( \mathbf{F} = (2xy, x^2 - y^2, z^3) \) là bảo toàn.
+    Nếu bảo toàn, tìm một hàm thế \( \phi \) sao cho \( \nabla \phi = \mathbf{F} \).
+
+    <br>
+    <hl>Câu 5:</hl> Chuyển sang tọa độ cầu và tính tích phân:
+    \[
+    \iiint_D \frac{1}{\sqrt{x^2 + y^2 + z^2}} \, dx \, dy \, dz,
+    \]
+    với \( D \) là quả cầu tâm \( O \) và bán kính \( R = 2 \).
+
+    <br>
+    <hl>Câu 6:</hl> Tính khối lượng của một vật với mật độ khối lượng \( \rho(x, y, z) = x^2 + y^2 + z^2 \), giới hạn
+    bởi hình trụ \( x^2 + y^2 = 1 \) và hai mặt phẳng \( z = 0 \), \( z = 2 \).
+
+    <br>
+    <hl>Câu 7:</hl> Kiểm tra tính phân kỳ của trường vector \( \mathbf{F} = (xy, yz, zx) \) và tính:
+    \[
+    \iiint_V \text{div} \, \mathbf{F} \, dV,
+    \]
+    với \( V \) là hình hộp giới hạn bởi \( 0 \leq x, y, z \leq 1 \).
+
+    <br>
+    <hl>Câu 8:</hl> Chứng minh định lý Gauss cho trường vector \( \mathbf{F} = (x, y, z) \) trên miền \( D \) là hình
+    cầu tâm \( O \) bán kính \( R \).
+
+    <h2>Phần 3: Trắc nghiệm (3 điểm)</h2>
+    <ol>
+        <li>Định lý Stokes liên hệ:
+            <ul>
+                <li>A. Tích phân mặt và tích phân đường</li>
+                <li>B. Tích phân đường và tích phân bội</li>
+                <li>C. Tích phân đơn và tích phân mặt</li>
+                <li>D. Không câu nào đúng</li>
+            </ul>
+        </li>
+        <li>Tọa độ cầu biểu diễn dưới dạng:
+            <ul>
+                <li>A. \( x = r \cos \theta \sin \phi, y = r \sin \theta \sin \phi, z = r \cos \phi \)</li>
+                <li>B. \( x = r \sin \theta \cos \phi, y = r \cos \theta \sin \phi, z = r \sin \phi \)</li>
+                <li>C. \( x = r^2, y = r^2 \sin^2 \phi, z = r \cos^2 \phi \)</li>
+                <li>D. Không câu nào đúng</li>
+            </ul>
+        </li>
+        <li>Trường vector \( \mathbf{F} \) là bảo toàn nếu:
+            <ul>
+                <li>A. \( \text{curl} \, \mathbf{F} = \mathbf{0} \)</li>
+                <li>B. \( \text{div} \, \mathbf{F} = 0 \)</li>
+                <li>C. \( \text{grad} \, \mathbf{F} = 0 \)</li>
+                <li>D. Không câu nào đúng</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Phần 4: Điền khuyết (2 điểm)</h2>
+    <p>Hoàn thành các câu sau:</p>
+    <ol>
+        <li>Định lý Gauss chuyển tích phân mặt thành tích phân bội trên <hl>__________</hl>.</li>
+        <li>Tọa độ cầu được sử dụng để đơn giản hóa việc tính tích phân trên các miền <hl>__________</hl>.</li>
+    </ol>
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

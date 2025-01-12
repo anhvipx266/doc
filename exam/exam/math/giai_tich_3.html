@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Bài tập - Giải tích 3</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="/doc/docs/math/index.html">Toán</a>
+        <a href="/doc/docs/math/giai_tich_3.html">Giải tích 3</a>
+    </nav>
+
+    <h1>Bài tập - Giải tích 3</h1>
+
+    <h2>Phương trình tuyến tính</h2>
+    <article>
+        <details>
+            <summary>\(\frac{dy}{dx} + 2y = 6\)</summary>
+            <p>Kết quả: \(y = 3 + Ce^{-2x}\)</p>
+            <h3>Lời giải:</h3>
+            <p>Phương trình có dạng \(\frac{dy}{dx} + P(x)y = Q(x)\), với \(P(x) = 2\) và \(Q(x) = 6\).</p>
+            <p>Tính tích phân của \(P(x)\):</p>
+            <p><span>$$\mu(x) = e^{\int 2 \, dx} = e^{2x}$$</span></p>
+            <p>Nhân phương trình với \(\mu(x)\):</p>
+            <p><span>$$e^{2x} \frac{dy}{dx} + 2e^{2x} y = 6e^{2x}$$</span></p>
+            <p>Phương trình trở thành:</p>
+            <p><span>$$\frac{d}{dx} \left( e^{2x} y \right) = 6e^{2x}$$</span></p>
+            <p>Tích phân hai vế:</p>
+            <p><span>$$e^{2x} y = \int 6e^{2x} dx = 3e^{2x} + C$$</span></p>
+            <p>Cuối cùng, ta có:</p>
+            <p><span>$$y = 3 + Ce^{-2x}$$</span></p>
+        </details>
+        <details>
+            <summary>\(y' + 3y = 2x{e^{ - 3x}}\)</summary>
+            \[\begin{array}{l}y' + 3y = 2x{e^{ - 3x}}\\p = 3,q = 2x{e^{ - 3x}}\\\rho  = {e^{\int {3dx} }} = {e^{3x}}\\{e^{3x}}(y' + 3y) = 2x\\\frac{d}{{dx}}(y{e^{3x}}) = 2x\\y{e^{3x}} = {x^2} + C\\ \Rightarrow y = ({x^2} + C){e^{ - 3x}}\end{array}\]
+        </details>
+    </article>
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

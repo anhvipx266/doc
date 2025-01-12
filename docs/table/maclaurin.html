@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biến đổi Maclaurin</title>
+
+    <link rel="stylesheet" href="/doc/style.css">
+</head>
+
+<body>
+    <h2>Biến đổi Maclaurin</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Hàm số</th>
+                <th>Khai triển chuỗi lũy thừa</th>
+                <th>Bán kính hội tụ \( R \)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>\(\frac{1}{1 - x}\)</td>
+                <td>\[
+                    \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + \dots
+                    \]</td>
+                <td>\(|x| < 1\)</td>
+            </tr>
+            <tr>
+                <td>\(\ln(1 + x)\)</td>
+                <td>\[
+                    \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots
+                    \]</td>
+                <td>\(|x| \le 1, x \neq -1\)</td>
+            </tr>
+            <tr>
+                <td>\(e^x\)</td>
+                <td>\[
+                    \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots
+                    \]</td>
+                <td>\(R = \infty\)</td>
+            </tr>
+            <tr>
+                <td>\(\sin(x)\)</td>
+                <td>\[
+                    \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} +
+                    \frac{x^5}{5!} - \dots
+                    \]</td>
+                <td>\(R = \infty\)</td>
+            </tr>
+            <tr>
+                <td>\(\cos(x)\)</td>
+                <td>\[
+                    \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} -
+                    \dots
+                    \]</td>
+                <td>\(R = \infty\)</td>
+            </tr>
+            <tr>
+                <td>\(\arctan(x)\)</td>
+                <td>\[
+                    \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} -
+                    \dots
+                    \]</td>
+                <td>\(|x| \le 1, x \neq \pm 1\)</td>
+            </tr>
+            <tr>
+                <td>\(\frac{1}{1 + x}\)</td>
+                <td>\[
+                    \sum_{n=0}^{\infty} (-1)^n x^n = 1 - x + x^2 - x^3 + \dots
+                    \]</td>
+                <td>\(|x| < 1\)</td>
+            </tr>
+            <tr>
+                <td>\(\ln(1 - x)\)</td>
+                <td>\[
+                    -\sum_{n=1}^{\infty} \frac{x^n}{n} = -x - \frac{x^2}{2} - \frac{x^3}{3} - \dots
+                    \]</td>
+                <td>\(|x| < 1\)</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</html>

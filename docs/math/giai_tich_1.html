@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Giải tích 1</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="index.html">Toán</a>
+    </nav>
+
+    <h1>Giải tích 1</h1>
+
+    <ul>
+        <li><a href="/doc/source/Bai giang gt1 thay thao.pdf">Bài giảng Nguyễn Xuân Thảo</a></li>
+        <li><a href="/doc/exam/exam/math/giai_tich_1.html">Bài tập</a></li>
+    </ul>
+
+    <div style="max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h1>Kiến thức tổng hợp về Giải tích 1</h1>
+
+        <section id="limits">
+            <h2>1. Giới hạn (Limits)</h2>
+            <p>
+                Giới hạn là giá trị mà một hàm số hoặc một dãy số tiến đến khi biến số tiến đến một giá trị nhất định.
+                Ký hiệu giới hạn:
+            </p>
+            <p>
+                <code>lim(x→a) f(x) = L</code>, nghĩa là khi x tiến đến a, thì f(x) tiến đến L.
+            </p>
+            <ul>
+                <li>Giới hạn hữu hạn: <code>lim(x→2) (3x + 5) = 11</code></li>
+                <li>Giới hạn vô cực: <code>lim(x→∞) (1/x) = 0</code></li>
+                <li>Giới hạn một bên: <code>lim(x→0⁺) (1/x) = ∞</code></li>
+            </ul>
+        </section>
+
+        <section id="derivatives">
+            <h2>2. Đạo hàm (Derivatives)</h2>
+            <p>
+                Đạo hàm của một hàm số biểu thị sự thay đổi của hàm số đó tại một điểm cụ thể. Công thức cơ bản:
+            </p>
+            <p>
+                <code>f'(x) = lim(h→0) [f(x+h) - f(x)] / h</code>
+            </p>
+            <ul>
+                <li>Đạo hàm của hàm số bậc nhất: <code>(ax + b)' = a</code></li>
+                <li>Đạo hàm của hàm số bậc hai: <code>(ax² + bx + c)' = 2ax + b</code></li>
+                <li>Quy tắc đạo hàm tích: <code>(u(x)v(x))' = u'(x)v(x) + u(x)v'(x)</code></li>
+            </ul>
+        </section>
+
+        <section id="applications-derivatives">
+            <h3>Ứng dụng của Đạo hàm</h3>
+            <ul>
+                <li>Xác định điểm cực đại, cực tiểu của hàm số.</li>
+                <li>Tính độ dốc của đường tiếp tuyến tại một điểm.</li>
+                <li>Xác định tính đơn điệu (đồng biến hoặc nghịch biến) của hàm số.</li>
+            </ul>
+        </section>
+
+        <section id="integrals">
+            <h2>3. Tích phân (Integrals)</h2>
+            <p>
+                Tích phân của một hàm số thể hiện diện tích dưới đường cong của đồ thị hàm số đó trong một khoảng xác
+                định. Ký hiệu:
+            </p>
+            <p>
+                <code>∫ f(x) dx</code>
+            </p>
+            <ul>
+                <li>Tích phân không xác định: <code>∫ x² dx = (x³)/3 + C</code></li>
+                <li>Tích phân xác định: <code>∫[a, b] x dx = (b² - a²)/2</code></li>
+                <li>Quy tắc tích phân từng phần: <code>∫ u dv = uv - ∫ v du</code></li>
+            </ul>
+        </section>
+
+        <section id="applications-integrals">
+            <h3>Ứng dụng của Tích phân</h3>
+            <ul>
+                <li>Tính diện tích dưới đường cong của đồ thị.</li>
+                <li>Tính thể tích vật thể xoay quanh trục.</li>
+                <li>Tính công cơ học trong các bài toán vật lý.</li>
+            </ul>
+        </section>
+
+        <section id="fundamental-theorem">
+            <h2>4. Định lý cơ bản của Giải tích</h2>
+            <p>
+                Định lý cơ bản của giải tích liên kết đạo hàm và tích phân, gồm hai phần:
+            </p>
+            <ul>
+                <li><b>Phần 1:</b> Nếu <code>F(x)</code> là nguyên hàm của <code>f(x)</code> trên khoảng
+                    <code>[a, b]</code>, thì: <code>∫[a, b] f(x) dx = F(b) - F(a)</code>
+                </li>
+                <li><b>Phần 2:</b> Nếu <code>F'(x) = f(x)</code>, thì đạo hàm của tích phân:
+                    <code>d/dx (∫[a, x] f(t) dt) = f(x)</code>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Trên đây là một số kiến thức cơ bản của giải tích 1. Học tốt và thành công!</p>
+        </footer>
+    </div>
+
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/main.js"></script>
+
+</html>

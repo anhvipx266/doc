@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc/style.css">
+
+    <title>Đại số</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
+        <a href="/doc/exam/quiz/index.html">Trắc nghiệm</a>
+    </nav>
+
+
+    <div id="quiz-box">
+        <script>
+            var quizData = [
+                {
+                    quiz: "Cho ma trận A = \\( \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} \\). Tính định thức của A.",
+                    answer: 1,
+                    type: 1,
+                    choice: ["2", "-2", "-5", "5"]
+                },
+                {
+                    quiz: "Trong không gian vector, tập hợp nào sau đây không phải là không gian con?",
+                    answer: 3,
+                    type: 1,
+                    choice: ["Tập hợp chứa vectơ không", "Tập hợp các vectơ song song với nhau", "Tập hợp các vectơ có tổng bằng 0", "Tập hợp các vectơ không thỏa mãn tính chất phân bố"]
+                },
+                {
+                    quiz: "Hệ phương trình nào sau đây có vô số nghiệm?",
+                    answer: 0,
+                    type: 1,
+                    choice: [
+                        "\\( x + y = 1 \\) và \\( 2x + 2y = 2 \\)",
+                        "\\( x + y = 1 \\) và \\( x - y = 2 \\)",
+                        "\\( x + y = 1 \\) và \\( x + y = 2 \\)",
+                        "\\( x + y = 1 \\) và \\( x + 2y = 3 \\)"
+                    ]
+                },
+                {
+                    quiz: "Tính giá trị riêng của ma trận B = \\( \\begin{pmatrix} 5 & 4 \\\\ 2 & 1 \\end{pmatrix} \\).",
+                    answer: 1,
+                    type: 1,
+                    choice: ["1 và 2", "6 và 0", "5 và 1", "2 và -1"]
+                }
+            ];
+        </script>
+    </div>
+    
+
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Mathjax -->
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/doc/js/quiz.js"></script>
+
+</html>

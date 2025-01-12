@@ -17,10 +17,15 @@
 
 <body>
     <nav>
-        <a href="/doc/index.html" class="active">Trang chủ</a>
+        <a href="/doc/home.html" class="active">Trang chủ</a>
     </nav>
 
-    <h2>Tín hiệu và hệ thống</h2>
+    <h2><a href="detail.html">Tín hiệu và hệ thống</a></h2>
+
+    <ul>
+        <li><a href="/doc/source/de_cuong/thht.pdf">Đề cương</a></li>
+        <li><a href="de_cuong.html">Khung đề cương</a></li>
+    </ul>
 
     <div>
         <ul>
@@ -36,8 +41,198 @@
             <li>
                 <a href="laplace.html">Biến đổi Laplace</a>
             </li>
+            <li>
+                <a href="fourier.html">Chuỗi Fourier</a>
+            </li>
         </ul>
     </div>
+
+    <h2>Tài liệu tốt hơn</h2>
+    <ol>
+        <li>Giới thiệu về Tín hiệu và Hệ thống
+            <ul>
+                <li>Khái niệm tín hiệu
+                    <ul>
+                        <li>Định nghĩa tín hiệu</li>
+                        <li>Phân loại tín hiệu (rời rạc, liên tục, tuần hoàn, không tuần hoàn, ngẫu nhiên, xác định)
+                        </li>
+                        <li>Các phép toán cơ bản trên tín hiệu (dời thời gian, co giãn, phản xạ)</li>
+                    </ul>
+                </li>
+                <li>Khái niệm hệ thống
+                    <ul>
+                        <li>Định nghĩa hệ thống</li>
+                        <li>Phân loại hệ thống (tuyến tính, bất biến theo thời gian, nhân quả, có nhớ, không có nhớ)
+                        </li>
+                        <li>Các tính chất của hệ thống</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Biểu diễn Tín hiệu trong Miền Thời gian
+            <ul>
+                <li>Phân tích tín hiệu trong miền thời gian
+                    <ul>
+                        <li>Hàm bước đơn vị, hàm xung đơn vị</li>
+                        <li>Hàm mũ, hàm sin, cos</li>
+                    </ul>
+                </li>
+                <li>Biến đổi tín hiệu trong miền thời gian
+                    <ul>
+                        <li>Đáp ứng xung và đáp ứng tần số</li>
+                        <li>Phép tích chập (Convolution)</li>
+                        <li>Đáp ứng xung của hệ thống LTI (Linear Time-Invariant)</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Biến đổi Fourier và Ứng dụng
+            <ul>
+                <li>Biến đổi Fourier của tín hiệu liên tục (CTFT)
+                    <ul>
+                        <li>Định nghĩa biến đổi Fourier</li>
+                        <li>Thuộc tính của biến đổi Fourier</li>
+                        <li>Hàm truyền đạt và phân tích phổ</li>
+                    </ul>
+                </li>
+                <li>Biến đổi Fourier của tín hiệu rời rạc (DTFT)
+                    <ul>
+                        <li>Định nghĩa và ứng dụng của DTFT</li>
+                        <li>Mối quan hệ giữa CTFT và DTFT</li>
+                    </ul>
+                </li>
+                <li>Ứng dụng của biến đổi Fourier
+                    <ul>
+                        <li>Lọc tín hiệu</li>
+                        <li>Phân tích phổ tín hiệu</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Biến đổi Laplace và Ứng dụng
+            <ul>
+                <li>Khái niệm biến đổi Laplace
+                    <ul>
+                        <li>Định nghĩa biến đổi Laplace</li>
+                        <li>Phân tích hàm Laplace ngược</li>
+                        <li>Các tính chất của biến đổi Laplace</li>
+                    </ul>
+                </li>
+                <li>Ứng dụng của biến đổi Laplace trong phân tích hệ thống
+                    <ul>
+                        <li>Hàm truyền đạt của hệ thống</li>
+                        <li>Phân tích đáp ứng hệ thống</li>
+                        <li>Giải phương trình vi phân sử dụng Laplace</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Biến đổi Z và Ứng dụng
+            <ul>
+                <li>Biến đổi Z
+                    <ul>
+                        <li>Định nghĩa và tính chất của biến đổi Z</li>
+                        <li>Phân tích hàm Z ngược</li>
+                    </ul>
+                </li>
+                <li>Ứng dụng của biến đổi Z
+                    <ul>
+                        <li>Mô tả hệ thống rời rạc</li>
+                        <li>Phân tích và thiết kế bộ lọc số</li>
+                        <li>Giải phương trình sai phân</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Phân tích Hệ thống LTI trong Miền Tần số
+            <ul>
+                <li>Hàm truyền đạt
+                    <ul>
+                        <li>Định nghĩa và tính chất</li>
+                        <li>Mối liên hệ với đáp ứng xung</li>
+                    </ul>
+                </li>
+                <li>Phân tích tần số của hệ thống
+                    <ul>
+                        <li>Đáp ứng biên độ và pha</li>
+                        <li>Đồ thị Bode</li>
+                        <li>Đồ thị Nyquist</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Mô tả và Phân tích Hệ thống sử dụng Phương trình Trạng thái
+            <ul>
+                <li>Biểu diễn trạng thái của hệ thống
+                    <ul>
+                        <li>Khái niệm và định nghĩa</li>
+                        <li>Mô hình trạng thái và phương trình trạng thái</li>
+                    </ul>
+                </li>
+                <li>Phân tích hệ thống sử dụng phương trình trạng thái
+                    <ul>
+                        <li>Đáp ứng trạng thái</li>
+                        <li>Độ ổn định và khả năng điều khiển</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Lọc Tín hiệu
+            <ul>
+                <li>Khái niệm về lọc tín hiệu
+                    <ul>
+                        <li>Lọc thông thấp, thông cao, thông dải, chắn dải</li>
+                    </ul>
+                </li>
+                <li>Thiết kế bộ lọc
+                    <ul>
+                        <li>Thiết kế bộ lọc số FIR và IIR</li>
+                        <li>Các phương pháp thiết kế bộ lọc</li>
+                        <li>Đáp ứng tần số của bộ lọc</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Biến đổi và Phân tích Wavelet
+            <ul>
+                <li>Giới thiệu về biến đổi Wavelet
+                    <ul>
+                        <li>Khái niệm cơ bản</li>
+                        <li>Mô tả tín hiệu sử dụng Wavelet</li>
+                    </ul>
+                </li>
+                <li>Ứng dụng của biến đổi Wavelet
+                    <ul>
+                        <li>Nén tín hiệu</li>
+                        <li>Lọc tín hiệu</li>
+                        <li>Phân tích tín hiệu đa phân giải</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Ứng dụng của Tín hiệu và Hệ thống
+            <ul>
+                <li>Xử lý âm thanh và hình ảnh
+                    <ul>
+                        <li>Lọc tiếng ồn, nhận dạng giọng nói</li>
+                        <li>Nén hình ảnh</li>
+                    </ul>
+                </li>
+                <li>Hệ thống truyền thông
+                    <ul>
+                        <li>Mã hóa tín hiệu</li>
+                        <li>Phân tích và thiết kế bộ lọc trong truyền thông</li>
+                    </ul>
+                </li>
+                <li>Điều khiển tự động
+                    <ul>
+                        <li>Phân tích và thiết kế hệ thống điều khiển</li>
+                        <li>Điều khiển phản hồi và điều khiển dự báo</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

@@ -1,0 +1,30 @@
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+   fr{
+    background-color: hsl(0, 0%, 10%);
+   }
+   .d-invert{
+    filter: invert(1);
+   }
+}
+
+/* Light theme */
+@media (prefers-color-scheme: light) {
+  fr{
+    background-color: hsl(0, 0%, 90%);
+   }
+   .l-invert{
+    filter: invert(1);
+   }
+}
+
+.invert{
+  filter: invert(1);
+}
+
+/* thẻ Định nghĩa */
+define {
+  font-weight: bold;
+  text-decoration: underline;
+  color: red;
+}
